@@ -1,0 +1,122 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.one{width: 100%; height: 650px; background-color: beige; position: relative;}
+.oneimg{width: 400px; height: 550px; border-radius: 12px; margin-top: 55px; right: 150px;
+    box-shadow: 0px 10px 20px 0px #040404; position: absolute;}
+
+
+.onediva{font-size: 70px; color: #624f2f; top: 150px; position: absolute; left: 150px; text-align: left; font-family: "Charm", cursive;}
+.onedivb{font-size: 30px; color: #624f2f; top: 250px; position: absolute; left: 150px;text-align: left;}
+.onedivc{font-size: 20px; color: #624f2f; top: 350px; position: absolute; left: 150px;text-align: left;}
+.onebtn{ text-decoration: none; display: flex; border:none;color:  beige; transition: background-color 0.4s ease ; background-color: #624f2f; top: 450px; position: absolute; left: 150px; border-radius: 20px; align-items: center; justify-content: center; height: 40px; width: 150px; font-size: 15px;}
+
+.onebtn:hover{background-color: beige; color: #624f2f; border: 1px solid #624f2f ;  transition: all 0.4s ease;}
+
+
+
+.q{margin-top: 50px; color: #000000; font-size: 40px; text-align: center; margin-bottom: 10px;}
+.s{text-align: center; color: #000000; font-size: 20px;}
+.iut{font-size: 40px; color: #000000; font-family: "Charm", cursive; margin-left: 100px; margin-top: 30px;}
+
+
+
+
+
+.two{display: grid; width: 90%; height: 665px;  grid-template-columns: 1fr 1fr;  margin: 0 auto; margin-top: 30px; gap: 50px; color: #040404;}
+.twoa{position: relative; background-color: beige; border-radius: 12px; box-shadow: 0px 10px 20px 0px #040404;}
+.twob{ position: relative ; background-color: beige ; border-radius: 12px;  box-shadow: 0px 10px 20px 0px #040404;}
+
+
+
+
+.z{width: 90%; height: 250px; position: absolute; left: 35px; top: 35px; border-radius: 12px;}
+
+.zx{   font-size: 50px;  text-align: center;  margin-top: 295px;}
+.zxc{ font-size: 20px; text-align: center;  max-width: 600px; margin-top: 6px; margin: 0 auto;}
+
+.zxcz{ position: absolute;  bottom: 205px; left: 50px; font-size: 20px;}
+.zxczx{ position: absolute; bottom: 170px; font-size: 20px;left: 50px;}
+.zxczxc{ position: absolute; bottom: 115px;font-size: 20px;left: 50px;}
+.zxczxcz{ position: absolute; bottom: 90px;font-size: 20px;left: 50px;}
+.zxczxczx{ position: absolute; bottom: 20px;font-size: 20px;left: 250px; height: 40px; width: 190px; border-radius: 12px; background-color: #0C3823; transition: background-color 0.3s ease; border: none; color: #f8f3e7;}
+.zxczxczx:hover{background-color: beige; color: #0C3823; border: 1px solid #0C3823 ; }
+.three{ font-size: 50px; padding-top: 100px;  font-family: "Charm", cursive; margin-left: 80px; color: #090909;}
+
+
+
+.eee{position: relative; margin-top: 50px;  height: 600px;}
+.imfo{ width: 100%; height: 500px; margin-top: 70px; position: absolute;}
+.treee{position: absolute; font-size: 70px; top: 250px; right: 40%; color: #f8f3e7; }
+
+
+
+
+
+.tr{ margin-top: 40px; position: relative;}
+.im{width: 1000px; height: 450px; position: absolute; border-radius: 5px;}
+.divfo{ position: absolute; right: 180px; width: 600px; height: 340px; background-color:rgb(166, 144, 117); top: 40px; border-radius: 5px;}
+.thdiv{ text-align: left; font-size: 40px; margin-top: 40px; margin-left: 50px;}
+.pdivthre{text-align: left; margin-left: 50px; margin-top: 15px; max-width: 500px; font-size: 20px;}
+.divbtnnthre{transition: background-color 0.3s ease; text-align: left; margin-left: 50px; margin-top: 20px; height: 40px; width: 120px; font-size: 18px; text-align: center; border-radius: 12px; border: none; background-color: #624f2f;color: bisque;}
+
+
+
+
+
+.trb{ margin-top: 600px; position: relative;}
+.imb{width: 1000px; height: 450px; position: absolute; border-radius: 5px; right: 0;}
+.divfob{ position: absolute; left: 180px; width: 600px; height: 340px; background-color:rgb(166, 144, 117); top: 40px; border-radius: 5px;}
+.thdivb{ text-align: left; font-size: 40px; margin-top: 40px; margin-left: 50px;}
+.pdivthreb{text-align: left; margin-left: 50px; margin-top: 15px; max-width: 500px; font-size: 20px;}
+.divbtnnthreb{transition: background-color 0.3s ease; text-align: left; margin-left: 50px; margin-top: 40px; height: 40px; width: 120px; font-size: 18px; text-align: center; border-radius: 12px; border: none; background-color: #624f2f;color: bisque;}
+
+
+.divbtnnthre:hover{background-color: bisque ; color: #624f2f;}
+.divbtnnthreb:hover{background-color: bisque ; color: #624f2f;}
+
+
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+

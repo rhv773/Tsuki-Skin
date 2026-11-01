@@ -1,0 +1,2112 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+
+ <head>
+<title>Product Guide
+</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Charm:wght@400;700&family=Courgette&family=Imperial+Script&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Charm:wght@400;700&family=Courgette&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Courgette&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Birthstone&family=Charm:wght@400;700&family=Corinthia:wght@400;700&family=Courgette&family=Imperial+Script&family=Italianno&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Birthstone&family=Charm:wght@400;700&family=Corinthia:wght@400;700&family=Courgette&family=Imperial+Script&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Birthstone&family=Charm:wght@400;700&family=Corinthia:wght@400;700&family=Courgette&family=Imperial+Script&family=Italianno&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="one.css">
+<script src="one.js" defer></script>
+
+    </head>
+    
+    <body>
+
+
+
+
+
+
+        <style>
+
+            .faq-item {
+    background: #ffffff;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 10px 15px;
+    text-align: left;
+    font-size: 13px;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .faq-question:hover {
+    background-color: #faf9f6;
+  }
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0 15px;
+    font-size: 12px;
+    color: #666;
+    background-color: #fdf8f6;
+  }
+  .faq-item.active .faq-answer {
+    max-height: 100px;
+    padding: 10px 15px;
+    border-top: 1px solid #eee;
+  }
+
+            .skincare-tips-container {
+     
+      color: #332b28;
+    }
+
+    .section-header h2 {
+      font-size: 30px;
+      margin-bottom: 4px;
+      font-weight: bold;
+    }
+
+    .section-header p {
+      font-size: 18px;
+      color: #665c58;
+      margin-bottom: 15px;
+    }
+
+    .tips-grid {
+      display: flex;
+      gap: 12px;
+      overflow-x: auto;
+      width: 100%;
+    }
+
+    .tip-card {
+      background-color: #fcf6f4;
+      border: 1px solid #f2e4df;
+      border-radius: 8px;
+      padding: 12px 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex: 1;
+      min-width: 150px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+      height: 100px;
+      
+    }
+
+    .tip-icon {
+      width: 30px;
+      height: 30px;
+      object-fit: contain;
+    }
+
+    .tip-text {
+      font-size: 18px;
+      line-height: 1.3;
+      color: #4a3f3a;
+      font-weight: 500;
+    }
+            
+        .hwq{width: 100%; height: 360px; background-image: url(pgheronew.jpg) ;  background-position: center center; background-size: 100% 100%;  background-repeat: no-repeat;}
+    
+    .yahal{width: 100%; height: 600px; display: flex; margin-top: 20px;}
+    
+    
+    
+    .skincare-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      
+      color: #333;
+    }
+
+    .column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    .column h2 {
+      font-size: 24px;
+      font-weight: 600;
+      color: #2b2b2b;
+      margin-bottom: 5px;
+    
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .divider {
+      width: 1px;
+      background-color: #e0e0e0;
+      height: 100%;
+    }
+
+    /* تنسيق القسم الأيسر */
+    .content-wrapper {
+      display: flex;
+      gap: 20px;
+      flex: 1;
+    }
+
+    .accordion-list {
+      flex: 1.2;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .accordion-item {
+        width: 400px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #faf6f3;
+      padding: 12px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: 1px solid transparent;
+    }
+
+    .accordion-item:hover, .accordion-item.active {
+      background-color: #f4ece6;
+      border-color: #e6d5cb;
+    }
+
+    .item-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .number {
+      background-color: #d9b8a3;
+      color: #fff;
+      width: 22px;
+      height: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .accordion-item .text {
+      font-size: 13px;
+      font-weight: 500;
+      color: #444;
+    }
+
+    .arrow {
+      font-size: 12px;
+      color: #777;
+      transition: transform 0.3s;
+    }
+
+    /* صندوق الإجابات التفصيلية */
+    .detail-box {
+      flex: 1.3;
+      background-color: #faf6f3;
+      border: 1px solid #e6d5cb;
+      border-radius: 10px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 340px;
+      width: 400px;
+    }
+
+    .detail-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #ebdcd3;
+      padding-bottom: 10px;
+    }
+
+    .warning-icon {
+      font-size: 18px;
+    }
+
+    .detail-header h3 {
+      font-size: 15px;
+      color: #8c4a32;
+      margin: 0;
+    }
+
+    .detail-box h4 {
+      font-size: 13px;
+      color: #555;
+      margin: 10px 0 5px 0;
+    }
+
+    .detail-box p {
+      font-size: 13px;
+      color: #666;
+      line-height: 1.5;
+      margin: 0 0 10px 0;
+    }
+
+    /* تنسيق القسم الأيمن */
+    .compatibility-content {
+      display: flex;
+      gap: 15px;
+      flex: 1;
+    }
+
+    .compatibility-list {
+      flex: 1.5;
+      display: flex;
+      flex-direction: column;
+      gap: 15px; 
+     
+      margin-top: 20px;
+      
+    }
+
+    .compat-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #f0f0f0;
+    
+      height: 68px;
+    }
+
+    .compat-item p {
+      margin: 0;
+      font-size: 13px;
+      color: #555;
+      line-height: 1.4;
+    }
+
+    .icon {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      color: white;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .icon.green {
+      background-color: #5b8266;
+    }
+
+    .icon.orange {
+      background-color: #d99b43;
+    }
+
+    .right-banner {
+      flex: 0.8;
+      background-color: #f8e1b4;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 15px;
+      border: 1px solid #eee;
+      height: 320px;
+    }
+
+    .right-banner p {
+      font-size: 14px;
+      font-style: italic;
+      color: #666;
+      line-height: 1.6;
+      margin: 0;
+    }
+    
+    .main-container {
+  width: 83%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  display: flex;
+  gap: 30px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.column {
+  flex: 1;
+}
+
+h2 {
+  font-size: 25px;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+  
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Divider between sections */
+
+
+
+.sefi{ display: flex;
+  flex-direction: column; /* ترتيب العناصر فوق بعض */
+ /* التوسيط الطولي (عموديًا) */
+  align-items: center; width: 100%; height: 200px; background-image: url(bebe.jpeg) ; background-size: cover; background-position: center; }
+
+
+
+
+
+
+
+
+
+.vertical-divider {
+  width: 1px;
+  background-color: #eaeaea;
+}
+
+
+
+
+
+
+
+
+/* Section 2: Routine Layout */
+.cards-wrapper {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px; 
+}
+
+.routine-card {
+  flex: 1;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.routine-card.morning {
+  background-color: #fdf5f2; /* Soft Warm/Peach */
+}
+
+.routine-card.evening {
+  background-color: #f4f6f1; /* Soft Sage Green */
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #2c2c2c;
+}
+
+.icon-sun {
+  color: #e59866;
+}
+
+.icon-moon {
+  color: #555;
+}
+
+/* Steps Timeline */
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Connecting vertical line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 11px;
+  width: 2px;
+  background-color: #e0d8d5;
+  z-index: 1;
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 2;
+}
+
+.step-num {
+  width: 24px;
+  height: 24px;
+  background-color: #bfa18f;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.evening .step-num {
+  background-color: #8c9a86;
+}
+
+.product-icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #776e65;
+  font-size: 1.2rem;
+
+}
+
+.product-name {
+  font-size: 0.88rem;
+  color: #4a4a4a;
+  font-weight: 500;
+}
+
+/* Info Note Box */
+.info-note {
+  background-color: #fdf5f2;
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.info-note i {
+  color: #999;
+}
+
+/* Section 3: Ingredients Layout */
+.ingredients-content {
+  display: flex;
+  gap: 15px;
+}
+
+.ingredients-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ingredients-table th {
+  text-align: left;
+  padding: 10px 12px;
+  font-size: 18px;
+  color: #666;
+  font-weight: 600;
+  
+}
+
+.ingredients-table td {
+  padding: 12px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 16px;
+  color: #555;
+  vertical-align: middle;
+  
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Ingredient Badge Colors */
+.badge-hyaluronic { background-color: #e2ebd8; color: #3c5233; }
+.badge-niacinamide { background-color: #f4e3dd; color: #6b473c; }
+.badge-salicylic  { background-color: #dbede2; color: #2e5940; }
+.badge-ceramides  { background-color: #e6e2f3; color: #493f6e; }
+.badge-vit-c      { background-color: #fde8cd; color: #735118; }
+
+/* Side Graphic Banner */
+.side-banner {
+  width: 140px;
+  background-color: #faf8f5;
+  border-radius: 12px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.leaf-img {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.handwritten-text {
+  font-family: 'Comic Sans MS', 'Caveat', cursive, sans-serif;
+  font-size: 0.85rem;
+  color: #6b5a4e;
+  line-height: 1.4;
+}
+
+.tare.hide-arrow::after {
+    display: none;
+}
+
+.taree.hide-arrow::after {
+    display: block;
+}
+
+.tareee.hide-arrow::after {
+    display: block;
+}
+.tareeee.hide-arrow::after {
+    display: block;
+}
+
+
+
+
+
+
+
+
+    
+
+    
+  .tare::after {
+    
+    content: "";
+    position: absolute;
+    top: 86%; /* ليخرج من الحافة السفلى تماماً */
+    left: 13%; /* يوضع في المنتصف أفقياً */
+    transform: translateX(-50%); /* لضبط التوسيط بدقة */
+    
+    /* رسم المثلث باستخدام الحدود Border */
+    border-width: 10px; /* حجم المثلث */
+    border-style: solid;
+    border-color: #9ba187 transparent transparent transparent; /* يجعل الجزء العلوي ملون بنفس لون المستطيل والباقي شفاف */
+  }  
+    
+    
+    
+    .taree::after {
+      display: none; /* إخفاء المثلث */
+    content: "";
+    position: absolute;
+    top: 86%; /* ليخرج من الحافة السفلى تماماً */
+    left: 23%; /* يوضع في المنتصف أفقياً */
+    transform: translateX(-50%); /* لضبط التوسيط بدقة */
+    
+    /* رسم المثلث باستخدام الحدود Border */
+    border-width: 10px; /* حجم المثلث */
+    border-style: solid;
+    border-color: #9ba187 transparent transparent transparent; /* يجعل الجزء العلوي ملون بنفس لون المستطيل والباقي شفاف */
+  }  
+
+
+  .tareee::after {
+    display: none; 
+    content: "";
+    position: absolute;
+    top: 86%; /* ليخرج من الحافة السفلى تماماً */
+    left: 33%; /* يوضع في المنتصف أفقياً */
+    transform: translateX(-50%); /* لضبط التوسيط بدقة */
+    
+    /* رسم المثلث باستخدام الحدود Border */
+    border-width: 10px; /* حجم المثلث */
+    border-style: solid;
+    border-color: #9ba187 transparent transparent transparent; /* يجعل الجزء العلوي ملون بنفس لون المستطيل والباقي شفاف */
+  }  
+
+
+  .tareeee::after {
+    display: none; 
+    content: "";
+    position: absolute;
+    top: 86%; /* ليخرج من الحافة السفلى تماماً */
+    left: 43.5%; /* يوضع في المنتصف أفقياً */
+    transform: translateX(-50%); /* لضبط التوسيط بدقة */
+    
+    /* رسم المثلث باستخدام الحدود Border */
+    border-width: 10px; /* حجم المثلث */
+    border-style: solid;
+    border-color: #9ba187 transparent transparent transparent; /* يجعل الجزء العلوي ملون بنفس لون المستطيل والباقي شفاف */
+  }  
+    
+    
+    
+    
+    
+    
+    </style>
+        <img src="newlogonew.jpeg" style="width: 145px;  object-fit: contain; height: 73px; position: absolute; top: 32px; left: 15px;" >
+
+<div class="top-bar">
+<span> <i class="fa-solid fa-truck"></i> Free shipping on orders over  <span class="Highlighter">50JOD&nbsp;&nbsp;&nbsp;</span></span>
+<span>|</span>
+<span>&nbsp;&nbsp;&nbsp; <i class="fa-solid fa-star"></i> Get 10% off on your first order - use code: <span class="Highlighter">GLOWY10</span>  </span>
+
+</div>
+
+<header>
+  <nav>
+    <div class="logo"> gguuuuuh hhhhhhh  </div>
+
+    <ul>
+      <li><a href="one.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="Doctors.html">Doctors</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+
+    </ul>
+    <div class="btn">
+      <button class="btnn" onclick="toggleProfile()"> Account</button>
+      <button class="btnnd">Patient Profiles</button>
+      <button class="btnnd">My Schedule</button>
+      
+    </div>
+
+     <div class="iconswe">
+       <i class="fa-solid fa-magnifying-glass" id="searshicon"></i>
+    <i class="fa-solid fa-cart-shopping" id="cartwq" style="margin-right: 10px;"> <span class="arrree" id="cart-count">0</span></i>
+    <i class="fa-solid fa-bars" id="meme"></i>
+   
+    </div>
+    
+
+    
+
+  </nav>
+</header>
+
+
+<div id="search-overlay" class="search-overlay">
+    
+    <!-- حقل البحث العلوي -->
+    <div class="search-box">
+        <input type="text" placeholder="WHAT ARE YOU LOOKING FOR?" class="terc" >
+        <button id="close-btn" class="bxx">✕</button>
+    </div>
+
+    <!-- صندوق الاقتراحات -->
+    <div class="suggestions-box">
+        <h3 class="ytrr"> <br> POPULAR SEARCHES</h3>
+        
+        <div class="tags">
+            <button class="bnmm">CLEANSER</button>
+            <button class="bnmm">MOISTURIZE</button>
+            <button class="bnmm">SERUM</button>
+            <button class="bnmm">SUNSCREEN</button>
+            <button class="bnmm">MAKEUP</button>
+        </div>
+    </div>
+
+</div>
+
+
+
+<section class="hwq">
+<br><br>
+<div style=" margin-left: 140px; color: #666;">PRODUCT GUIDE</div>
+<div style="margin-top: 20px; font-size: 50px; margin-left: 140px; max-width: 400px;">Your Skin Deserves the Right Care</div>
+<div style="margin-top: 20px; max-width: 430px; margin-left: 140px; font-size: 18px;">This guide helps you understand how to use your skincare products correctly, build a routine that works for your skin, learn about key ingredients, and avoid common mistakes.</div>
+<div style="margin-top: 20px; max-width: 400px; font-size: 27px;  align-items: center; text-align: center; justify-content: center; display: flex; margin-left: 140px; font-family: Corinthia, cursive; ">
+    <div>Better knowledge &nbsp;→  &nbsp;</div>
+    <div>Healthier skin &nbsp; →  &nbsp;</div>
+    <div> &nbsp;Real results  </div>
+</div>
+
+</section>
+
+
+<section class="yahal"> 
+    
+    <div style="margin-left: 140px; width: 50%;  ">
+        <br>
+<div style="font-size: 30px; ">1. Product Usage Guide</div>
+
+<div style="font-size: 18px;  max-width: 490px; margin-top: 10px; color: #666;">Learn how to use each type of product correctly and get the most out of your skincare</div>
+    
+<div style="display: flex; margin-top: 15px;">
+    <div id="won" class="tare" style="width: 160px; height: 100px; background-color: #9ba187; border-radius: 12px; align-items: center; border: 1px solid #9ba187; justify-content: center; text-align: center; " ><i class="fa-solid fa-pump-soap" style="margin-top: 20px; font-size: 30px;"></i> <div style="margin-top: 10px;" >Cleanser</div></div>
+<div id="wonn" class="taree" style="width: 160px; height: 100px; margin-left: 10px; background-color: white; border: 1px solid #9ba187;; border-radius: 12px; align-items: center; justify-content: center; text-align: center; " ><i class="fa-solid fa-jar" style="margin-top: 20px; font-size: 30px;"></i> <div style="margin-top: 10px;" >Moisturizer</div></div>
+<div id="wonnn" class="tareee" style="width: 160px; height: 100px; margin-left: 10px; background-color: white; border: 1px solid #9ba187;; border-radius: 12px; align-items: center; justify-content: center; text-align: center; " ><i class="fa-solid fa-droplet" style="margin-top: 20px; font-size: 30px;"></i> <div style="margin-top: 10px;" >Treatment</div></div>
+<div id="wonnnn"class="tareeee" style="width: 160px; height: 100px; margin-left: 10px; background-color: white; border: 1px solid #9ba187; border-radius: 12px; align-items: center; justify-content: center; text-align: center; " ><i class="fa-solid fa-jar" style="margin-top: 20px; font-size: 30px;"></i> <div style="margin-top: 10px;" >Toner</div></div>
+ 
+</div>
+
+
+
+<div style="display: flex; margin-top: 15px; width: 670px;  border-radius: 12px; background-color: #F2F5E8; height: 300px;">
+<img src="cle.jpg" width="180px" height="240px " style="margin-left: 20px; margin-top: 30px;" id="inbb">
+<div style="margin-top: 20px; margin-left: 25px;">
+<div style="font-size: 25px; font-weight: bold;" id="clear">Cleansers</div>
+<div style="color: #666; margin-top: 6px; max-width: 390px; font-size: 18px;" id="clearr">Remove dirt, oil and impurities without stripping your skin's natural barrier.</div>
+
+<div style="margin-top: 10px; height: 50px; width: 360px; align-items: center; display: flex;">
+    <div style="display: flex; align-items: center; width: 100%;">
+        <img src="nm.jpg" width="35px" height="35px" style="margin-right: 20px; flex-shrink: 0;">
+        <div style="flex-grow: 1;">
+            <div>When to Use</div>
+            <div style="color: #666;" id="h">Morning and night</div>
+        </div>
+    </div>
+</div>
+
+<div style="margin-top: 10px; height: 50px; width: 360px; align-items: center; display: flex;">
+    <div style="display: flex; align-items: center; width: 100%;">
+        <img src="nmn.jpg" width="35px" height="35px" style="margin-right: 20px; flex-shrink: 0;">
+        <div style="flex-grow: 1;">
+            <div>How to Use</div>
+            <div style="color: #666;" id="hh">Use a small amount, massage gently for 30-60 seconds, then rinse with lukewarm water</div>
+        </div>
+    </div>
+</div>
+
+<div style="margin-top: 10px; height: 50px; width: 360px; align-items: center; display: flex;">
+    <div style="display: flex; align-items: center; width: 100%;">
+        <img src="nmnm.jpg" width="35px" height="35px" style="margin-right: 20px; flex-shrink: 0;">
+        <div style="flex-grow: 1;">
+            <div>Tip</div>
+            <div style="color: #666;" id="hhh">Avoid hot water and harsh scrubbing</div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</div>
+</div>
+
+</div>
+
+
+
+    <div>
+        
+<div style="width: 690px; height: 490px; border-radius: 12px; background-image: url(sun.jpg); background-position: center center; background-size: 100% 100%;  background-repeat: no-repeat; margin-top: 45px; margin-right: 140px; ">
+
+
+    <div style="margin-top: 10px; height: 60px; font-size: 30px;  width: 360px; align-items: center;  display: flex; ">
+    
+        <img src="sunn.jpg" width="40px" height="40px" style="margin-right: 20px; margin-left: 20px;">
+        
+            <div>Sunscreen</div>
+        
+</div>
+    <div style="margin-left: 20px; max-width: 450px; font-size: 18px;">
+        Protects your skin from UV damages, prevents premature aging and reduces the nuk of pigmentation.
+    </div>
+
+<div style="margin-top: 20px; margin-left: 20px; ">
+    <div style="height: 1px; width: 450px; background-color: #dddcdc;" ></div>
+    <div style="display: flex; margin-top: 10px;">
+        <img src="sunn.jpg" width="40px" height="40px">
+        <div style="margin-left: 20px;">
+            <div style="font-size: 23px; margin-bottom: 5px;">when to apple</div>
+            <div style="max-width: 300px;" > morning at the last step in your roten before makeup</div>
+        </div>
+    </div>
+</div>
+
+<div style="margin-top: 10px; margin-left: 20px;  ">
+    <div style="height: 1px; width: 450px; background-color: #dddcdc;" ></div>
+    <div style="display: flex; margin-top: 10px;">
+        <img src="sunn2.jpg" width="30px" height="30px">
+        <div style="margin-left: 20px;">
+            <div style="font-size: 23px; margin-bottom: 5px;">How Much</div>
+            <div style="max-width: 300px;" > uis a generous amount (about 2 finger lengths) to cover all exposed areas</div>
+        </div>
+    </div>
+</div>
+
+
+<div style="margin-top: 10px; margin-left: 20px; ">
+    <div style="height: 1px; width: 450px; background-color: #dddcdc;" ></div>
+    <div style="display: flex; margin-top: 10px;">
+        <img src="sunn3.jpg" width="30px" height="30px">
+        <div style="margin-left: 20px;">
+            <div style="font-size: 23px; margin-bottom: 5px;">Reapplication</div>
+            <div style="max-width: 300px;" >Every 2 hours when outdoors, after swimming or sweating</div>
+        </div>
+    </div>
+</div>
+
+
+<div style="margin-top: 10px; margin-left: 20px; ">
+    <div style="height: 1px; width: 450px; background-color: #dddcdc;" ></div>
+    <div style="display: flex; margin-top: 10px;">
+        <img src="sunn4.jpg" width="30px" height="30px">
+        <div style="margin-left: 20px;">
+            <div style="font-size: 23px; margin-bottom: 5px;">Common Mistake</div>
+            <div style="max-width: 300px;" >Using too little - it reduces the protection significantly</div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</div>
+    </div>
+</section>
+
+
+
+<section class="main-container">
+    
+    <!-- Section 2: Build Your Routine -->
+    <div class="column routine-column">
+      <h2>2. Build Your Routine</h2>
+      <p class="subtitle">Follow a simple routine for healthier, balanced skin.</p>
+
+      <div class="cards-wrapper">
+        <!-- Morning Routine Card -->
+        <div class="routine-card morning">
+          <div class="card-header">
+            <span>Morning Routine</span>
+            <i class="fa-regular fa-sun icon-sun"></i>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="step-num">1</span>
+              <div class="product-icon"><i class="fa-solid fa-pump-soap"></i></div>
+              <span class="product-name">Cleanser</span>
+            </div>
+            <div class="timeline-item">
+              <span class="step-num">2</span>
+              <div class="product-icon"><i class="fa-solid fa-droplet"></i></div>
+              <span class="product-name">Treatment (if needed)</span>
+            </div>
+            <div class="timeline-item">
+              <span class="step-num">3</span>
+              <div class="product-icon"><i class="fa-solid fa-jar"></i></div>
+              <span class="product-name">Moisturizer</span>
+            </div>
+            <div class="timeline-item">
+              <span class="step-num">4</span>
+              <div class="product-icon"><i class="fa-solid fa-bottle-droplet"></i></div>
+              <span class="product-name">Sunscreen</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Evening Routine Card -->
+        <div class="routine-card evening">
+          <div class="card-header">
+            <span>Evening Routine</span>
+            <i class="fa-regular fa-moon icon-moon"></i>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="step-num">1</span>
+              <div class="product-icon"><i class="fa-solid fa-pump-soap"></i></div>
+              <span class="product-name">Cleanser</span>
+            </div>
+            <div class="timeline-item">
+              <span class="step-num">2</span>
+              <div class="product-icon"><i class="fa-solid fa-droplet"></i></div>
+              <span class="product-name">Treatment</span>
+            </div>
+            <div class="timeline-item">
+              <span class="step-num">3</span>
+              <div class="product-icon"><i class="fa-solid fa-jar"></i></div>
+              <span class="product-name">Moisturizer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Note box -->
+      <div class="info-note">
+        <i class="fa-solid fa-circle-info"></i>
+        <span>The order may vary depending on the product type and your doctor's instructions.</span>
+      </div>
+    </div>
+
+    <!-- Divider Line -->
+    <div class="vertical-divider"></div>
+
+    <!-- Section 3: Know Your Ingredients -->
+    <div class="column ingredients-column">
+      <h2>3. Know Your Ingredients</h2>
+      <p class="subtitle">Understand what each ingredient does and how it helps your skin.</p>
+
+      <div class="ingredients-content">
+        <table class="ingredients-table">
+          <thead>
+            <tr>
+              <th>Ingredient</th>
+              <th>Main Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="badge badge-hyaluronic">Hyaluronic Acid</span></td>
+              <td>Hydrates and locks in moisture.</td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-niacinamide">Niacinamide</span></td>
+              <td>Supports the skin barrier and may help improve pigmentation.</td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-salicylic">Salicylic Acid</span></td>
+              <td>Unclogs pores and reduces breakouts.</td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-ceramides">Ceramides</span></td>
+              <td>Strengthens the skin barrier and prevents moisture loss.</td>
+            </tr>
+            <tr>
+              <td><span class="badge badge-vit-c">Vitamin C</span></td>
+              <td>Antioxidant and may help brighten and even skin tone.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Right Graphic Banner -->
+        <div class="side-banner">
+          <div class="leaf-img">🌿</div>
+          <p class="handwritten-text">Good ingredients<br>=<br>Healthy skin<br>♡</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+<br><br>
+  
+ <div style="height: 1px; width: 80%; margin: 0 auto; background-color: #dddcdc;  "></div>
+
+
+<section style="width: 83%; margin: 0 auto; height: 470px;   margin-top: 60px;">
+
+<div class="skincare-container">
+    
+    <!-- القسم الأيسر: الأخطاء مع إمكانية التوسع عبر السهم -->
+    <div class="column left-column">
+      <div style="font-size: 30px;">4. Skincare Mistakes</div>
+      <p class="subtitle">Avoid these common mistakes to protect your skin and get better results.</p>
+      
+      <div class="content-wrapper">
+        <!-- قائمة الأسئلة -->
+        <div class="accordion-list">
+          <div class="accordion-item active" onclick="showDetail(0)">
+            <div class="item-left">
+              <span class="number">1</span>
+              <span class="text">Using Too Many Active Ingredients</span>
+            </div>
+            
+          </div>
+          
+          <div class="accordion-item" onclick="showDetail(1)">
+            <div class="item-left">
+              <span class="number">2</span>
+              <span class="text">Skipping Sunscreen</span>
+            </div>
+            
+          </div>
+          
+          <div class="accordion-item" onclick="showDetail(2)">
+            <div class="item-left">
+              <span class="number">3</span>
+              <span class="text">Over-Exfoliating</span>
+            </div>
+            
+          </div>
+          
+          <div class="accordion-item" onclick="showDetail(3)">
+            <div class="item-left">
+              <span class="number">4</span>
+              <span class="text">Changing Products Too Frequently</span>
+            </div>
+           
+          </div>
+          
+          <div class="accordion-item" onclick="showDetail(4)">
+            <div class="item-left">
+              <span class="number">5</span>
+              <span class="text">Using Products Not Suitable for Your Skin Type</span>
+            </div>
+            
+          </div>
+          
+          <div class="accordion-item" onclick="showDetail(5)">
+            <div class="item-left">
+              <span class="number">6</span>
+              <span class="text">Expecting Instant Results</span>
+            </div>
+            
+          </div>
+        </div>
+
+        <!-- صندوق عرض الإجابة/التفاصيل -->
+        <div class="detail-box" id="detailBox">
+          <div class="detail-header">
+            <span class="warning-icon">⚠️</span>
+            <h3 id="detailTitle">Using Too Many Active Ingredients</h3>
+          </div>
+          <h4>Why it can be harmful:</h4>
+          <p id="detailHarm">It can irritate your skin, damage your skin barrier and cause dryness, redness or breakouts.</p>
+          <h4>How to avoid it:</h4>
+          <p id="detailAvoid">Start with one or two actives, use them on different days if needed, and always listen to your skin.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- فاصل عمودي -->
+    <div class="divider"></div>
+
+    <!-- القسم الأيمن: توافق المنتجات -->
+    <div class="column right-column">
+      <div style="font-size: 30px;">5. Product Compatibility</div>
+      <p class="subtitle">Some products work well together, while others can cause irritation or dryness. Here's what to keep in mind:</p>
+      
+      <div class="compatibility-content">
+        <div class="compatibility-list">
+          <div class="compat-item">
+            <span class="icon green">✔</span>
+            <p>Using a cleanser + moisturizer + sunscreen is safe and effective for most skin types.</p>
+          </div>
+          <div class="compat-item">
+            <span class="icon orange">⚠️</span>
+            <p>Avoid using multiple strong exfoliants in the same routine.</p>
+          </div>
+          <div class="compat-item">
+            <span class="icon orange">⚠️</span>
+            <p>Be careful when combining acne treatments (e.g., retinol, benzoyl peroxide, salicylic acid).</p>
+          </div>
+          <div class="compat-item">
+            <span class="icon green">✔</span>
+            <p>Some products need special instructions from your doctor.</p>
+          </div>
+        </div>
+        
+        <div class="right-banner">
+          <p>Right products<br>+<br>Right combo<br>=<br>Better results <span style="color:#d97757;">♥</span></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+<section style="margin-top: 20px; height: 200px; width: 83%; margin: 0 auto; ">
+  <div class="skincare-tips-container">
+    <div class="section-header">
+      <div style="font-size: 30px;">6. Skincare Tips</div>
+      <p>Simple tips that make a big difference.</p>
+    </div>
+    
+    <div class="tips-grid">
+      <!-- البطاقة الأولى -->
+      <div class="tip-card">
+        <img src="zq.jpg" alt="Keep Routine Simple" class="tip-icon">
+        <span class="tip-text">Keep Your Routine Simple</span>
+      </div>
+
+      <!-- البطاقة الثانية -->
+      <div class="tip-card">
+        <img src="xq.jpg" alt="Introduce Products" class="tip-icon">
+        <span class="tip-text">Introduce New Products Gradually</span>
+      </div>
+
+      <!-- البطاقة الثالثة -->
+      <div class="tip-card">
+        <img src="cq.jpg" alt="Moisturize" class="tip-icon">
+        <span class="tip-text">Moisturize Consistently</span>
+      </div>
+
+      <!-- البطاقة الرابعة -->
+      <div class="tip-card">
+        <img src="vq.jpg" alt="Avoid Picking" class="tip-icon">
+        <span class="tip-text">Avoid Picking at Acne</span>
+      </div>
+
+      <!-- البطاقة الخامسة -->
+      <div class="tip-card">
+        <img src="bq.jpg" alt="Patch Test" class="tip-icon">
+        <span class="tip-text">Patch Test New Products</span>
+      </div>
+
+      <!-- البطاقة السادسة -->
+      <div class="tip-card">
+        <img src="nq.jpg" alt="Be Patient" class="tip-icon">
+        <span class="tip-text">Be Patient with Results</span>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+
+
+
+<section style="width: 83%; margin: 0 auto; height: 300px; margin-top: 20px;  background-color: #fdfbf7; padding: 20px; box-sizing: border-box; display: flex; flex-direction: column;">
+  
+  <!-- عنوان القسم -->
+  <div style="margin-bottom: 15px;">
+    <h2 style="font-size: 30px; color: #2c2c2c; margin: 0 0 5px 0;">7. Frequently Asked Questions</h2>
+    <p style="font-size: 18px; color: #666; margin: 0;">Quick answers to common questions about your skincare journey.</p>
+  </div>
+
+  <!-- المحتوى الرئيسي (أعمدة الأسئلة والصورة) -->
+  <div style="display: flex; gap: 20px; height: calc(100% - 60px); align-items: flex-start;">
+    
+    <!-- العمود الأول للأسئلة -->
+    <div style="flex: 1; display: flex; flex-direction: column; gap: 10px;">
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>How Long Does It Take to See Results?</span>
+          <span>⌄</span>
+        </button>
+        <div class="faq-answer">It typically takes about 4 to 6 weeks of consistent use to see noticeable results.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>Should I Apply Moisturizer Before or After Serum?</span>
+          <span>⌄</span>
+        </button>
+        <div class="faq-answer">Always apply your serum first because it has lighter molecules, followed by moisturizer to lock it in.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>Can I Use Multiple Serums Together?</span>
+          <span>⌄</span>
+        </button>
+        <div class="faq-answer">Yes, you can layer serums, but make sure to go from the thinnest consistency to the thickest.</div>
+      </div>
+    </div>
+
+    <!-- العمود الثاني للأسئلة -->
+    <div style="flex: 1; display: flex; flex-direction: column; gap: 10px;">
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>What Should I Do If a Product Irritates My Skin?</span>
+          <span>⌄</span>
+        </button>
+        <div class="faq-answer">Stop using the product immediately and soothe your skin with a gentle, fragrance-free moisturizer.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">
+          <span>Should I Stop Using a Product If My Skin Becomes Dry?</span>
+          <span>⌄</span>
+        </button>
+        <div class="faq-answer">If you experience severe irritation, redness, or persistent breakouts, please consult your doctor.</div>
+      </div>
+
+      <div style="display: flex; height: 39px; background-color: #faebe9;; width: 565px; align-items: center; border: 1px solid #f6d9d9; border-radius:7px">
+        <img src="mq.jpg" width="20px" height="20px" style="margin-left: 10px;">
+        <div style="margin-left: 10px; font-size: 13px; color: #333;">If you experience severe irritation, redness, or persistent breakouts, please consult your doctor.</div>
+      </div>
+    </div>
+
+    <!-- جهة اليمين: صورة بدلاً من النص المزغرف -->
+    <div style="width: 180px; height: 100%; display: flex; align-items: center; justify-content: center; ">
+      <img src="mmq.jpg"  style="max-width: 100%; max-height: 100%; object-fit: contain;">
+    </div>
+
+  </div>
+</section>
+
+<br><br><br>
+
+
+<section class="sefi">
+<div style="margin-top: 20px; font-size: 15px; color: white;">READY &nbsp; TO &nbsp; TAKE  &nbsp;CARE &nbsp; OF &nbsp;YOUR &nbsp;SKIN?</div>
+<div style="margin-top: 20px; font-size: 30px; color: white;">Book an Appointment with Doctors</div>
+<a href="Doctors.html" style="margin-top: 25px; padding: 15px; font-size: 15px; background-color:  #5b6b5b; text-decoration: none; border-radius: 20px; border: 1px solid white;  color: white;">&nbsp;&nbsp;Book an Appointment → &nbsp;&nbsp;</a>
+</section>
+
+
+
+
+<br><br><br>
+<br>
+<br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="skin-footer">
+
+    <!-- ================= TOP FOOTER LINKS ================= -->
+
+    <div class="footer-top">
+
+        <a href="find-store.html" class="footer-feature">
+            <span class="feature-icon">⌖</span>
+            <div>
+                <strong>Find a Store</strong>
+                <small>Choose Your Store</small>
+            </div>
+        </a>
+
+
+        <a href="customer-service.html" class="footer-feature">
+            <span class="feature-icon">◯</span>
+            <div>
+                <strong>Customer Service Chat</strong>
+            </div>
+        </a>
+
+
+        <a href="download.html" class="footer-feature">
+            <span class="feature-icon">▤</span>
+            <div>
+                <strong>Get the App</strong>
+                <small>Download Now</small>
+            </div>
+        </a>
+
+
+        <a href="newsletter.html" class="footer-feature">
+            <span class="feature-icon">✉</span>
+            <div>
+                <strong>Join Skin Sync</strong>
+                <small>Sign up Now</small>
+            </div>
+        </a>
+
+
+        <a href="vip.html" class="footer-feature">
+            <span class="feature-icon">▭</span>
+            <div>
+                <strong>Skin Sync VIP</strong>
+                <small>Discover Your Benefits</small>
+            </div>
+        </a>
+
+    </div>
+
+
+    <!-- ================= MAIN FOOTER ================= -->
+
+    <div class="footer-main">
+
+
+        <!-- COLUMN 1 -->
+
+        <div class="footer-column">
+
+            <h3>About Skin Sync</h3>
+
+            <a href="about.html">About Us</a>
+            <a href="how-we-work.html">How We Work</a>
+            <a href="doctors.html">Our Doctors</a>
+            <a href="services.html">Our Services</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="gift-card.html">Gift Cards</a>
+
+        </div>
+
+
+        <!-- COLUMN 2 -->
+
+        <div class="footer-column">
+
+            <h3>My Skin Sync</h3>
+
+            <a href="login.html">Sign In</a>
+            <a href="profile.html">My Profile</a>
+            <a href="assessment.html">Skin Assessment</a>
+            <a href="products.html">My Products</a>
+            <a href="cart.html">My Cart</a>
+            <a href="appointments.html">My Appointments</a>
+            <a href="vip.html">Skin Sync VIP</a>
+
+        </div>
+
+
+        <!-- COLUMN 3 -->
+
+        <div class="footer-column">
+
+            <h3>Help</h3>
+
+            <a href="customer-service.html">Customer Service</a>
+            <a href="shipping.html">Shipping & Delivery</a>
+            <a href="returns.html">Returns & Exchanges</a>
+            <a href="payment.html">Payment Options</a>
+            <a href="booking.html">Booking Information</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+
+        </div>
+
+
+        <!-- COLUMN 4 -->
+
+        <div class="footer-column">
+
+            <h3>Find Us</h3>
+
+            <a href="find-store.html">Amman — Dabouq</a>
+            <a href="find-store.html">Store Locations</a>
+
+            <a href="tel:+962790000000">
+                +962 7 9000 0000
+            </a>
+
+            <a href="mailto:hello@skinsync.com">
+                hello@skinsync.com
+            </a>
+
+
+            <div class="footer-social">
+
+                <a href="#" aria-label="Instagram">Instagram</a>
+                <a href="#" aria-label="Facebook">Facebook</a>
+                <a href="#" aria-label="TikTok">TikTok</a>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= RIGHT SIDE ================= -->
+
+        <div class="footer-right">
+
+            <!-- LOGO -->
+
+            <a href="index.html" class="footer-logo-link">
+
+                <img
+                    src="logo.jpg"
+                    alt="Skin Sync Logo"
+                    class="footer-logo"
+                >
+
+            </a>
+
+
+            <h2>
+                Know Your Skin.<br>
+                Embrace Your Beauty.
+            </h2>
+
+
+            <!-- PHONE -->
+
+            <div class="newsletter-box">
+
+                <h3>Stay Connected</h3>
+
+                <p>
+                    Get skincare tips, updates and exclusive offers.
+                </p>
+
+                <div class="input-row">
+
+                    <input
+                        type="tel"
+                        placeholder="Mobile Phone Number"
+                    >
+
+                    <button type="button">
+                        Subscribe
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- EMAIL -->
+
+            <div class="newsletter-box">
+
+                <h3>Sign up for Skin Sync Emails</h3>
+
+                <div class="input-row">
+
+                    <input
+                        type="email"
+                        placeholder="Enter your email address"
+                    >
+
+                    <button type="button">
+                        Sign Up
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= BOTTOM FOOTER ================= -->
+
+    <div class="footer-bottom">
+
+        <div class="copyright">
+
+            <p>
+                © 2026 Skin Sync. All Rights Reserved.
+            </p>
+
+            <div class="legal-links">
+
+                <a href="privacy.html">
+                    Privacy Policy
+                </a>
+
+                <a href="terms.html">
+                    Terms & Conditions
+                </a>
+
+                <a href="accessibility.html">
+                    Accessibility
+                </a>
+
+                <a href="sitemap.html">
+                    Sitemap
+                </a>
+
+            </div>
+
+            <a href="tel:+962790000000">
+                +962 7 9000 0000
+            </a>
+
+        </div>
+
+
+        <!-- SOCIAL MEDIA -->
+
+        <div class="social-icons">
+
+            <a href="#" aria-label="Instagram">◎</a>
+
+            <a href="#" aria-label="Facebook">f</a>
+
+            <a href="#" aria-label="X">𝕏</a>
+
+            <a href="#" aria-label="YouTube">▶</a>
+
+            <a href="#" aria-label="Pinterest">p</a>
+
+            <a href="#" aria-label="TikTok">♪</a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<div id="cart-overlay" class="cart-overlay"></div>
+
+<!-- القائمة الجانبية للسلة -->
+<div id="cart-drawer" class="cart-drawer">
+    <!-- الهيدر: العنوان وزر الإغلاق -->
+    <div class="cart-header">
+        <h2>SHOPPING BAG (<span id="cart-count-title">0</span>)</h2>
+        <button id="close-cart-btn" class="close-cart-btn">✕</button>
+    </div>
+
+    <div class="shipping-progress-container">
+    
+    <p class="shipping-text">
+        YOU ARE <span id="amount-away" class="pink-text">50 JOD</span> AWAY FROM FREE SHIPPING
+    </p>
+
+   
+    <div class="progress-bar-bg">
+        <div id="progress-fill" class="progress-bar-fill" style="width: 50%;"></div>
+    </div>
+    <img src="trackn.jpg" style="width: 35px; border: 2px solid black; height: 35px; border-radius: 50%; position: absolute; top: 145px; right: 29px;">
+</div>
+    
+   <div class="cart-body">
+
+
+
+        <!-- 1. المنتج الرئيسي في السلة -->
+        <div class="cart-main-item">
+            <img src="https://via.placeholder.com/80" alt="Product" class="item-img">
+            <div class="item-info">
+                <h3>EASY BAKE PRESSED POWDER</h3>
+                <p class="item-variant">Banana Bread • 8.5G / 0.29 OZ</p>
+                <p class="item-price">43.00 JOD</p>
+                
+                <!-- أزرار زيادة ونقصان الكمية -->
+                <div class="quantity-box">
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+                </div>
+            </div>
+            <!-- زر الحذف -->
+            <button class="delete-btn"><i class="fa-solid fa-trash-can"></i></button>
+        </div>
+
+
+
+
+
+        <!-- 2. قسم التوصيات (Recommended For You) القابل للسحب يمين ويسار -->
+        <div class="recommended-section">
+            <div class="rec-header">
+                <span>RECOMMENDED FOR YOU</span>
+                <i class="fa-solid fa-chevron-up"></i>
+            </div>
+
+            <!-- حاوية المنتجات التي تتحرك يمين ويسار -->
+            <div class="rec-slider">
+                <!-- المنتج المقترَح الأول -->
+                <div class="rec-card">
+                    <img src="https://via.placeholder.com/70" alt="Rec Product">
+                    <div class="rec-details">
+                        <h4>Easy Bake Loose Baking & Setting Powder</h4>
+                        <select class="rec-select">
+                            <option>Peach Pie</option>
+                        </select>
+                        <div class="rec-price-btn">
+                            <span>$43.00</span>
+                            <button class="add-bag-btn">ADD TO BAG</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- المنتج المقترَح الثاني (يمكنك نسخه لزيادة المنتجات التي تتحرك يمين وشمال) -->
+                <div class="rec-card">
+                    <img src="https://via.placeholder.com/70" alt="Rec Product">
+                    <div class="rec-details">
+                        <h4>Liquid Matte Lipstick</h4>
+                        <select class="rec-select">
+                            <option>Bombshell</option>
+                        </select>
+                        <div class="rec-price-btn">
+                            <span>$21.00</span>
+                            <button class="add-bag-btn">ADD TO BAG</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. أقسام الهدايا والعينات -->
+        
+        
+
+    </div>
+
+    <!-- فوتر السلة (المجموع وزر الدفع) -->
+    <div class="cart-footer">
+    
+    <!-- صندوق النقاط الوردي -->
+    <div class="points-box">
+        <i class="fa-solid fa-crown points-icon"></i>
+        <div class="points-text">
+            <p>Earn <strong>43 Points</strong> on this order</p>
+            <p class="points-sub">Save USD 15.00 next time with 150 Points.</p>
+            <a href="#" class="pink-link">Log in</a> or <a href="#" class="pink-link">Create an account</a>
+        </div>
+    </div>
+
+    <!-- ملخص الطلب (Order Summary) -->
+    <div class="order-summary">
+        <h3>ORDER SUMMARY</h3>
+        <div class="summary-row">
+            <span>Subtotal</span>
+            <span>$43.00</span>
+        </div>
+        <div class="summary-row">
+            <span>Delivery</span>
+            <span class="muted-text">To be calculated at checkout</span>
+        </div>
+        <div class="summary-row">
+            <span>Discounts</span>
+            <span>$0.00</span>
+        </div>
+        
+        <div class="summary-divider"></div>
+
+        <div class="summary-row total-row-bold">
+            <span class="pink-title">ORDER TOTAL</span>
+            <span class="pink-price">$43.00</span>
+        </div>
+    </div>
+
+    <!-- زر الدفع الآمن -->
+    <button class="checkout-secure-btn">
+        CHECKOUT SECURELY <i class="fa-solid fa-lock"></i>
+    </button>
+
+    <!-- خط فاصل مع نص Express checkout -->
+    <div class="express-divider">
+        <span>Express checkout</span>
+    </div>
+
+    <!-- أزرار الدفع السريع (PayPal و Google Pay) -->
+    <div class="express-pay-buttons">
+        <button class="pay-btn paypal-btn">
+            <i class="fa-brands fa-paypal"><b>PayPal</b></i>
+        </button>
+        <button class="pay-btn gpay-btn">
+            <i class="fa-brands fa-google-pay"></i> G Pay
+        </button>
+    </div>
+
+    <p class="choose-method-text">Choose your payment method at checkout.</p>
+
+    <!-- أيقونات البطاقات في الأسفل -->
+    <div class="payment-icons">
+        <i class="fa-brands fa-cc-visa" style="color: #1a1f71;"></i>
+        <i class="fa-brands fa-cc-mastercard" style="color: #eb001b;"></i>
+        <i class="fa-brands fa-cc-paypal" style="color: #003087;"></i>
+        <i class="fa-brands fa-apple-pay"></i>
+        <i class="fa-brands fa-google-pay"></i>
+    </div>
+
+</div>
+
+</div>
+
+
+
+<div id="meno-overlay" class="meno-overlay">
+    
+    <div class="cdf">
+    <div class="meno-ta">
+     
+        Explore all pages and sections of our store
+        <button id="threw" class="threww">✕</button>
+    </div>
+
+    <!-- صندوق الاقتراحات -->
+    <div class="meno-box">
+        <div style="margin-right: 200px;"> 
+<div style="font-size: 30px; margin-bottom: 10px; color: #0C3823;"> Your Personal Hub</div>
+<div style="margin-bottom: 5px;">Services</div>
+<div style="margin-bottom: 5px;">Products</div>
+<div style="margin-bottom: 5px;">Initial Skin Assessment</div>
+<div style="margin-bottom: 5px;">My Profile</div>
+<div > Product Guide</div>
+
+        </div>
+        
+
+<div style="margin-right: 200px;"> 
+<div style="font-size: 30px; margin-bottom: 10px; color: #0C3823"> our doctors</div>
+<div style="margin-bottom: 5px;">Doctors</div>
+<div style="margin-bottom: 5px;">buon baekhyun</div>
+<div style="margin-bottom: 5px;">buon baekhyun</div>
+<div style="margin-bottom: 5px;">buon baekhyun</div>
+<div style="margin-bottom: 5px;">buon baekhyun</div>
+<div style="margin-bottom: 5px;">buon baekhyun</div>
+<div style="margin-bottom: 5px;">buon baekhyun</div>
+<div style="margin-bottom: 5px;">buon baekhyun</div>
+
+        </div>
+
+
+        <div style="margin-right: 200px;"> 
+          <div style="font-size: 30px; margin-bottom: 10px; color: #0C3823"> kids area</div>
+<div style="margin-bottom: 5px;"> kids area</div>
+<div style="margin-bottom: 5px;">vip</div>
+<div style="margin-bottom: 5px;">lab</div>
+<div style="margin-bottom: 5px;">gift vaww</div>
+        </div>
+
+
+        <div > 
+<div style="font-size: 30px; margin-bottom: 10px; color: #0C3823"> about as</div>
+<div style="margin-bottom: 5px;">vip</div>
+<div style="margin-bottom: 5px;">lab</div>
+<div>gift vaww</div>
+
+
+        </div>
+
+    </div>
+    </div>
+</div>
+
+
+
+
+<div id="profileSection" class="profile-modal">
+  <div class="profile-content">
+    <!-- زر إغلاق السيكشن -->
+    <span class="closeqw-btn" onclick="toggleProfile()">&times;</span>
+    
+    
+  <!-- الهيدر: يحتوي على صورة القفل والعنوان -->
+  <div class="card-header">
+    <div class="icon-container">
+      <img src="loke.jpg"  class="lock-img">
+    </div>
+    <div class="header-text">
+      <h2>JOIN OUR LOYALTY PROGRAM</h2>
+      <p>Get rewarded every time you shop.</p>
+    </div>
+  </div>
+
+  <!-- قائمة الميزات -->
+  <ul class="features-list">
+    <li>
+      <span class="check-icon">&#10004;</span>
+      Earn points when you shop
+    </li>
+    <li>
+      <span class="check-icon">&#10004;</span>
+      Unlock early product access
+    </li>
+    <li>
+      <span class="check-icon">&#10004;</span>
+      Redeem points for money off
+    </li>
+  </ul>
+
+  <!-- الأزرار -->
+  <div class="buttons-container">
+    <a href="login.html" class="btnxc btn-login">Sign In</a>
+    <a href="mypro.html" class="btnxc btn-create">My Profile</a>
+  </div>
+</div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    
+    // بيانات الأسئلة والإجابات للقسم الأيسر
+    const detailsData = [
+      {
+        title: "Using Too Many Active Ingredients",
+        harm: "It can irritate your skin, damage your skin barrier and cause dryness, redness or breakouts.",
+        avoid: "Start with one or two actives, use them on different days if needed, and always listen to your skin."
+      },
+      {
+        title: "Skipping Sunscreen",
+        harm: "Exposing unprotected skin to UV rays leads to premature aging, sunburn, hyperpigmentation, and increased risk of skin damage.",
+        avoid: "Apply a broad-spectrum sunscreen with SPF 30 or higher every morning, even on cloudy days, and reapply as needed."
+      },
+      {
+        title: "Over-Exfoliating",
+        harm: "Strips the skin of natural oils, leads to severe irritation, inflammation, and makes the skin more vulnerable to environmental damage.",
+        avoid: "Limit chemical or physical exfoliation to 1–2 times a week max, and choose gentle formulas suited to your skin type."
+      },
+      {
+        title: "Changing Products Too Frequently",
+        harm: "Prevents your skin from adjusting and makes it difficult to tell which products are actually working or causing reactions.",
+        avoid: "Give any new skincare product at least 4 to 6 weeks to show visible results before introducing something new."
+      },
+      {
+        title: "Using Products Not Suitable for Your Skin Type",
+        harm: "Can clog pores (if oily/acne-prone), worsen dryness, trigger allergic reactions, or throw off your skin's natural balance.",
+        avoid: "Identify your true skin type (oily, dry, combination, or sensitive) and choose formulas specifically tested for your needs."
+      },
+      {
+        title: "Expecting Instant Results",
+        harm: "Leads to frustration, overusing products, or abandoning healthy routines prematurely out of impatience.",
+        avoid: "Be patient, stay consistent with your daily routine, and remember that healthy skin transformation takes time."
+      }
+    ];
+
+    function showDetail(index) {
+      // إزالة التحديد النشط من جميع العناصر وتفعيله للعنصر المضغوط
+      const items = document.querySelectorAll('.accordion-item');
+      items.forEach((item, idx) => {
+        if (idx === index) {
+          item.classList.add('active');
+        } else {
+          item.classList.remove('active');
+        }
+      });
+
+      // تحديث محتوى صندوق الإجابات بناءً على العنصر المختار
+      const data = detailsData[index];
+      document.getElementById('detailTitle').innerText = data.title;
+      document.getElementById('detailHarm').innerText = data.harm;
+      document.getElementById('detailAvoid').innerText = data.avoid;
+    }
+
+    function toggleFaq(button) {
+    const item = button.parentElement;
+    // إذا أردت إغلاق الباقي وفتح واحد فقط، أزل التعليق عن السطر التالي:
+    // document.querySelectorAll('.faq-item').forEach(el => { if(el !== item) el.classList.remove('active'); });
+    item.classList.toggle('active');
+  }
+
+
+
+  window.onclick = function(event) {
+  const profileModal = document.getElementById("profileSection");
+  if (event.target === profileModal) {
+    profileModal.classList.remove("active");
+  }
+}
+
+const clear =document.getElementById("clear");
+const clearr =document.getElementById("clearr");
+
+const h =document.getElementById("h");
+const hh =document.getElementById("hh");
+const hhh =document.getElementById("hhh");
+
+const won =document.getElementById("won");
+const wonn =document.getElementById("wonn");
+const wonnn =document.getElementById("wonnn");
+const wonnnn =document.getElementById("wonnnn");
+const inbb=document.getElementById("inbb");
+
+
+const tareElement = document.querySelector('.tare');
+const tareeElement = document.querySelector('.taree');
+const tareeeElement = document.querySelector('.tareee');
+const tareeeeElement = document.querySelector('.tareeee');
+
+won.addEventListener("click", function() {
+won.style.backgroundColor = "#9ba187";
+wonn.style.backgroundColor = "white";
+wonnn.style.backgroundColor = "white";
+wonnnn.style.backgroundColor = "white";
+
+
+clear.textContent = "Cleansers";
+clearr.textContent = "Remove dirt, oil and impurities without stripping your skin's natural barrier.";
+
+h.textContent = "Moming and night";
+hh.textContent = "Use a small amount, massage gently for 30-60 secards, then rinse with lukewarm water";
+hhh.textContent = "Avoid hot water and harsh scrubbing";
+inbb.src = 'cle.jpg';
+
+
+
+    
+    tareElement.classList.remove('hide-arrow');
+tareeElement.classList.remove('hide-arrow');
+tareeeElement.classList.remove('hide-arrow');
+tareeeeElement.classList.remove('hide-arrow');
+
+
+
+});
+
+
+
+
+wonn.addEventListener("click", function() {
+
+wonn.style.backgroundColor = "#9ba187";
+
+
+won.style.backgroundColor = "white";
+wonnn.style.backgroundColor = "white";
+wonnnn.style.backgroundColor = "white";
+
+
+clear.textContent = "Moisturizers";
+clearr.textContent = "Lock in hydration and strengthen your skin's outer barrier.";
+
+h.textContent = "Moming and night";
+hh.textContent = "Apply smoothly over face and neck until fully absorbed";
+hhh.textContent = "Use while skin is slightly damp to seal in all moisture";
+inbb.src = 'mome.jpg';
+
+ tareElement.classList.add('hide-arrow');
+tareeElement.classList.add('hide-arrow');
+tareeeElement.classList.remove('hide-arrow');
+tareeeeElement.classList.remove('hide-arrow');
+
+
+});
+
+
+
+wonnn.addEventListener("click", function() {
+
+won.style.backgroundColor = "white";
+wonn.style.backgroundColor = "white";
+wonnn.style.backgroundColor = "#9ba187";
+wonnnn.style.backgroundColor = "white";
+
+clear.textContent = "Treatment";
+clearr.textContent = "Target specific skin issues like acne, dark spots, or aging.";
+
+h.textContent = "Night time (or morning if specified by your product)";
+hh.textContent = "Apply a pea-sized amount evenly before your moisturizer";
+hhh.textContent = "Start slowly 2-3 times a week, then increase frequency";
+    inbb.src = 'momee.jpg';
+
+
+ tareElement.classList.add('hide-arrow');
+tareeElement.classList.remove('hide-arrow');
+tareeeElement.classList.add('hide-arrow');
+tareeeeElement.classList.remove('hide-arrow');
+
+});
+
+
+
+wonnnn.addEventListener("click", function() {
+
+  won.style.backgroundColor = "white";
+wonn.style.backgroundColor = "white";
+wonnn.style.backgroundColor = "white";
+wonnnn.style.backgroundColor = "#9ba187";
+
+
+clear.textContent = "Toner";
+clearr.textContent = "Hydrate, restore skin balance, and prep for upcoming steps.";
+
+h.textContent = "Moming and night";
+hh.textContent = "Apply onto fingertips or a cotton pad, gentle tap on skin";
+hhh.textContent = "Apply on damp skin to boost hydration and absorb better";
+inbb.src = 'momeee.jpg';
+
+
+ tareElement.classList.add('hide-arrow');
+tareeElement.classList.remove('hide-arrow');
+tareeeElement.classList.remove('hide-arrow');
+tareeeeElement.classList.add('hide-arrow');
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+
+    </body>
+</html>

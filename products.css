@@ -1,0 +1,452 @@
+
+
+
+
+
+.proq{ height: 600px;   }
+.prodiq{position: relative;}
+.proimq{ height: 600px; width: 100%; position: absolute;}
+
+
+.prosmq{position: absolute; top: 150px; left: 100px;}
+.prologoq{position: absolute; font-size: 60px; left: 100px; top: 200px;}
+.propq{position: absolute; left: 100px; top: 350px; }
+
+
+.qwaser{margin-left: 60px; margin-top: 50px; }
+.wr{width: 150px; height: 40px; margin-left: 10px;
+    border: 1px solid #62522e; border-radius: 40px; z-index: 10; font-size: 17px; background-color: transparent;}
+
+.wr:hover{background-color: #62522e; color: #f8f3e7; transition: 0.5s;}
+
+
+
+.rere{margin-bottom: 70px; position: relative;}
+.qaqa{margin-top: 13px; position: absolute;}
+.qaqaqa{ position: absolute; margin-top: 13px; margin-left: 150px;}
+
+
+
+
+.foa{ width: 90%; margin: 0 auto; height: 500px;  margin-top: 20px; display: flex;}
+.sari{  top: 1045px;  position: absolute; color: rgb(82, 82, 82); background-color: transparent; border: none; font-size: 35px; left: 50px;}
+.sale {top: 1045px;  position: absolute; color: rgb(82, 82, 82); background-color: transparent; border: none; font-size: 35px; right: 75px;}
+
+
+.imgr{position: absolute; color: rgb(82, 82, 82); z-index: 2; top: 1045px; left: 535px; background-color: transparent; border: none; font-size: 35px;}
+.foaim{ border-radius: 20px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.893); width: 450px; height: 400px; margin-top: 40px; position: relative; z-index: 1; left: 40px;  overflow: hidden;}
+.imgle{position: absolute;color: rgb(82, 82, 82); left: 148px;  z-index: 2; top: 1045px; background-color: transparent; font-size: 35px; border: none;}
+
+
+
+.foiu{ margin-left: 90px; z-index: 5;  margin-top: 45px; max-width: 600px;}
+
+.foaima{ font-size: 50px; margin-bottom: 6px;}
+.foaimb{ font-size: 20px;}
+.foaimc{font-size: 20px; }
+
+.foaimd{}
+.btgg{ height: 40px; width: 40px; background-color: rosybrown; border-radius: 50%; border: none; margin-right: 6px; margin-bottom: 20px;}
+
+
+.foaime{font-size: 40px; }
+.foaimf{font-size: 30px;   color: #d7b25d ;  position: absolute; }
+
+.sh{ height: 50px; width: 150px; border: none; transition: 0.5s; border-radius: 12px; color: #f8f3e7; margin-left: 400px; font-size: 20px; top: 1190px; position: absolute; background-color: #0b0b0b;}
+
+
+.sh:hover{background-color: #62522e; transition: 0.5s;}
+
+
+.ewq{margin-left:80px; font-size: 30px; }
+
+
+
+.matchh{position: absolute; color: #62522e; backdrop-filter: blur(12px) saturate(160%);
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04); border: 1px solid #846f3e;
+  left: 200px; margin-top: 40px; background-color: rgba(255, 255, 255, 0.80);; border-radius: 30px; height: 50px; width: 150px;}
+
+
+
+.matchha{position: absolute; color: #62522e; backdrop-filter: blur(12px) saturate(160%);
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04); border: 1px solid #846f3e; z-index: 10;
+  left: 350px; margin-top: 60px; background-color: rgba(255, 255, 255, 0.80);; border-radius: 30px; height: 50px; width: 150px;}
+
+
+
+
+.matchhb{position: absolute; color: #62522e; backdrop-filter: blur(12px) saturate(160%);
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04); border: 1px solid #846f3e;
+  left: 578px; margin-top: 40px; background-color: rgba(255, 255, 255, 0.80);; border-radius: 30px; height: 50px; width: 150px;}
+
+
+.matchhc{position: absolute; color: #62522e; backdrop-filter: blur(12px) saturate(160%);
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04); border: 1px solid #846f3e;
+  left: 955px; margin-top: 40px; background-color: rgba(255, 255, 255, 0.80);; border-radius: 30px; height: 50px; width: 150px;}
+
+
+.matchhd{position: absolute; color: #62522e; backdrop-filter: blur(12px) saturate(160%);
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04); border: 1px solid #846f3e;
+  right: 30px; margin-top: 40px; background-color: rgba(255, 255, 255, 0.80);; border-radius: 30px; height: 50px; width: 150px;}
+
+
+
+
+
+.knn{position: relative; margin-top: 50px;}
+.xp{ width: 100%; height: 400px; margin-top: 50px; position: absolute;}
+.xpp{  margin-top: 100px; position: absolute; margin-left: 800px; font-size: 50px; font-family:"Charm", cursive ;}
+.xppp{position: absolute; margin-top: 180px; font-size: 20px; max-width: 600px; margin-left: 800px;}
+.xpxp {align-items: center; position: absolute; color: #f8f3e7; top: 350px ; font-size: 15px;  border: none; transition: 0.5s;  background-color: #070707; margin-left: 800px; width: 200px; height: 45px; text-align: center; display: flex; justify-content: center; text-decoration: none; border-radius: 12px;}
+
+.xpxp:hover{background-color: #a8bfa8; transition: 0.5s; color: black;  text-decoration: none; border: 1px solid #070707;}  
+
+
+
+
+
+
+
+
+
+/* تأثير تبديل الصورة عند الهوفير - لن يعمل إلا إذا كانت للصورة كلاس 'has-hover' */
+#pfashm.has-hover:hover {
+    content: url('m1c.jpg'); 
+}
+
+#pmg1.all1:hover{
+
+  content: url('s3b.jpg');
+
+}
+
+#pmg2.all2:hover{
+
+  content: url('e3b.jpg');
+
+}
+
+
+#pmg3.all3:hover{
+
+  content: url('l1d.webp');
+
+}
+
+
+
+#pmg4.all4:hover{
+
+  content: url('p2d.webp');
+
+}
+
+#pmg5.all5:hover{
+
+  content: url('q1d.jpg');
+
+}
+
+#pmg6.all6:hover{
+
+  content: url('k1c.webp');
+
+}
+
+#pmg7.all7:hover{
+
+  content: url('m2d.jpg');
+
+}
+#pmg8.all8:hover{
+
+  content: url('i1bn.png');
+
+}
+#pmg9.all9:hover{
+
+  content: url('p1b.jpg');
+
+}
+#pmg10.all10:hover{
+
+  content: url('e2b.jpg');
+
+}
+#pmg11.all11:hover{
+
+  content: url('s2c.jpg');
+
+}
+#pmg12.all12:hover{
+
+  content: url('c1b.webp');
+
+}
+
+
+
+
+
+
+
+
+
+#pfashm.has-hoverr:hover {
+    content: url('e1b.jpg'); 
+}
+
+#pmg1.pskin1:hover{
+
+  content: url('s3b.jpg');
+
+}
+
+
+#pmg2.pskin2:hover{
+
+  content: url('e3b.jpg');
+
+}
+
+#pmg3.pskin3:hover{
+
+  content: url('q2c.jpg');
+
+}
+
+#pmg4.pskin4:hover{
+
+  content: url('q3b.jpg');
+
+}
+
+#pmg5.pskin5:hover{
+
+  content: url('q1b.jpg');
+
+}
+
+#pmg6.pskin6:hover{
+
+  content: url('q4bn.webp');
+
+}
+
+#pmg7.pskin7:hover{
+
+  content: url('m2d.jpg');
+
+}
+
+#pmg8.pskin8:hover{
+
+  content: url('m3b.jpg');
+
+}
+
+#pmg9.pskin9:hover{
+
+  content: url('m1c.jpg');
+
+}
+
+#pmg10.pskin10:hover{
+
+  content: url('e2b.jpg');
+
+}
+
+#pmg11.pskin11:hover{
+
+  content: url('s2c.jpg');
+
+}
+
+#pmg12.pskin12:hover{
+
+  content: url('s1b.jpg');
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pfashm.has-hoverrr:hover {
+    content: url('h1b.webp'); 
+}
+
+#pmg1.pma1:hover{
+
+  content: url('f1bnn.webp');
+
+}
+
+#pmg2.pma2:hover{
+
+  content: url('b1i.jpg');
+
+}
+
+#pmg3.pma3:hover{
+
+  content: url('l1d.webp');
+
+}
+
+
+#pmg4.pma4:hover{
+
+  content: url('p2d.webp');
+
+}
+
+#pmg5.pma5:hover{
+
+  content: url('f3e.webp');
+
+}
+
+
+#pmg6.pma6:hover{
+
+  content: url('k1i.webp');
+
+}
+
+#pmg7.pma7:hover{
+
+  content: url('b2b.webp');
+
+}
+
+#pmg8.pma8:hover{
+
+  content: url('i1bn.png');
+
+}
+
+#pmg9.pma9:hover{
+
+  content: url('p1b.jpg');
+
+}
+
+#pmg10.pma10:hover{
+
+  content: url('f2e.webp');
+
+}
+
+#pmg11.pma11:hover{
+
+  content: url('k2e.jpg');
+
+}
+
+#pmg12.pma12:hover{
+
+  content: url('c1b.webp');
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#pallcolor1:hover,
+#pallcolor2:hover,
+#pallcolor3:hover,
+#pallcolor4:hover,
+#pallcolor5:hover,
+#pallcolor6:hover,
+#pallcolor7:hover,
+#pallcolor8:hover,
+#pallcolor9:hover,
+#pallcolor10:hover,
+#pallcolor11:hover,
+#pallcolor12:hover,
+#pallcolor13:hover,
+#pallcolor14:hover,
+#pallcolor15:hover,
+#pallcolor16:hover,
+#pallcolor17:hover,
+#pallcolor18:hover,
+#pallcolor19:hover,
+#pallcolor20:hover,
+#pallcolor21:hover,
+#pallcolor22:hover,
+#pallcolor23:hover,
+#pallcolor24:hover,
+#pallcolor25:hover,
+#pallcolor26:hover,
+#pallcolor27:hover,
+#pallcolor28:hover,
+#pallcolor29:hover,
+#pallcolor30:hover,
+#pallcolor31:hover,
+#pallcolor32:hover,
+#pallcolor33:hover,
+#pallcolor34:hover,
+#pallcolor35:hover,
+#pallcolor36:hover,
+#pallcolor37:hover,
+#pallcolor38:hover,
+#pallcolor39:hover,
+#pallcolor40:hover,
+#pallcolor41:hover,
+#pallcolor42:hover,
+#pallcolor43:hover,
+#pallcolor44:hover,
+#pallcolor45:hover,
+#pallcolor46:hover,
+#pallcolor47:hover,
+#pallcolor48:hover,
+#pallcolor49:hover,
+#pallcolor50:hover,
+#pallcolor51:hover,
+#pallcolor52:hover,
+#pallcolor53:hover,
+#pallcolor54:hover,
+#pallcolor55:hover,
+#pallcolor56:hover,
+#pallcolor57:hover,
+#pallcolor58:hover,
+#pallcolor59:hover,
+#pallcolor60:hover,
+#pallcolor61:hover,
+#pallcolor62:hover, 
+#pallcolor63:hover,
+#pallcolor70:hover,
+#pallcolor71:hover{
+    outline: 1px solid #000000;
+    outline-offset: 2px;
+}
+
+
+
+
+
+
+

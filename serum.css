@@ -1,0 +1,597 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #faf9f6;
+  color: #333;
+}
+
+.pretty {
+  width: 100%;
+  height: 600px;
+  background-image: url("srrrrrr.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.btn-srr {
+  border: none;
+  color: #f8f3e7;
+  background-color: #0C3823;
+  cursor: pointer;
+  border-radius: 24px;
+  padding: 10px 20px;
+  font-size: 18px;
+  margin-top: 10px;
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-srr:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px #0C3823;
+  background: linear-gradient(135deg, #0C3823 0%, #7d877d 100%);
+}
+
+
+
+.features-bar {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 70px;
+  margin-left: 87px;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #000000;
+}
+
+.feature-icon {
+  width: 32px;
+  height: 32px;
+  border: none;
+}
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.feature-item:not(:last-child):after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+
+.Selection {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  gap: 30px;
+}
+
+/* القائمة الجانبية */
+.filter-sidebar {
+  width: 320px;
+  flex-shrink: 0;
+  background: #f1eee8;
+  padding: 35px 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  position: sticky;
+  top: 20px;
+}
+
+.filter-sidebar:hover {
+  transform: scale(1.02);
+  transition: 0.6s;
+}
+
+.brand-subtitle {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #555;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.filter-sidebar h2 {
+  font-size: 32px;
+  font-family: 'Playfair Display', serif;
+  color: #1a1a1a;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.filter-sidebar>p {
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #777;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.sidebar-desc {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+/* قائمة الأهداف في السايدبار */
+.goals-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.goal-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.goal-icon {
+  width: 32px;
+  height: 32px;
+  background: #0C3823;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.goal-text strong {
+  display: block;
+  font-size: 13px;
+  color: #222;
+}
+
+.goal-text span {
+  display: block;
+  font-size: 11px;
+  color: #777;
+}
+
+.sidebar-quote {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 18px;
+  color: #0C3823;
+  text-align: center;
+  border-top: 1px solid #e5dfd5;
+  padding-top: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.ingredient-card {
+  border: 1px solid #eae3d5;
+  border-radius: 16px;
+  padding: 25px 20px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.ingredient-card:hover {
+  border-color: #0C3823;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.ingredient-card.active-card {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  border-color: #0C3823;
+}
+
+.ingredient-card.active-card.icon-status {
+  content: '✓';
+
+  .check-mark.benefits-list {
+    background: #0C3823;
+    color: #fff;
+  }
+}
+
+
+.icon-status {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #e5dfd5;
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.check-mark {
+  background: #0C3823;
+  color: #fff;
+}
+
+.ingredient-card img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin: 10px 0 15px 0;
+}
+
+.ingredient-card h3 {
+  font-size: 15px;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+.ingredient-card p {
+  font-size: 12px;
+  color: #777;
+  line-height: 1.4;
+  margin: 0 0 15px 0;
+}
+
+
+.card-badge {
+  background: #0C3823;
+  color: #ece9e4;
+  font-size: 11px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-top: auto;
+}
+
+.tag:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.dos-donts-container {
+  height: 350px;
+  width: 1270px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #f4f1ec;
+  padding: 30px;
+  border-radius: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  margin: 20px auto;
+}
+
+.dos-donts-header {
+  flex: 1;
+  padding-right: 15px;
+}
+
+.dos-donts-header h2 {
+  font-size: 28px;
+  margin: 0 0 10px 0;
+  color: #2c3e2e;
+  font-family: Georgia, serif;
+}
+
+.dos-donts-header p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.card {
+  height: 300px;
+  flex: 1;
+  display: flex;
+  margin: 0;
+  align-items: flex-start;
+  padding: 19px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+  max-width: 1000px;
+}
+
+
+.card.recommended {
+  background-color: #dce3d8;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+.card.recommended:hover {
+  transform: scale(1.05);
+}
+
+.card.avoid {
+  background-color: #f7e4e1;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+.card.avoid:hover {
+  transform: scale(1.05);
+}
+
+.loli {
+  width: 100%;
+  height: 170px;
+  margin-right: 15px;
+  border-radius: 8px;
+}
+
+.card-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  flex-shrink: 0;
+}
+
+.check-icon {
+  background-color: #5b7058;
+}
+
+.cross-icon {
+  background-color: #d87070;
+}
+
+
+.card-content h3 {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.card-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-content li {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 6px;
+  position: relative;
+  padding-left: 18px;
+}
+
+.card-content li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #888;
+  font-size: 12px;
+}
+
+
+.serum-section {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.brand-logo {
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.section-header h1 {
+  font-size: 48px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #666;
+  font-style: italic;
+}
+
+
+.card-container {
+  background: #fcfbf9;
+  border: 1px solid #e2ded7;
+  border-radius: 16px;
+  padding: 30px;
+  display: flex;
+  gap: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+}
+
+
+.product-image-container {
+  flex: 1;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.product-details {
+  flex: 1.1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.details-group h3 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+/* التاقات */
+.tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.tag {
+  background: #eeebe3;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #666;
+}
+
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.benefits-list li {
+  font-size: 15px;
+  color: #4a4a4a;
+  margin-bottom: 8px;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #e8e4dc;
+  margin: 20px 0;
+}
+
+
+label {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #dcd7cd;
+  border-radius: 8px;
+  padding: 12px 15px;
+  background: #fcfbf9;
+}
+
+.input-icon {
+  margin-right: 10px;
+  opacity: 0.5;
+}
+
+.input-wrapper input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+}
+
+/* السعر والزر */
+.price-label {
+  display: block;
+  font-size: 14px;
+  color: #777;
+  margin-top: 15px;
+}
+
+.price {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.checkout-btn {
+  width: 100%;
+  background-color: #0C3823;
+  color: #ffffff;
+  border: none;
+  padding: 16px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.checkout-btn:hover {
+ background-color: #fafdfc;
+ border: 1px solid #0C3823;
+ color: #0C3823;
+}
+
+.note {
+  text-align: center;
+  font-size: 12px;
+  color: #888;
+  margin-top: 10px;
+}
+
+.rrr {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.rrr.active {
+  opacity: 1;
+  transform: translateY(0);
+}

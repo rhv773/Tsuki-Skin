@@ -1,0 +1,110 @@
+
+
+.skinsumm{ width: 80%; margin: 0 auto; height: 200px; background-color: #a8bfa8 ; font-size: 20px; border-radius: 12px; }
+
+.suy{margin-left: 800px; max-width: 390px; position: absolute; top: 180px;}
+
+.mnmnno{  margin-left: 400px;  position: absolute; top: 170px; bottom: 5px;}
+.mnmnnt{  margin-left: 400px;  position: absolute; top: 210px; bottom: 5px;}
+.mnmnnh{  margin-left: 400px;  position: absolute; top: 250px; bottom: 5px;}
+
+.mnmn{margin-left: 15px; margin-top: 5px; margin-bottom: 20px;}
+
+.over{ font-family: "Charm", cursive; font-size: 40px; text-align: center; }
+
+.spaa{background-color: beige; border-radius: 12px;  margin-left: 5px; padding: 5px;}
+
+
+
+.sha{
+width: 350px;
+height: 470px;
+background-color:  rgba(255, 255, 255, 0.80);
+margin-left: 60px;
+margin-top: 20px;
+border-radius: 12px;
+box-shadow: 0px 4px 15px rgba(10, 10, 10, 0.6);
+ border: 1px solid #846f3e;
+ 
+}
+
+
+
+.roll{ width: 350px; height: 400px; left: 450px; position: absolute; top: 329px;  display: flex; justify-content: center; align-items: center;
+   flex-direction: column; background-color:transparent}
+.rola{ align-items: center; width: 300px; height: 50px; background-color: #a8bfa8; margin-bottom: 10px;  font-size: 20px; text-align: center; border-radius: 12px; justify-content: center; display: flex;  }
+.rolaa{ align-items: center; width: 300px; min-height: 50px; height: auto; background-color: #a8bfa8; margin-bottom: 10px;  font-size: 20px; text-align: center; border-radius: 12px; justify-content: center; display: flex;  }
+
+
+.sensitivity-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+position: absolute;
+right: 140px;
+top: 380px;
+    background: conic-gradient(
+        #a8bfa8 0% 65%,
+        #eeeeee 65% 100%
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sensitivity-inner {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sensitivity-value {
+    font-size: 30px;
+    font-weight: bold;
+    color: #4a4a4a;
+}
+
+.sensitivity-label {
+    font-size: 19px;
+    color: #777;
+    margin-top: 4px;
+
+}
+
+
+.appp{background-color: rgb(252, 252, 249) ; border: 5px solid #a8bfa8;  box-shadow: 0px 4px 15px rgba(10, 10, 10, 0.6); width: 210px; border-radius: 50%;  position: absolute; font-size: 15px; right: 450px; top: 365px; height: 210px; background-size: cover; }
+
+
+.dodo{ width: 350px ; min-height: 310px; height: auto;box-shadow: 0px 4px 15px rgba(10, 10, 10, 0.6);
+
+ border: 1px solid #846f3e; border-radius: 12px; background-color: rgba(255, 255, 255, 0.80); position: absolute; left: 60px; top: 800px; }
+
+
+
+
+.reco{width: 700px;  height: 400px;     position: absolute; right: 30px;  top: 1000px; }
+
+.recodiv{margin-bottom: 20px;  margin-top: 10px; text-align: center; font-size: 20px; font-family: "Charm", cursive; }
+
+.qwr{width:550px ; height: 90; margin: 0 auto; margin-bottom: 120px; }
+
+.qwrth{width:550px ; height: 90; margin: 0 auto; position: absolute; bottom: 140px; left: 150px; }
+
+.eew{width: 335px; height: 75px; border-radius: 40px; background-color: rgb(252, 252, 249);  position: absolute; z-index: 4;  right: 335px;   border: 1px solid   #929492 ; }
+
+.ewo{ width: 40px; height: 40px; border-radius: 50%;   margin-top: 17px ; margin-left: 15px;  margin-right: 10px;   }
+
+.ewq{width: 370px; height: 75px; border-radius: 40px; background-color: #a8bfa8;  position: absolute; z-index: 1;  right: 30px;  border: 1px solid   #929492 ;  }
+
+
+
+
+
+

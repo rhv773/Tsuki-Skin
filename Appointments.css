@@ -1,0 +1,879 @@
+body{
+background-color: #0C3823;
+margin: 0 ;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+.top-bar
+  {
+text-align: center;
+background-color : #a8bfa8 ;
+color:#0C3823;
+padding: 8px 0;
+font-size: 14px;
+font-family: 'Courier New', Courier, monospace;
+  }
+
+.Highlighter
+{
+font-weight: bold;
+font-size: 14px;
+font-family: 'Courier New', Courier, monospace;
+padding: 8px 0;
+}
+
+
+ nav
+  {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 30px;
+background-color: #f8f3e7;
+
+  }
+
+ nav ul
+  {
+    display: flex;
+list-style: none;
+gap: 70px;
+margin: 0 ;
+padding: 0px;
+  }
+nav ul li a
+ {
+
+  font-family: "Charm", cursive;
+
+color: #0C3823;
+
+font-size: 20px;
+text-decoration: none;
+}
+
+.icon{
+  display: flex;
+gap: 15px;
+  padding-right: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  color: #0C3823;
+}
+
+.logo
+{
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  
+}
+
+
+ .btnnd
+{
+  background-color: #0C3823;
+  border: none;
+  color: #f8f3e7;;
+  border: 2px solid #0C3823;
+  cursor: pointer;
+  border-radius: 7px;
+   padding: 6px 20px;
+   display: none;
+   
+} 
+.btnn
+{
+
+  border: none;
+  color: #0C3823;
+  background-color: #f8f3e7;
+  border: 2px solid #0C3823;
+  cursor: pointer;
+  border-radius: 7px;
+   padding: 6px 20px;
+  
+   width: 120px;
+  
+}
+
+
+
+
+
+
+.seru{width: 80%; height: 700px;   margin-top: 10px;}
+
+
+/* تنسيق صندوق البحث العام */
+.search-boxu {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    border: 2px solid #ccc;
+    border-radius: 30px; /* زوايا دائرية جذابة */
+    padding: 5px 15px;
+    width: 500px;
+    transition: all 0.3s ease;
+}
+
+/* تأثير عند الضغط أو التركيز داخل خانة البحث */
+.search-boxu:focus-within {
+    border-color: #0C3823;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(4, 255, 0, 0.25);
+}
+
+/* تنسيق خانة إدخال النص */
+.search-boxu input {
+    border: none;
+    outline: none;
+    background: transparent;
+    flex: 1;
+    font-size: 16px;
+    padding: 8px;
+    color: #333;
+}
+
+/* تنسيق زر البحث */
+.search-boxu button {
+    background-color: #0C3823;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.2s ease;
+}
+
+/* تأثير عند المرور على زر البحث */
+.search-boxu button:hover {
+    background-color: #257d2b;
+}
+
+
+.sesh{margin-left: 60px;}
+
+.appro{width: 90%; height: 600px; background-color: #fff; border-radius: 12px; border: 2px solid #ccc; margin-left: 60px; margin-top: 20px; }
+.wewe{height: 80px; width: 98%;   margin-left: 20px; display: flex;  }
+
+.ayam{ width: 200px; height: 40px; border: 2px solid #ccc; margin-top: 20px; font-size: 20px; display: flex; justify-content: center; text-align: center; align-items: center;  border-radius: 12px; margin-left: 300px;}
+
+.dayh{background-color: #0C3823; color: white;  width: 60px; height: 40px; border-radius: 12px; position: absolute; left: 765px ;  align-items: center; display: flex;}
+
+
+.btrr{width: 40px; height: 40px; border-radius: 12px; border: none;margin-right: 20px;margin-left: 6px; margin-top: 20px;}
+.btrrt{width: 40px; height: 40px; border-radius: 12px; margin-left: 40px; border: none; margin-top: 20px; }
+
+.todaye{border: 2px solid #ccc; width: 80px; height: 40px; margin-right: 20px; margin-top: 20px; justify-content: center; display: flex; border-radius: 12px; align-items: center; text-align: center;}
+
+.smale{height: 40px;  position: relative; margin-left: 20px; font-size: 18px;}
+
+/* 1. الحاوية الرئيسية للجدول */
+.ahh {
+  scrollbar-color: rgb(5, 90, 5) #f3f4f6;
+  width: 100%;
+  height: 440px;
+  margin-top: 10px;
+  background-color: #ffffff;
+  
+  display: grid;
+  /* 8 أعمدة: عمود الأوقات بعرض 90px و7 أعمدة متساوية للأيام */
+  grid-template-columns: 90px repeat(7, 1fr);
+  
+  /* الصفوف: صف للعناوين بارتفاع 45px، ثم 8 صفوف للأوقات بارتفاع 60px لكل ساعة */
+  grid-template-rows: 50px repeat(7, 60px);
+  
+  overflow: auto; /* تفعيل شريط التمرير (Scroll) عند الحاجة */
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* 2. خلايا العناوين والأيام في الصف الأول */
+.header-cell {
+  background-color: #f8f9fa;
+  font-weight: bold;
+  font-size: 20px;
+  color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  position: sticky;
+  top: 0; /* تثبيت العناوين أثناء السكرول */
+  z-index: 2;
+}
+
+/* 3. خلايا عمود الأوقات (على اليسار أو اليمين) */
+.time-cell {
+  background-color: #fcfcfc;
+  color: #888888;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #f0f0f0;
+  border-right: 1px solid #e0e0e0;
+}
+
+/* 4. الخلايا الداخلية للشبكة (أماكن المواعيد) */
+.grid-cell {
+  border-bottom: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0;
+  transition: background-color 0.2s ease;
+}
+
+/* تأثير بسيط عند مرور الماوس فوق الخلية */
+.grid-cell:hover {
+  background-color: #f7fafc;
+}
+
+
+
+.appointment {
+  background-color: #e6f4ea; /* لون خلفية أخضر فاتح مثل الصورة */
+  border-left: 4px solid #34a853; /* خط جانبي ملون */
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 0.8rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  
+  /* هنا يتم تحديد مكان الموعد بدقة في الجدول! */
+  grid-column: 6; /* العمود رقم 6 (يمثل يوم الجمعة مثلاً بناءً على ترتيب الأعمدة) */
+  grid-row: 2 / span 2; /* يبدأ من الصف الثاني (9:00 AM) ويمتد على صفين (طول الموعد) */
+}
+
+
+
+
+
+.rty{margin-left: 120px; margin-top: 20px; }
+
+.stats-card-container {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  width: 100%;
+  max-width: 380px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.stat-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* الألوان والخلفيات المطابقة للصورة */
+.stat-icon.purple {
+  background-color: #f1edfc;
+  color: #5c35cc;
+}
+
+.stat-icon.green {
+  background-color: #e6f4ea;
+  color: #137333;
+}
+
+.stat-icon.yellow {
+  background-color: #fef7e0;
+  color: #b06000;
+}
+
+.stat-icon.red {
+  background-color: #fce8e6;
+  color: #c5221f;
+}
+
+.stat-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-size: 18px;
+  font-weight: 700;
+  color: #202124;
+  line-height: 1.2;
+}
+
+.stat-label {
+  font-size: 13px;
+  color: #5f6368;
+  font-weight: 500;
+}
+
+
+
+/* =========================================
+   SKIN SYNC FOOTER
+========================================= */
+
+.skin-footer {
+    background: #0C3823;
+    color: #ffffff;
+    padding: 0 4%;
+    font-family: Arial, sans-serif;
+
+}
+
+
+/* =========================================
+   TOP FOOTER
+========================================= */
+
+.footer-top {
+    min-height: 125px;
+
+    display: grid;
+    grid-template-columns:
+        1.1fr
+        1.2fr
+        1fr
+        1fr
+        1.4fr;
+
+    align-items: center;
+
+    border-bottom: 1px solid #444444;
+}
+
+
+.footer-feature {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    padding-right: 25px;
+
+    transition: 0.2s ease;
+}
+
+
+.footer-feature:hover {
+    opacity: 0.7;
+}
+
+
+.feature-icon {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+
+    font-size: 17px;
+}
+
+
+.footer-feature strong {
+    display: block;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    margin-bottom: 3px;
+}
+
+
+.footer-feature small {
+    display: block;
+
+    font-size: 13px;
+    color: #dddddd;
+}
+
+
+/* =========================================
+   MAIN FOOTER
+========================================= */
+
+.footer-main {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr
+        1fr
+        1fr
+        2fr;
+
+    gap: 55px;
+
+    padding: 38px 0 40px;
+}
+
+
+/* =========================================
+   FOOTER COLUMNS
+========================================= */
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+.footer-column h3 {
+    margin: 0 0 8px;
+
+    font-size: 17px;
+    font-weight: 600;
+}
+
+
+.footer-column a {
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    line-height: 1.35;
+
+    transition: 0.2s ease;
+}
+
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   SOCIAL LINKS INSIDE FIND US
+========================================= */
+
+.footer-social {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-top: 8px;
+}
+
+
+/* =========================================
+   RIGHT SIDE
+========================================= */
+
+.footer-right {
+    padding-left: 15px;
+}
+
+
+.footer-logo-link {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+
+.footer-logo {
+    width: 135px;
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+/* =========================================
+   SLOGAN
+========================================= */
+
+.footer-right h2 {
+
+    margin: 0 0 50px;
+
+    font-family: Georgia, serif;
+
+    font-size: 34px;
+
+    font-weight: 400;
+
+    line-height: 1.15;
+}
+
+
+/* =========================================
+   NEWSLETTER
+========================================= */
+
+.newsletter-box {
+    margin-bottom: 28px;
+}
+
+
+.newsletter-box h3 {
+
+    margin: 0 0 12px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+}
+
+
+.newsletter-box p {
+
+    margin: 0 0 12px;
+
+    color: #cccccc;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   INPUT + BUTTON
+========================================= */
+
+.input-row {
+
+    display: flex;
+
+    gap: 15px;
+
+    align-items: center;
+}
+
+
+.input-row input {
+
+    width: 100%;
+
+    max-width: 300px;
+
+    height: 52px;
+
+    box-sizing: border-box;
+
+    padding: 0 18px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: #ffffff;
+
+    color: #222222;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+
+.input-row input::placeholder {
+
+    color: #777777;
+}
+
+
+.input-row button {
+
+    height: 52px;
+
+    padding: 0 22px;
+
+    border: 1px solid #ffffff;
+
+    border-radius: 30px;
+
+    background: transparent;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    transition: 0.2s ease;
+}
+
+
+.input-row button:hover {
+
+    background: #ffffff;
+
+    color: #000000;
+}
+
+
+/* =========================================
+   BOTTOM FOOTER
+========================================= */
+
+.footer-bottom {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-end;
+
+    border-top: 1px solid #444444;
+
+    padding: 22px 0 28px;
+}
+
+
+.copyright {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+.copyright p {
+
+    margin: 0;
+
+    font-size: 13px;
+
+    color: #ffffff;
+}
+
+
+.copyright > a {
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 13px;
+}
+
+
+.copyright > a:hover {
+
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   LEGAL LINKS
+========================================= */
+
+.legal-links {
+
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+
+.legal-links a {
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 13px;
+}
+
+
+.legal-links a:hover {
+
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   SOCIAL ICONS
+========================================= */
+
+.social-icons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 27px;
+}
+
+
+.social-icons a {
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 25px;
+
+    font-weight: 400;
+
+    transition: 0.2s ease;
+}
+
+
+.social-icons a:hover {
+
+    opacity: 0.6;
+}
+
+
+
+
+
+
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .footer-top {
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+        gap: 25px;
+
+        padding: 25px 0;
+    }
+
+
+    .footer-main {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 40px;
+    }
+
+
+    .footer-right {
+
+        grid-column: span 2;
+        padding-left: 0;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .footer-top {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    .footer-main {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .footer-right {
+
+        grid-column: span 1;
+    }
+
+
+    .footer-right h2 {
+
+        margin-bottom: 30px;
+
+        font-size: 28px;
+    }
+
+
+    .input-row {
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .input-row input {
+
+        max-width: none;
+    }
+
+
+    .input-row button {
+
+        width: fit-content;
+    }
+
+
+    .footer-bottom {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 25px;
+    }
+
+
+    .social-icons {
+
+        gap: 20px;
+    }
+
+}
+
+
+
+
+
+
+

@@ -1,0 +1,360 @@
+
+:root {
+    --primary: #a8bfa8;
+    --primary-dark: #d48374;
+    --bg-color: #eee9e7;
+    --card-bg: #ffffff;
+    --text-color: #4a4a4a;
+}
+
+
+
+
+.form-container {
+    width: 100%;
+    max-width: 650px;
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+
+    
+    margin: 40px auto;
+}
+
+
+/* =========================
+   FORM HEADER
+   ========================= */
+
+.form-container h1 {
+    text-align: center;
+    color:  #a8bfa8;
+    margin-bottom: 30px;
+     font-family: "Charm", cursive;
+}
+
+.form-container > div:first-child {
+    text-align: center;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.form-container {
+  background: var(--card-bg);
+}
+
+
+/* =========================
+   QUESTIONS
+   ========================= */
+
+.form-container .question-block {
+    margin-bottom: 35px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #eee;
+}
+
+.form-container .question-title {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+
+/* =========================
+   AGE / SENSITIVITY SLIDER
+   ========================= */
+
+.form-container .age-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.form-container .age-slider {
+    flex: 1;
+    accent-color: var(--primary);
+}
+
+.form-container .age-badge {
+    background: var(--primary);
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   SKIN TYPE CARDS
+   ========================= */
+
+.form-container .skin-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.form-container .skin-card input {
+    display: none;
+}
+
+.form-container .skin-card label {
+    display: block;
+    padding: 15px;
+    border: 2px solid #eee;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form-container .skin-card input:checked + label {
+    border-color: var(--primary);
+    background-color: #a8bfa8;
+    color: rgb(9, 9, 9);
+    font-weight: bold;
+}
+
+
+/* =========================
+   TEXTAREA
+   ========================= */
+
+.form-container .custom-textarea {
+    width: 100%;
+    height: 90px;
+    border: 2px solid #eee;
+    border-radius: 12px;
+    padding: 12px;
+    box-sizing: border-box;
+    font-family: inherit;
+    resize: vertical;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-container .custom-textarea:focus {
+    border-color: var(--primary);
+}
+
+
+/* =========================
+   SELECT
+   ========================= */
+
+.form-container select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #eee;
+    border-radius: 12px;
+    background: #fff;
+    outline: none;
+    cursor: pointer;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.form-container select:focus {
+    border-color: var(--primary);
+}
+
+
+/* =========================
+   CHECKBOX TAGS
+   ========================= */
+
+.form-container .tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.form-container .tag-item input {
+    display: none;
+}
+
+.form-container .tag-item label {
+    padding: 8px 16px;
+    background: #f0f0f0;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.form-container .tag-item input:checked + label {
+    background: var(--primary);
+    color: white;
+}
+
+
+/* =========================
+   ACNE OPTIONS
+   ========================= */
+
+.form-container .acne-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.form-container .color-option input {
+    display: none;
+}
+
+.form-container .color-option label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    border: 2px solid #eee;
+    cursor: pointer;
+}
+
+.form-container .color-option input:checked + label {
+  
+    background: #a8bfa8;
+    color: #f0f0f0;
+    border: none;
+}
+
+
+/* =========================
+   DIET
+   ========================= */
+
+.form-container .diet-group {
+    display: flex;
+    border: 2px solid #eee;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.form-container .diet-group input {
+    display: none;
+}
+
+.form-container .diet-group label {
+    flex: 1;
+    text-align: center;
+    padding: 12px;
+    cursor: pointer;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.form-container .diet-group input:checked + label {
+    background: var(--primary);
+    color: white;
+}
+
+
+/* =========================
+   TOGGLE
+   ========================= */
+
+.form-container .toggle-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.form-container .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+    flex-shrink: 0;
+}
+
+.form-container .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.form-container .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.form-container .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+.form-container .switch input:checked + .slider {
+    background-color: var(--primary);
+}
+
+.form-container .switch input:checked + .slider:before {
+    transform: translateX(24px);
+}
+
+
+/* =========================
+   SUBMIT BUTTON
+   ========================= */
+
+.form-container .submit-btn {
+    width: 100%;
+    background: var(--primary-dark);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+   
+}
+
+.form-container .submit-btn:hover {
+    background: var(--primary);
+}
+
+.sub{
+ font-size: 15px; border: none;   width: 150px; height: 40px; border-radius: 12px; background-color: #a8bfa8; color: #fff;
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 600px) {
+
+    .form-container {
+        padding: 20px;
+        margin: 25px 12px;
+    }
+
+    .form-container .skin-options {
+        grid-template-columns: 1fr;
+    }
+
+    .form-container .diet-group {
+        flex-direction: column;
+    }
+}
+
