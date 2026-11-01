@@ -114,15 +114,120 @@
 
 <br><br><br>
 
-<section style="background-color:#fbf7e4; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.534); width: 80%; height: 700px; border-radius: 10px;  margin: 0 auto; ">
+<section style="background-color:#fefcf2; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.534); width: 70%; height: 800px; border-radius: 10px;  margin: 0 auto; ">
   <div style="width: 100%; height: 140px;  border-radius: 12px; background-color:#0C3823 " >
    
   </div>
 
 
+```html
+<div id="chatArea" style="
+width: 100%;
+height: 480px;
+background-color: #FAF8F2;
+padding: 30px;
+box-sizing: border-box;
+overflow-y: auto;
+">
 
+    <div style="
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    ">
 
+        <div style="
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background-color: #E8DFD0;
+        color: #59634B;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        flex-shrink: 0;
+        ">
+            ✦
+        </div>
 
+        <div>
+            <p style="
+            color: #59634B;
+            font-size: 13px;
+            margin: 0 0 8px 3px;
+            font-weight: bold;
+            ">
+                Tsuki
+            </p>
+
+            <div style="
+            background-color: #F0EBDD;
+            border: 1px solid #E8DFD0;
+            border-radius: 3px 14px 14px 14px;
+            padding: 16px 20px;
+            max-width: 430px;
+            color: #4A3625;
+            font-size: 14px;
+            line-height: 1.8;
+            ">
+                Hello! Welcome to Tsuki Skin.
+
+                <br>
+
+                I'm Tsuki, your personal skincare assistant.
+                I'm here to help you understand your skin,
+                explore skincare ingredients, and find the
+                right products and routines for your needs.
+
+                <br><br>
+
+                How can I help you today?
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div style="
+display: flex;
+align-items: center;
+gap: 12px;
+padding: 15px 25px;
+background-color: #FAF8F2;
+border-top: 1px solid #E8DFD0;
+">
+
+    <input type="text" id="messageInput"
+    placeholder="Ask Tsuki anything about skincare..."
+    style="
+    flex: 1;
+padding: 14px;
+border: 1px solid #D8CEBC;
+border-radius: 10px;
+outline: none;
+background-color: #F7F4E9;
+font-size: 14px;
+">
+
+    <button onclick="sendMessage()" style="
+    background-color: #59634B;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 13px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    ">
+        ➤
+    </button>
+
+</div>
+
+<div style="width: 100%; height: 100px; margin-top: 560px; background-color:aqua">
+
+</div>
 
 </section>
 
@@ -707,6 +812,77 @@
     profileModal.classList.remove("active");
   }
 }
+
+
+
+
+
+
+function sendMessage() {
+
+    let input = document.getElementById("messageInput");
+
+    let message = input.value.trim();
+
+    if (message === "") return;
+
+    let chatArea = document.getElementById("chatArea");
+
+    let messageHTML = `
+
+    <div style="
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+    ">
+
+        <div style="
+        background-color: #59634B;
+        color: white;
+        padding: 15px 20px;
+        border-radius: 14px 3px 14px 14px;
+        max-width: 430px;
+        font-size: 14px;
+        line-height: 1.8;
+        overflow-wrap: anywhere;
+        ">
+            ${escapeHTML(message)}
+        </div>
+
+    </div>
+
+    `;
+
+    chatArea.innerHTML += messageHTML;
+
+    input.value = "";
+
+    chatArea.scrollTop = chatArea.scrollHeight;
+
+}
+
+function escapeHTML(text) {
+    return text.replace(/[&<>"']/g, function(char) {
+        return {
+            '&': '&amp;',
+            '<': '&lt;',
+            '>': '&gt;',
+            '"': '&quot;',
+            "'": '&#039;'
+        }[char];
+    });
+}
+
+
+
+
+
+
+
+
+
+
+
   </script>
 
 </body>
