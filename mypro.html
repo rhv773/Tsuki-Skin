@@ -3,7 +3,7 @@
    
 
  <head>
-<title>Doctors
+<title>My Profile
 </title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,9 +30,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="mypro.css">
-
+<link rel="stylesheet" href="one.css">
+<script src="one.js" defer></script>
     </head>
-    <body>
+    <body style="background-color: #f8f4ed;">
         <img src="newlogonew.jpeg" style="width: 145px;  object-fit: contain; height: 73px; position: absolute; top: 32px; left: 15px;" >
 
 <div class="top-bar">
@@ -51,19 +52,20 @@
       <li><a href="services.html">Services</a></li>
       <li><a href="products.html">Products</a></li>
       <li><a href="Doctors.html">Doctors</a></li>
-      <li><a href="#">About Us</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
 
     </ul>
     <div class="btn">
-      <button class="btnn">My profile</button>
+      <button class="btnn" onclick="toggleProfile()"> Account</button>
       <button class="btnnd">Patient Profiles</button>
       <button class="btnnd">My Schedule</button>
       
     </div>
-    <div class="icon">
-       <i class="fa-solid fa-magnifying-glass"></i>
-    <i class="fa-solid fa-cart-shopping"></i>
-    <i class="fa-solid fa-bars"></i>
+    
+    <div class="iconswe">
+       <i class="fa-solid fa-magnifying-glass" id="searshicon"></i>
+    <i class="fa-solid fa-cart-shopping" id="cartwq" style="margin-right: 10px;"> <span class="arrree" id="cart-count">0</span></i>
+    <i class="fa-solid fa-bars" id="meme"></i>
    
     </div>
     
@@ -71,10 +73,48 @@
   </nav>
 </header>
 
+
+<div id="search-overlay" class="search-overlay">
+    
+    <!-- حقل البحث العلوي -->
+    <div class="search-box">
+        <input type="text" placeholder="WHAT ARE YOU LOOKING FOR?" class="terc" >
+        <button id="close-btn" class="bxx">✕</button>
+    </div>
+
+    <!-- صندوق الاقتراحات -->
+    <div class="suggestions-box">
+        <h3 class="ytrr"> <br> POPULAR SEARCHES</h3>
+        
+        <div class="tags">
+            <button class="bnmm">CLEANSER</button>
+            <button class="bnmm">MOISTURIZE</button>
+            <button class="bnmm">SERUM</button>
+            <button class="bnmm">SUNSCREEN</button>
+            <button class="bnmm">MAKEUP</button>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <section class="myy" >
 <div class="imh">
 <img src="ff.jpg"  class="imo">
-<img src="cam.jpg" width="60px" height="60px" class="imt">
+ <i class="fa-solid fa-camera" style="position: absolute; top: 130px; border-radius: 50%; left: 150px; width: 45px; height: 45px; background-color: #0C3823; color: white; justify-content: center; text-align: center; align-items: center; display: flex; box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);  font-size: 23px; color: white;" ></i>  
 </div>
 <div class="maz">
     <div style="font-size: 50px; margin-bottom: 10px;">nene</div>
@@ -99,12 +139,12 @@
 <div class="hawe">
 <div class="haweon">
 <div style="margin-top: 15px;">tommorow</div>
-<hr class="hrr">
+<div class="hrr"></div>
 <div style="margin-top: 10px;">4:00 pm</div>
 </div>
 <div class="hawetw">
 <div>Dermatology Consultation</div>
-<div style="margin-top: 10px;">Dr. Emily Carter</div>
+<div style="margin-top: 10px;">Dr. beakhyun</div>
 <button style="margin-top: 25px; width: 100px; height: 35px; border-radius: 12px; border: none; background-color: #0C3823; color: aliceblue;">View Details</button>
 </div>
 </div>
@@ -115,70 +155,237 @@
 <div class="topmo">
 <img src="taqweem.jpg" width="30px" height="30px" style="margin-left: 10px;">
 <div style="margin-left: 10px;">Notifications</div>
-<div style="margin-left: 130px;">view all</div>
+<div style="margin-left: 220px;">view all</div>
 </div>
 <div class="hawet">
 
 <div class="weq">
-    <img src="logo.jpg" width="30px" height="30px" >
+    <span  width="30px" height="30px" >◉</span>
     <div style="margin-left: 10px;"> Dr. Emily Carter updated your skin profile</div>
     <div style="position: absolute; left: 55px; top: 45px;"> 2 hours ago</div>
-    <div style="position: absolute; right: 20px; top: 25px;"> > </div>
+    <div style="position: absolute; right: 20px; top: 20px; font-size: 30px;"> &rsaquo; </div>
 </div>
 
 <div class="weq">
-    <img src="logo.jpg" width="30px" height="30px" >
+   <span  width="30px" height="30px" >◉</span>
     <div style="margin-left: 10px;"> Your appointment is tomorrow at 4:00 PM. </div>
     <div style="position: absolute; left: 55px; top: 45px;"> 2 hours ago</div>
-    <div style="position: absolute; right: 20px; top: 25px;"> > </div>
+    <div style="position: absolute; right: 20px; top: 20px; font-size: 30px;">&rsaquo;</div>
 </div>
 
 
 <div class="weqf">
-    <img src="logo.jpg" width="30px" height="30px" >
+    <span  width="30px" height="30px" >◉</span>
     <div style="margin-left: 10px;"> A new product has been recommended for you </div>
     <div style="position: absolute; left: 55px; top: 45px;"> 2 hours ago</div>
-    <div style="position: absolute; right: 20px; top: 25px;"> > </div>
+    <div style="position: absolute; right: 20px; top: 20px; font-size: 30px;">&rsaquo; </div>
 </div>
 </div>
 </section>
 
 <section class="beraa">
-    <button class="berab"> overview</button>
-     <button class="berab"> profucts and services</button>
-      <button class="berab"> timeline </button>
+    <button class="berab" id="myproone"> overview</button>
+     <button class="berab" id="myprotwo"> profucts and services</button>
+      <button class="berab" id="myprothree"> Ingredient Checker </button>
+      <button class="berab" id="myprofour"> timeline </button>
+</section>
+
+
+<section id="myprointeg" style=" display: none; position: absolute; top: 455px; border-radius: 12px; left: 80px; width: 1000px; height: 850px; border: 1px solid rgb(96, 64, 45); color: #4a3625;  background-color: #f7f4e9; box-sizing: border-box; ">
+
+    <!-- Header -->
+    <div style="padding: 28px 30px 20px; border-bottom: 1px solid #ded5c8;">
+
+        <h1 style=" font-size: 34px; color: #174331; margin: 0 0 12px;">
+            Ingredient Checker
+        </h1>
+
+        <p style="font-size: 15px; color: #796d60;  margin: 0;">
+            Check if an ingredient is suitable for your skin.
+            <br>
+            Discover which ingredients to choose and which to avoid.
+        </p>
+
+    </div>
+
+    <!-- Search -->
+    <div style="padding: 24px 30px 28px;">
+
+        <div style="display: flex; align-items: center; width: 100%; height: 54px; border: 1px solid #c8bdae; border-radius: 30px; background-color: #fbf9f3; box-sizing: border-box; padding: 5px 6px 5px 18px;">
+
+            <span style="font-size: 22px; color: #687d6b; margin-right: 12px;">
+                ⌕
+            </span>
+
+            <input type="text"
+                   placeholder="Enter an ingredient name..."
+                   style="flex: 1; min-width: 0; border: none; outline: none; background: transparent; font-size: 14px; color: #4a3625;">
+
+            <button type="button" class="ctty">
+                   
+                Check →
+            </button>
+
+        </div>
+
+        <p style="font-size: 12px; color: #938779; margin: 10px 0 0 8px;">
+            Example: Niacinamide, Retinol, Hyaluronic Acid
+        </p>
+
+    </div>
+
+    <!-- Search Result -->
+    <div style="margin: 0 30px 24px; padding: 18px 20px; border: 1px solid #c7d2bf; border-radius: 10px; background-color: #edf0e6;">
+
+        <p style="font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px; color: #71806c; margin: 0 0 10px;">
+            Ingredient Result
+        </p>
+
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+
+            <div>
+                <h3 style=" font-size: 23px; margin: 0 0 8px; color: #355b43;">
+                    Niacinamide
+                </h3>
+
+                <p style="font-size: 13px; color: #796d60; margin: 0; ">
+                    May help support the skin barrier and regulate oil production.
+                </p>
+            </div>
+
+            <span style="display: inline-block; white-space: nowrap; background-color: #d5e2d0; color: #31583c; border-radius: 20px; padding: 9px 13px; font-size: 12px;">
+                ✓ Suitable
+            </span>
+
+        </div>
+
+    </div>
+
+    <!-- Ingredient Lists -->
+    <div style="padding: 0 30px;">
+
+        <h2 style=" font-size: 23px; margin: 0 0 18px; color: #4a3625;">
+            Ingredient Guide
+        </h2>
+
+        <div style="display: flex; gap: 18px;">
+
+            <!-- Suitable -->
+            <div style="width: 50%; box-sizing: border-box; border: 1px solid #d5ddce; border-radius: 10px; background-color: #eff1e8; padding: 20px;">
+
+                <h3 style="font-size: 16px; color: #355b43; margin: 0 0 18px;">
+                    ✓ Suitable Ingredients
+                </h3>
+
+                <div style="padding: 12px 0; border-bottom: 1px solid #d8ddcf;">
+                    <strong style="font-size: 14px;">Niacinamide</strong>
+                    <p style="font-size: 12px; color: #82786b; margin: 6px 0 0;">
+                        Supports the skin barrier.
+                    </p>
+                </div>
+
+                <div style="padding: 12px 0; border-bottom: 1px solid #d8ddcf;">
+                    <strong style="font-size: 14px;">Hyaluronic Acid</strong>
+                    <p style="font-size: 12px; color: #82786b; margin: 6px 0 0;">
+                        Helps maintain skin hydration.
+                    </p>
+                </div>
+
+                <div style="padding: 12px 0;">
+                    <strong style="font-size: 14px;">Ceramides</strong>
+                    <p style="font-size: 12px; color: #82786b; margin: 6px 0 0;">
+                        Help protect the skin barrier.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Not Suitable -->
+            <div style="width: 50%; box-sizing: border-box; border: 1px solid #e4c9bc; border-radius: 10px; background-color: #f5eae3; padding: 20px;">
+
+                <h3 style="font-size: 16px; color: #a65e4f; margin: 0 0 18px;">
+                    ✕ Ingredients to Avoid
+                </h3>
+
+                <div style="padding: 12px 0; border-bottom: 1px solid #e7d5ca;">
+                    <strong style="font-size: 14px;">Fragrance</strong>
+                    <p style="font-size: 12px; color: #82786b; margin: 6px 0 0;">
+                        May irritate sensitive skin.
+                    </p>
+                </div>
+
+                <div style="padding: 12px 0; border-bottom: 1px solid #e7d5ca;">
+                    <strong style="font-size: 14px;">Harsh Exfoliants</strong>
+                    <p style="font-size: 12px; color: #82786b; margin: 6px 0 0;">
+                        May worsen irritation.
+                    </p>
+                </div>
+
+                <div style="padding: 12px 0;">
+                    <strong style="font-size: 14px;">Drying Alcohols</strong>
+                    <p style="font-size: 12px; color: #82786b; margin: 6px 0 0;">
+                        May increase dryness.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Skin Profile -->
+    <div style="margin: 25px 30px 0; padding: 16px 18px; border-top: 1px solid #ded5c8; display: flex; align-items: center; justify-content: space-between; gap: 15px;">
+
+        <div>
+            <h3 style="font-size: 14px; color: #355b43; margin: 0 0 9px;">
+                Your Skin Profile
+            </h3>
+
+            <p style="font-size: 12px; color: #82786b; margin: 0; ">
+                Combination Skin &nbsp; · &nbsp; Acne-Prone &nbsp; · &nbsp; Sensitivity 60%
+            </p>
+        </div>
+
+        <div style="max-width: 235px; font-size: 11px; color: #82786b; background-color: #eeeee5; border-radius: 8px; padding: 12px;">
+            ⓘ Ingredient suitability depends on your skin condition and product formulation.
+        </div>
+
+    </div>
+
+    
 </section>
 
 
 
 
- <section class="azz">
+ <section class="azz"  id="myproover" display="block" >
 <div class="topmot">
 <img src="taqweem.jpg" width="40px" height="40px" style="margin-left: 10px;">
 <div style="margin-left: 10px; font-size: 25px;">Skin Overview</div>
-<div style="margin-left: 630px;">view all</div>
+<div style="margin-left: 690px;">view all</div>
 </div>
 <div class="ritw">
 
 
 <div style="margin-top: 10px;">
-<div style="margin-bottom: 60px; color: rgb(75, 75, 75);"> skin type<span style="margin-left: 160px; color: black;">oile</span></div>
-<div style="margin-bottom: 60px; color: rgb(75, 75, 75);"> senstergffk<span style="margin-left: 135px; color: black;"> 60% <div class="donut-chart"></div></span></div>
-<div style="margin-bottom: 60px; color: rgb(75, 75, 75);"> main coseidhd<span style="margin-left: 105px;"><span style="background-color: rgb(228, 202, 202); color: rgb(111, 29, 29); border-radius: 40px; padding: 5px;">&nbsp;&nbsp;&nbsp;Acne&nbsp;&nbsp;&nbsp;</span><span style="background-color: rgb(228, 202, 202); color: rgb(111, 29, 29); border-radius: 40px;padding: 5px; margin-left: 10px;"> &nbsp;&nbsp;Dark Spots&nbsp;&nbsp;</span> </span></div>
-<div style="margin-bottom: 60px; color: rgb(75, 75, 75);"> Acne Severity<span style="margin-left: 120px; color: black;">Moderate</span></div>
-<div style="margin-bottom: 10px; color: rgb(75, 75, 75);">Past Treatments</div>
-<div style="color:rgb(75, 75, 75) ;" >.Peels .Laser .Microneedling </div>
+<div style="margin-bottom: 60px; "> skin type<span style="margin-left: 160px; ">oile</span></div>
+<div style="margin-bottom: 60px; "> senstergffk<span style="margin-left: 135px; "> 60% <div class="donut-chart"></div></span></div>
+<div style="margin-bottom: 60px; "> main coseidhd<span style="margin-left: 105px;"><span style="background-color: rgb(228, 202, 202); color: rgb(111, 29, 29); border-radius: 40px; padding: 5px;">&nbsp;&nbsp;&nbsp;Acne&nbsp;&nbsp;&nbsp;</span><span style="background-color: rgb(228, 202, 202); color: rgb(111, 29, 29); border-radius: 40px;padding: 5px; margin-left: 10px;"> &nbsp;&nbsp;Dark Spots&nbsp;&nbsp;</span> </span></div>
+<div style="margin-bottom: 60px; "> Acne Severity<span style="margin-left: 120px;">Moderate</span></div>
+<div style="margin-bottom: 10px; ">Past Treatments</div>
+<div  >.Peels .Laser .Microneedling </div>
 </div>
 
-<hr style="margin-left: 90px;">
+<hr class="hss" style="margin-left: 90px; color:#39291f">
 
 
   
 <div class="trew">
-<img src="logo.jpg" width="200px" height="200px"  style="display: block;     border-radius: 50%; /* تحويل الصورة من inline إلى block */
+<img src="ff.jpg" width="200px" height="200px"  style="display: block;     border-radius: 50%; 
   margin-left: auto;   
   margin-right: auto; margin-bottom: 30px;">
-<div style="max-width: 290px; margin-left: 50px; color:  rgb(75, 75, 75);">Combination skin with moderate sensitivity, mainly concerned with acne and dark spots. </div>
+<div  style="max-width: 280px; margin-left: 50px; ">Combination skin with moderate sensitivity, mainly concerned with acne and dark spots. </div>
 </div>
 
 </div>
@@ -187,61 +394,196 @@
 
 
 </section> 
+<br><br>
+
+ <section id="myoverb" style =" display: block; width: 1055px; height:300px; background-image: url('myoverb.jpg');   margin-left: 80px; border: 1px solid #56391a; border-radius: 12px; " >
 
 
 
- <section  class="reco" >
-<div class="recodiv" >RECOMMENDED INGREDIENTS / INGREDIENTS TO AVOID</div>
-<div class="qwr" >
-<div class="eew">
-   <img src="logo.jpg"  class="ewo"   >  
-   <span  style="position: absolute; margin-top: 22px;" >Salicylic Acid ,Betaine Salicylate ,Sodium Salicylate ,Niacinamide ,Nicotinamide</span>
-</div>
-
-<div class="ewq"  >
-<img src="logo.jpg" style  =" margin-top: 17px; width: 50px; height: 50px; border-radius: 50%;      margin-left: 100px;   ">  
-   <span  style="position: absolute; margin-top: 22px; margin-left: 10px;  ">Coconut Oil, Cocoa Butter, Lanolin, Isopropyl Myristate, Alcohol Denat </span>
-
-</div>
-
-</div>
 
 
 
-<div class="qwr" >
-<div class="eew">
-   <img src="logo.jpg"  class="ewo"   >  
-   <span  style="position: absolute; margin-top: 22px;" >Niacinamide, Glycolic Acid (AHA), Retinol, Hyaluronic Acid, Kaolin Clay, Zinc</span>
-</div>
+   
+    <div style="height:58px; padding:0 25px; display:flex; align-items:center; justify-content:space-between;  box-sizing:border-box;">
 
-<div class="ewq"  >
-<img src="logo.jpg" style  =" margin-top: 17px; width: 50px; height: 50px; border-radius: 50%;      margin-left: 100px;   ">  
-   <span  style="position: absolute; margin-top: 22px; margin-left: 10px; ">Synthetic Fragrance, Isopropyl Palmitate Coconut Oil, Cocoa Butter. </span>
+        <h2 style="font-size:23px; font-weight:normal; margin:0;">
+            ✧ Skin Health Indicators
+        </h2>
 
-</div>
+        <span style="font-size:12px; color:#796957;">
+            Based on your assessment ⓘ
+        </span>
 
-</div>
+    </div>
 
-<br><br><br><br><br><br>
-<div class="qwr" >
-<div class="eew">
-   <img src="logo.jpg"  class="ewo"   >  
-   <span  style="position: absolute; margin-top: 22px;" >Niacinamide, Glycolic Acid (AHA), Retinol, Hyaluronic Acid, Kaolin Clay, Zinc</span>
-</div>
 
-<div class="ewq"  >
-<img src="logo.jpg" style  =" margin-top: 17px; width: 50px; height: 50px; border-radius: 50%;      margin-left: 100px;   ">  
-   <span  style="position: absolute; margin-top: 22px; margin-left: 10px; ">Coconut Oil, Cocoa Butter,Coconut Oil, Cocoa Butter. </span>
+   
+    <div style="height:177px; display:flex; padding:12px 10px 5px; box-sizing:border-box;">
 
-</div>
+       
+        <div style="width:25%; text-align:center; padding:0 15px; box-sizing:border-box; ">
 
-</div>
+            <div style="width:43px; height:43px; border-radius:50%; margin:0 auto 7px; display:flex; justify-content:center; align-items:center; font-size:24px; background:#d4dfd2; border:1px solid #b8c7b5;">
+                ♧
+            </div>
+
+            <h3 style="font-size:14px; font-weight:normal; margin:0 0 5px;">
+                Hydration Level
+            </h3>
+
+            <p style="font-size:17px; margin:0 0 8px; color:#39291f;">
+                65%
+            </p>
+
+            <div style="height:10px; width:100%; background:#eadfd7; border-radius:10px; overflow:hidden;">
+                <div style="height:100%; width:65%; background:#9eaf9b; border-radius:10px;"></div>
+            </div>
+
+            <p style="font-size:11px; line-height:1.4; color:#796957; margin:7px 0 0;">
+                Your skin needs more hydration.
+            </p>
+
+        </div>
+
+
+       
+        <div style="width:25%; text-align:center; padding:0 15px; box-sizing:border-box; ">
+
+            <div style="width:43px; height:43px; border-radius:50%; margin:0 auto 7px; display:flex; justify-content:center; align-items:center; font-size:24px; background:#f0d6c3; border:1px solid #dfc1ad;">
+                ◉
+            </div>
+
+            <h3 style="font-size:14px; font-weight:normal; margin:0 0 5px;">
+                Oil Balance
+            </h3>
+
+            <p style="font-size:17px; margin:0 0 8px; color:#39291f;">
+                72%
+            </p>
+
+            <div style="height:10px; width:100%; background:#eadfd7; border-radius:10px; overflow:hidden;">
+                <div style="height:100%; width:72%; background:#dcb39b; border-radius:10px;"></div>
+            </div>
+
+            <p style="font-size:11px; line-height:1.4; color:#796957; margin:7px 0 0;">
+                Oil production needs balancing.
+            </p>
+
+        </div>
+
+
+        
+        <div style="width:25%; text-align:center; padding:0 15px; box-sizing:border-box; ">
+
+            <div style="width:43px; height:43px; border-radius:50%; margin:0 auto 7px; display:flex; justify-content:center; align-items:center; font-size:24px; background:#e4c4c2; border:1px solid #d7b2b0;">
+                ♡
+            </div>
+
+            <h3 style="font-size:14px; font-weight:normal; margin:0 0 5px;">
+                Skin Barrier
+            </h3>
+
+            <p style="font-size:17px; margin:0 0 8px; color:#39291f;">
+                58%
+            </p>
+
+            <div style="height:10px; width:100%; background:#eadfd7; border-radius:10px; overflow:hidden;">
+                <div style="height:100%; width:58%; background:#cfa5a2; border-radius:10px;"></div>
+            </div>
+
+            <p style="font-size:11px; line-height:1.4; color:#796957; margin:7px 0 0;">
+                Your skin barrier needs care.
+            </p>
+
+        </div>
+
+
+        
+        <div style="width:25%; text-align:center; padding:0 15px; box-sizing:border-box;">
+
+            <div style="width:43px; height:43px; border-radius:50%; margin:0 auto 7px; display:flex; justify-content:center; align-items:center; font-size:24px; background:#c99e91; border:1px solid #b88c80;">
+                ✧
+            </div>
+
+            <h3 style="font-size:14px; font-weight:normal; margin:0 0 5px;">
+                Acne Activity
+            </h3>
+
+            <p style="font-size:17px; margin:0 0 8px; color:#39291f;">
+                Moderate
+            </p>
+
+            <div style="height:10px; width:100%; background:#eadfd7; border-radius:10px; overflow:hidden;">
+                <div style="height:100%; width:60%; background:#ae8276; border-radius:10px;"></div>
+            </div>
+
+            <p style="font-size:11px; line-height:1.4; color:#796957; margin:7px 0 0;">
+                Acne and post-acne marks present.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    
+    <div style="height:63px; padding:0 25px;  display:flex; justify-content:space-between; align-items:center; box-sizing:border-box;">
+
+        <p style="font-size:12px; margin:0; color:#796957;">
+            ☼ &nbsp; Tip: Keep your skin hydrated and support your skin barrier.
+        </p>
+
+        <button type="button" onclick="alert('Your skin health details will appear here.')" style="padding:10px 17px; background:#d4dfd2; color:#244434; border:1px solid #9eaf9b; border-radius:25px; font-family:Georgia,serif; font-size:13px; cursor:pointer;">
+            View Details &nbsp; ❯
+        </button>
+
+    </div>
+
+
 
 
 </section> 
 
 
-<section  class="dodo" >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+<section  class="dodowe" >
 <div style="font-size: 30px; margin-top: 10px; margin-left: 20px;">
   
  <b> Doctor notes </b></div>
@@ -250,7 +592,7 @@
 <div>
 <img src="ff.jpg"  style="width: 70px;  margin-left: 20px; height: 70px; margin-top: 10px; border-radius: 50%; overflow: hidden; object-fit: cover;  position: absolute;  ">
 <div style="margin-left: 100px; position: absolute; margin-top: 20px ; "><b> Dr.baekhyun</b> </div>
-<div style="margin-left: 100px; position: absolute;  margin-top: 45px ; ">ufhkc hlhdlk </div>
+<div style="margin-left: 100px; position: absolute;  margin-top: 45px ; ">Dermatology Specialist </div>
 </div>
 <div style="margin-top: 100px; margin-left: 20px; "> <b>Recommended : </b></div>
 <div style="max-width: 380px; margin-left: 20px;">The doctor recommends a gentle skincare routine focused on balancing oil production, maintaining skin hydration, and gradually improving acne and post-acne marks.
@@ -261,34 +603,11 @@
 
 
 
-<!-- <section class="seritc">
-<div class="topmo">
-<img src="taqweem.jpg" width="30px" height="30px" style="margin-left: 10px;">
-<div style="margin-left: 10px;">Notifications</div>
-<div style="margin-left: 130px;">view all</div>
-</div>
-<div class="hawet">
-
-<div class="weq">
-    <img src="logo.jpg" width="30px" height="30px" >
-    <div style="margin-left: 10px;"> Dr. Emily Carter updated your skin profile</div>
-    
-</div>
-
-<div class="weq">
-    <img src="logo.jpg" width="30px" height="30px" >
-    <div style="margin-left: 10px;"> Your appointment is tomorrow at 4:00 PM. </div>
-    
-</div>
 
 
-<div class="weqf">
-    <img src="logo.jpg" width="30px" height="30px" >
-    <div style="margin-left: 10px;"> A new product has been recommended for you </div>
-    
-</div>
-</div>
-</section> -->
+
+
+ 
 
 
 
@@ -312,81 +631,82 @@
 
 
 
- <section class="azzt" style="display: none;">
+ <section class="azzt" id="myproase" style="display: none;">
 <div class="topmot">
-<img src="taqweem.jpg" width="40px" height="40px" style="margin-left: 10px;">
+<img src="myproi.png" width="40px" height="40px" style="margin-left: 10px;">
 <div style="margin-left: 10px; font-size: 25px;">products & services</div>
-<div style="margin-left: 630px;">view all</div>
+<div style="margin-left: 700px;">view all</div>
 </div>
 <div class="recopro">recommment for your skin <hr class="hrre"></div>
 
 <div style="width: 100%;  height: 715px; ">
 
 <div style="display: flex; ">
+<div>
 <div class="boxy">
-    <div><img src="logo.jpg" class="imoo"></div>
+    <div><img src="m3an.webp" class="imoo"></div>
    <div class="divo">
-    <div style="font-size: 20px;">  barre lay cream</div>
-    <div style="color: rgb(150, 150, 150); margin-bottom: 20px;"> its importants to your dark secrcl </div>
-    <div class="statee"><img src=""> skin states</div>
-    <button class="vree">view prodact </button>
+    <div style="font-size: 20px;">Dynasty Cream</div>
+    <div style="color: rgb(150, 150, 150); margin-bottom: 20px; font-size: 18px; max-width: 100px;"> its importants to your dark secrcl </div>
+    <div class="statee"> 88% Match</div>
+    
+    </div>
+
+</div>
+<button class="vree">view prodact &rarr;</button>
+</div>
+
+<div>
+<div class="boxy">
+    <div><img src="mamaa.png" class="imoo" > </div>
+   <div class="divo">
+    <div style="font-size: 20px;">96 Mucin Power Essence</div>
+    <div style="color: rgb(150, 150, 150); margin-bottom: 20px; font-size: 18px; max-width: 100px;"> its importants to your dark secrcl </div>
+    <div class="statee"> 88% Match</div>
+    
+    </div>
+    
+</div>
+<button class="vree">view prodact &rarr;</button>
+</div>
+
+
+
+<div>
+<div class="boxy">
+    <div><img src="s1ana.webp" class="imoo"></div>
+   <div class="divo">
+    <div style="font-size: 20px;">Day Dew Sunscreen</div>
+    <div style="color: rgb(150, 150, 150); margin-bottom: 20px; font-size: 18px; max-width: 100px;"> its importants to your dark secrcl </div>
+    <div class="statee"> 88% Match</div>
+    
     </div>
 </div>
+<button class="vree">view prodact &rarr;</button>
+</div>
 
+
+<div>
 <div class="boxy">
-    <div><img src="logo.jpg" class="imoo"></div>
+    <div><img src="s1ana.webp" class="imoo"></div>
    <div class="divo">
-    <div style="font-size: 20px;">  barre lay cream</div>
-    <div style="color: rgb(150, 150, 150); margin-bottom: 20px;"> its importants to your dark secrcl </div>
-    <div class="statee"><img src=""> skin states</div>
-    <button class="vree">view prodact </button>
+    <div style="font-size: 20px;">Day Dew Sunscreen</div>
+    <div style="color: rgb(150, 150, 150); margin-bottom: 20px; font-size: 18px; max-width: 100px;"> its importants to your dark secrcl </div>
+    <div class="statee"> 88% Match</div>
+   
     </div>
 </div>
-<div class="boxy">
-    <div><img src="logo.jpg" class="imoo"></div>
-   <div class="divo">
-    <div style="font-size: 20px;">  barre lay cream</div>
-    <div style="color: rgb(150, 150, 150); margin-bottom: 20px;"> its importants to your dark secrcl </div>
-    <div class="statee"><img src="logo.jpg" width="30px" height="30px"> skin states</div>
-    <button class="vree">view prodact </button>
-    </div>
+ <button class="vree">view prodact &rarr;</button>
 </div>
+
+
 </div>
 
 
 
 
-<div style="display: flex; margin-top: 10px;">
-<div class="boxy">
-    <div><img src="logo.jpg" class="imoo"></div>
-   <div class="divo">
-    <div style="font-size: 20px;">  barre lay cream</div>
-    <div style="color: rgb(150, 150, 150); margin-bottom: 20px;"> its importants to your dark secrcl </div>
-    <div class="statee"><img src=""> skin states</div>
-    <button class="vree">view prodact </button>
-    </div>
-</div>
 
-<div class="boxy">
-    <div><img src="logo.jpg" class="imoo"></div>
-   <div class="divo">
-    <div style="font-size: 20px;">  barre lay cream</div>
-    <div style="color: rgb(150, 150, 150); margin-bottom: 20px;"> its importants to your dark secrcl </div>
-    <div class="statee"><img src=""> skin states</div>
-    <button class="vree">view prodact </button>
-    </div>
-</div>
-<div class="boxy">
-    <div><img src="logo.jpg" class="imoo"></div>
-   <div class="divo">
-    <div style="font-size: 20px;">  barre lay cream</div>
-    <div style="color: rgb(150, 150, 150); margin-bottom: 20px;"> its importants to your dark secrcl </div>
-    <div class="statee"><img src="logo.jpg" width="30px" height="30px"> skin states</div>
-    <button class="vree">view prodact </button>
-    </div>
-</div>
-</div>
-
+<br><br>
 
 <hr>
 
@@ -395,12 +715,12 @@
 <div>
 
 <div class="boxq">
-<div class="ino"><img src="logo.jpg" width="60px" height="60px" style="border-radius: 50%; "></div>
+<div class="ino"><img src="sewq.png" width="60px" height="60px" style="border-radius: 50%; "></div>
 <div >
-    <div>hdhfoiehfie fhehfrrf jr</div>
-    <div>eguwifjkewf ehfbejf hbfkdf efguefbjf </div>
+    <div>Carbon Laser Peel</div>
+    <div  style="max-width: 500px; ">Professional skin treatment for rejuvenation</div>
 </div>
-<button  class="vreeq"> book now  </button>
+<button  class="vreeq"> book now  &rarr; </button>
 </div>
 
 </div>
@@ -409,18 +729,20 @@
 <div>
 
 <div class="boxq">
-<div class="ino"><img src="logo.jpg" width="60px" height="60px" style="border-radius: 50%; "></div>
+<div class="ino"><img src="sewq.png" width="60px" height="60px" style="border-radius: 50%; "></div>
 <div >
-    <div>hdhfoiehfie fhehfrrf jr</div>
-    <div>eguwifjkewf ehfbejf hbfkdf efguefbjf </div>
+    <div>Dermapen</div>
+    <div style="max-width: 500px; ">Professional skin treatment for rejuvenation</div>
 </div>
-<button  class="vreeq"> book now  </button>
+<button  class="vreeq"> book now &rarr; </button>
 </div>
+
+</div>
+
 
 </div>
 
 
-</div>
 </section> 
 
 
@@ -439,13 +761,15 @@
 
 
 
- <section class="azzter" style="display: none;">
+
+
+ <section class="azzter" id="myprotime" style="display: none;" >
 <div class="topmoter">
 <img src="taqweem.jpg" width="40px" height="40px" style="margin-left: 10px;">
 <div>
-<div style="margin-left: 10px; font-size: 25px;">your skin jounior</div>
-<div style="margin-left: 10px; font-size: 20px;">your skin jounior</div></div>
-<div style="margin-left: 630px;">view all</div>
+<div style="margin-left: 10px; font-size: 20px;">your skin jounior</div>
+<div style="margin-left: 10px; font-size: 15px;">your skin jounior</div></div>
+<div style="margin-left: 700px;">view all</div>
 </div>
 
 
@@ -454,110 +778,164 @@
     <!-- العنصر الأول -->
     <div class="timeline-item">
       <div class="timeline-date">
-        <span class="date-title">SEP 27, 2026</span>
-        <span class="date-sub">Initial Assessment</span>
+        <span class="date-title">Before</span>
+        <span class="date-sub">Initial Skin Condition</span>
       </div>
       <div class="timeline-marker">
-        <div class="icon-circle green">📋</div>
+        <div class="icon-circle green"><i class="fa-solid fa-clock-rotate-left"></i></div>
       </div>
       <div class="timeline-card">
         <div class="card-info">
-          <span class="badge green-badge">Assessment</span>
-          <h3>Completed Skin Assessment</h3>
-          <p>Your skin profile has been created based on your answers. We've tailored personalized recommendations for you.</p>
+          <span class="badge green-badge">Previous Treatments</span>
+          <h3>Your Skin's Treatment History</h3>
+          <p style="max-width: 500px;">Your previous skincare treatments have been recorded to help us understand your skin's history and personalize your care journey.</p>
         </div>
-        <button class="btnwq">View Details &rarr;</button>
-        <div class="card-img">
-          <img src="face.jpg" alt="Skin Assessment">
-        </div>
+        
+        <div class="card-img" style=" width:150px; height: 90px;">
+    <label for="skinPhoto" style="cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center; ">
+
+        <i class="fa-solid fa-camera" style="font-size: 30px; margin-top: 7px; color: #d48374;"></i>
+
+        <p style="margin-top: 12px; color: #4a4a4a; font-size: 13px;">Upload Your Skin Photo</p>
+
+        <small style="color: #999; font-size: 12px;">Click to choose a photo</small>
+
+    </label>
+
+    <input type="file" id="skinPhoto" accept="image/*" style="display: none;">
+</div>
       </div>
     </div>
 
     <!-- العنصر الثاني -->
     <div class="timeline-item">
       <div class="timeline-date">
-        <span class="date-title">SEP 28, 2026</span>
-        <span class="date-sub">Doctor Consultation</span>
+        <span class="date-title">Today</span>
+        <span class="date-sub">Current Skin Status</span>
       </div>
       <div class="timeline-marker">
-        <div class="icon-circle pink">👨‍⚕️</div>
+        <div class="icon-circle pink"><i class="fa-solid fa-calendar-day"></i></div>
       </div>
       <div class="timeline-card">
         <div class="card-info">
-          <span class="badge pink-badge">Consultation</span>
-          <h3>Dermatology Consultation</h3>
-          <p>You visited Dr. Emily Carter for your initial consultation. Your treatment plan was discussed and personalized.</p>
+          <span class="badge pink-badge">Current Skin Status</span>
+          <h3>Your Skin Today</h3>
+          <p style="max-width: 500px;">Your skin's current condition has been documented. Track your progress and see how your skin responds to your personalized skincare journey.
+</p>
         </div>
-        <button class="btnwq">View Details &rarr;</button>
-        <div class="card-img">
-          <img src="consultation.jpg" alt="Doctor Consultation">
-        </div>
+        
+        <div class="card-img" style=" width:150px; height: 90px;">
+    <label for="skinPhoto" style="cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center; ">
+
+        <i class="fa-solid fa-camera" style="font-size: 30px; margin-top: 7px; color: #d48374;"></i>
+
+        <p style="margin-top: 12px; color: #4a4a4a; font-size: 13px;">Upload Your Skin Photo</p>
+
+        <small style="color: #999; font-size: 12px;">Click to choose a photo</small>
+
+    </label>
+
+    <input type="file" id="skinPhoto" accept="image/*" style="display: none;">
+</div>
       </div>
     </div>
 
     <!-- العنصر الثالث -->
     <div class="timeline-item">
       <div class="timeline-date">
-        <span class="date-title">OCT 02, 2026</span>
-        <span class="date-sub">Products</span>
+        <span class="date-title">After 3 Months</span>
+        <span class="date-sub">Progress Evaluation</span>
       </div>
       <div class="timeline-marker">
-        <div class="icon-circle brown">🛍️</div>
+        <div class="icon-circle brown"><i class="fa-solid fa-chart-line"></i></div>
       </div>
       <div class="timeline-card">
         <div class="card-info">
-          <span class="badge brown-badge">Purchase</span>
-          <h3>Recommended Products</h3>
-          <p>Your personalized skincare and treatment products have been added to your profile and cart.</p>
+          <span class="badge brown-badge">Progress Evaluation</span>
+          <h3>Your Skin's Progress</h3>
+          <p style="max-width: 500px;">Three months into your skincare journey, it's time to evaluate your skin's progress and observe the changes achieved through your personalized treatment plan.
+</p>
         </div>
-        <button class="btnwq">View Products &rarr;</button>
-        <div class="card-img">
-          <img src="products.jpg" alt="Products">
-        </div>
+        
+         <div class="card-img" style=" width:150px; height: 90px;">
+    <label for="skinPhoto" style="cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center; ">
+
+        <i class="fa-solid fa-camera" style="font-size: 30px; margin-top: 7px; color: #d48374;"></i>
+
+        <p style="margin-top: 12px; color: #4a4a4a; font-size: 13px;">Upload Your Skin Photo</p>
+
+        <small style="color: #999; font-size: 12px;">Click to choose a photo</small>
+
+    </label>
+
+    <input type="file" id="skinPhoto" accept="image/*" style="display: none;">
+</div>
       </div>
     </div>
 
     <!-- العنصر الرابع -->
     <div class="timeline-item">
       <div class="timeline-date">
-        <span class="date-title">OCT 06, 2026</span>
-        <span class="date-sub">Follow Up</span>
+        <span class="date-title">After 6 Months</span>
+        <span class="date-sub">Treatment Follow-up</span>
       </div>
       <div class="timeline-marker">
-        <div class="icon-circle green">📅</div>
+        <div class="icon-circle green"><i class="fa-solid fa-arrow-trend-up"></i></div>
       </div>
       <div class="timeline-card">
         <div class="card-info">
-          <span class="badge green-badge">Appointment</span>
-          <h3>Follow-up Appointment</h3>
-          <p>Your next appointment is scheduled for 4:00 PM with Dr. Emily Carter.</p>
+          <span class="badge green-badge">Treatment Follow-up</span>
+          <h3>Treatment Follow-up</h3>
+          <p style="max-width: 500px;">Six months into your skincare journey, it's time to review your long-term progress, evaluate treatment results, and celebrate the improvements in your skin.
+</p>
         </div>
-        <button class="btnwq">View Details &rarr;</button>
-        <div class="card-img">
-          <img src="calendar.jpg" alt="Appointment">
-        </div>
+      
+         <div class="card-img" style=" width:150px; height: 90px;">
+    <label for="skinPhoto" style="cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center; ">
+
+        <i class="fa-solid fa-camera" style="font-size: 30px; margin-top: 7px; color: #d48374;"></i>
+
+        <p style="margin-top: 12px; color: #4a4a4a; font-size: 13px;">Upload Your Skin Photo</p>
+
+        <small style="color: #999; font-size: 12px;">Click to choose a photo</small>
+
+    </label>
+
+    <input type="file" id="skinPhoto" accept="image/*" style="display: none;">
+</div>
       </div>
     </div>
 
     <!-- العنصر الخامس -->
     <div class="timeline-item">
       <div class="timeline-date">
-        <span class="date-title">OCT 10, 2026</span>
-        <span class="date-sub">Progress</span>
+        <span class="date-title">Final Results</span>
+        <span class="date-sub">Final Skin Results</span>
       </div>
       <div class="timeline-marker">
-        <div class="icon-circle pink">✨</div>
+        <div class="icon-circle pink"><i class="fa-solid fa-star"></i></div>
       </div>
       <div class="timeline-card">
         <div class="card-info">
-          <span class="badge pink-badge">Progress Update</span>
-          <h3>Skin Progress Update</h3>
-          <p>We've added notes about your skin progress and adjusted your routine for better results.</p>
+          <span class="badge pink-badge">Final Evaluation</span>
+          <h3>Your Skin, Your Journey</h3>
+          <p style="max-width: 500px;">Your skincare journey has reached its final stage. Review your overall progress, compare your before and after results, and see how far your skin has come.
+</p>
         </div>
-        <button class="btnwq">View Details &rarr;</button>
-        <div class="card-img">
-          <img src="progress.jpg" alt="Progress">
-        </div>
+       
+        <div class="card-img" style=" width:150px; height: 90px;">
+    <label for="skinPhoto" style="cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center; ">
+
+        <i class="fa-solid fa-camera" style="font-size: 30px; margin-top: 7px; color: #d48374;"></i>
+
+        <p style="margin-top: 12px; color: #4a4a4a; font-size: 13px;">Upload Your Skin Photo</p>
+
+        <small style="color: #999; font-size: 12px;">Click to choose a photo</small>
+
+    </label>
+
+    <input type="file" id="skinPhoto" accept="image/*" style="display: none;">
+</div>
       </div>
     </div>
 </div>
@@ -566,23 +944,690 @@
 
 
 
-<br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br>
 
-<section class="fiu">
+
+<section class="fiu" id="fiu">
 
 </section>
 
 
 
 
-<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br>
+
+
+
+
+
+<footer class="skin-footer">
+
+    <!-- ================= TOP FOOTER LINKS ================= -->
+
+    <div class="footer-top">
+
+        <a href="https://maps.app.goo.gl/sNTKBT89UBUz8guo6" class="footer-feature">
+            <span class="feature-icon">⌖</span>
+            <div>
+                <strong>Find a Store</strong>
+                <small>Choose Your Store</small>
+            </div>
+        </a>
+
+
+        <a href="customer-service.html" class="footer-feature">
+            <span class="feature-icon">◯</span>
+            <div>
+                <strong>Customer Service Chat</strong>
+            </div>
+        </a>
+
+
+        <a href="https://play.google.com/store/games?hl=ar" class="footer-feature">
+            <span class="feature-icon">▤</span>
+            <div>
+                <strong>Get the App</strong>
+                <small>Download Now</small>
+            </div>
+        </a>
+
+
+        <a href="login.html" class="footer-feature">
+            <span class="feature-icon">✉</span>
+            <div>
+                <strong>Join Skin Sync</strong>
+                <small>Sign up Now</small>
+            </div>
+        </a>
+
+
+        <a href="vip.html" class="footer-feature">
+            <span class="feature-icon">▭</span>
+            <div>
+                <strong>Skin Sync VIP</strong>
+                <small>Discover Your Benefits</small>
+            </div>
+        </a>
+
+    </div>
+
+
+    <!-- ================= MAIN FOOTER ================= -->
+
+    <div class="footer-main">
+
+
+        <!-- COLUMN 1 -->
+
+        <div class="footer-column">
+
+            <h3>About Skin Sync</h3>
+
+            <a href="aboutus.html">About Us</a>
+            <a href="how-we-work.html">How We Work</a>
+            <a href="Doctors.html">Our Doctors</a>
+            <a href="services.html">Our Services</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="gift-card.html">Gift Cards</a>
+
+        </div>
+
+
+        <!-- COLUMN 2 -->
+
+        <div class="footer-column">
+
+            <h3>My Skin Sync</h3>
+
+            <a href="login.html">Sign In</a>
+            <a href="mypro.html">My Profile</a>
+            <a href="IS.html">Skin Assessment</a>
+            <a href="products.html">My Products</a>
+            <a href="cart.html">My Cart</a>
+            
+            <a href="vip.html">Skin Sync VIP</a>
+
+        </div>
+
+
+        <!-- COLUMN 3 -->
+
+        <div class="footer-column">
+
+            <h3>Help</h3>
+
+            <a href="customer-service.html">Customer Service</a>
+            <a href="shipping.html">Shipping & Delivery</a>
+            <a href="returns.html">Returns & Exchanges</a>
+            <a href="payment.html">Payment Options</a>
+            <a href="booking.html">Booking Information</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+
+        </div>
+
+
+        <!-- COLUMN 4 -->
+
+        <div class="footer-column">
+
+            <h3>Find Us</h3>
+
+            <a href="find-store.html">Amman — Dabouq</a>
+            <a href="find-store.html">Store Locations</a>
+
+            <a href="tel:+962790000000">
+                +962 7 9000 0000
+            </a>
+
+            <a href="mailto:hello@skinsync.com">
+                hello@skinsync.com
+            </a>
+
+
+            <div class="footer-social">
+
+                <a href="#" aria-label="Instagram">Instagram</a>
+                <a href="#" aria-label="Facebook">Facebook</a>
+                <a href="#" aria-label="TikTok">TikTok</a>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= RIGHT SIDE ================= -->
+
+        <div class="footer-right">
+
+            <!-- LOGO -->
+
+            <a href="index.html" class="footer-logo-link">
+
+                <img
+                    src="images/logo.png"
+                    alt="Skin Sync Logo"
+                    class="footer-logo"
+                >
+
+            </a>
+
+
+            <h2>
+                Know Your Skin.<br>
+                Embrace Your Beauty.
+            </h2>
+
+
+            <!-- PHONE -->
+
+            <div class="newsletter-box">
+
+                <h3>Stay Connected</h3>
+
+                <p>
+                    Get skincare tips, updates and exclusive offers.
+                </p>
+
+                <div class="input-row">
+
+                    <input
+                        type="tel"
+                        placeholder="Mobile Phone Number"
+                    >
+
+                    <button type="button">
+                        Subscribe
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- EMAIL -->
+
+            <div class="newsletter-box">
+
+                <h3>Sign up for Skin Sync Emails</h3>
+
+                <div class="input-row">
+
+                    <input
+                        type="email"
+                        placeholder="Enter your email address"
+                    >
+
+                    <button type="button">
+                        Sign Up
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= BOTTOM FOOTER ================= -->
+
+    <div class="footer-bottom">
+
+        <div class="copyright">
+
+            <p>
+                © 2026 Skin Sync. All Rights Reserved.
+            </p>
+
+            <div class="legal-links">
+
+                <a href="privacy.html">
+                    Privacy Policy
+                </a>
+
+                <a href="terms.html">
+                    Terms & Conditions
+                </a>
+
+                <a href="accessibility.html">
+                    Accessibility
+                </a>
+
+                <a href="sitemap.html">
+                    Sitemap
+                </a>
+
+            </div>
+
+            <a href="tel:+962790000000">
+                +962 7 9000 0000
+            </a>
+
+        </div>
+
+
+        <!-- SOCIAL MEDIA -->
+
+        <div class="social-icons">
+
+            <a href="#" aria-label="Instagram">◎</a>
+
+            <a href="#" aria-label="Facebook">f</a>
+
+            <a href="#" aria-label="X">𝕏</a>
+
+            <a href="#" aria-label="YouTube">▶</a>
+
+            <a href="#" aria-label="Pinterest">p</a>
+
+            <a href="#" aria-label="TikTok">♪</a>
+
+        </div>
+
+    </div>
+
+</footer>
 
 
 
 
 
 
+
+
+
+<!-- خلفية معتمة عند فتح السلة -->
+<div id="cart-overlay" class="cart-overlay"></div>
+
+<!-- القائمة الجانبية للسلة -->
+<div id="cart-drawer" class="cart-drawer">
+    <!-- الهيدر: العنوان وزر الإغلاق -->
+    <div class="cart-header">
+        <h2>SHOPPING BAG (<span id="cart-count-title">0</span>)</h2>
+        <button id="close-cart-btn" class="close-cart-btn">✕</button>
+    </div>
+
+    <div class="shipping-progress-container">
+    
+    <p class="shipping-text">
+        YOU ARE <span id="amount-away" class="pink-text">50 JOD</span> AWAY FROM FREE SHIPPING
+    </p>
+
+   
+    <div class="progress-bar-bg">
+        <div id="progress-fill" class="progress-bar-fill" style="width: 50%;"></div>
+    </div>
+    <img src="trackn.jpg" style="width: 35px; border: 2px solid black; height: 35px; border-radius: 50%; position: absolute; top: 145px; right: 29px;">
+</div>
+    
+   <div class="cart-body">
+
+
+
+        <!-- 1. المنتج الرئيسي في السلة -->
+        <div class="cart-main-item">
+            <img src="https://via.placeholder.com/80" alt="Product" class="item-img">
+            <div class="item-info">
+                <h3>EASY BAKE PRESSED POWDER</h3>
+                <p class="item-variant">Banana Bread • 8.5G / 0.29 OZ</p>
+                <p class="item-price">43.00 JOD</p>
+                
+                <!-- أزرار زيادة ونقصان الكمية -->
+                <div class="quantity-box">
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+                </div>
+            </div>
+            <!-- زر الحذف -->
+            <button class="delete-btn"><i class="fa-solid fa-trash-can"></i></button>
+        </div>
+
+
+
+
+
+        <!-- 2. قسم التوصيات (Recommended For You) القابل للسحب يمين ويسار -->
+        <div class="recommended-section">
+            <div class="rec-header">
+                <span>RECOMMENDED FOR YOU</span>
+                <i class="fa-solid fa-chevron-up"></i>
+            </div>
+
+            <!-- حاوية المنتجات التي تتحرك يمين ويسار -->
+            <div class="rec-slider">
+                <!-- المنتج المقترَح الأول -->
+                <div class="rec-card">
+                    <img src="https://via.placeholder.com/70" alt="Rec Product">
+                    <div class="rec-details">
+                        <h4>Easy Bake Loose Baking & Setting Powder</h4>
+                        <select class="rec-select">
+                            <option>Peach Pie</option>
+                        </select>
+                        <div class="rec-price-btn">
+                            <span>$43.00</span>
+                            <button class="add-bag-btn">ADD TO BAG</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- المنتج المقترَح الثاني (يمكنك نسخه لزيادة المنتجات التي تتحرك يمين وشمال) -->
+                <div class="rec-card">
+                    <img src="https://via.placeholder.com/70" alt="Rec Product">
+                    <div class="rec-details">
+                        <h4>Liquid Matte Lipstick</h4>
+                        <select class="rec-select">
+                            <option>Bombshell</option>
+                        </select>
+                        <div class="rec-price-btn">
+                            <span>$21.00</span>
+                            <button class="add-bag-btn">ADD TO BAG</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. أقسام الهدايا والعينات -->
+        
+        
+
+    </div>
+
+    <!-- فوتر السلة (المجموع وزر الدفع) -->
+    <div class="cart-footer">
+    
+    <!-- صندوق النقاط الوردي -->
+    <div class="points-box">
+        <i class="fa-solid fa-crown points-icon"></i>
+        <div class="points-text">
+            <p>Earn <strong>43 Points</strong> on this order</p>
+            <p class="points-sub">Save USD 15.00 next time with 150 Points.</p>
+            <a href="#" class="pink-link">Log in</a> or <a href="#" class="pink-link">Create an account</a>
+        </div>
+    </div>
+
+    <!-- ملخص الطلب (Order Summary) -->
+    <div class="order-summary">
+        <h3>ORDER SUMMARY</h3>
+        <div class="summary-row">
+            <span>Subtotal</span>
+            <span>$43.00</span>
+        </div>
+        <div class="summary-row">
+            <span>Delivery</span>
+            <span class="muted-text">To be calculated at checkout</span>
+        </div>
+        <div class="summary-row">
+            <span>Discounts</span>
+            <span>$0.00</span>
+        </div>
+        
+        <div class="summary-divider"></div>
+
+        <div class="summary-row total-row-bold">
+            <span class="pink-title">ORDER TOTAL</span>
+            <span class="pink-price">$43.00</span>
+        </div>
+    </div>
+
+    <!-- زر الدفع الآمن -->
+    <button class="checkout-secure-btn">
+        CHECKOUT SECURELY <i class="fa-solid fa-lock"></i>
+    </button>
+
+    <!-- خط فاصل مع نص Express checkout -->
+    <div class="express-divider">
+        <span>Express checkout</span>
+    </div>
+
+    <!-- أزرار الدفع السريع (PayPal و Google Pay) -->
+    <div class="express-pay-buttons">
+        <button class="pay-btn paypal-btn">
+            <i class="fa-brands fa-paypal"><b>PayPal</b></i>
+        </button>
+        <button class="pay-btn gpay-btn">
+            <i class="fa-brands fa-google-pay"></i> G Pay
+        </button>
+    </div>
+
+    <p class="choose-method-text">Choose your payment method at checkout.</p>
+
+    <!-- أيقونات البطاقات في الأسفل -->
+    <div class="payment-icons">
+        <i class="fa-brands fa-cc-visa" style="color: #1a1f71;"></i>
+        <i class="fa-brands fa-cc-mastercard" style="color: #eb001b;"></i>
+        <i class="fa-brands fa-cc-paypal" style="color: #003087;"></i>
+        <i class="fa-brands fa-apple-pay"></i>
+        <i class="fa-brands fa-google-pay"></i>
+    </div>
+
+</div>
+
+</div>
+
+
+
+<div id="meno-overlay" class="meno-overlay">
+    
+    <div class="cdf">
+    <div class="meno-ta">
+     
+        Explore all pages and sections of our store
+        <button id="threw" class="threww">✕</button>
+    </div>
+
+    <!-- صندوق الاقتراحات -->
+    <div class="meno-box">
+        <div style="margin-right: 200px;"> 
+<div style="font-size: 30px; margin-bottom: 10px; color: #0C3823;"> Your Personal Hub</div>
+<div style="margin-bottom: 5px;">Services</div>
+<div style="margin-bottom: 5px;">Products</div>
+<div style="margin-bottom: 5px;">Initial Skin Assessment</div>
+<div style="margin-bottom: 5px;">My Profile</div>
+<div > Product Guide</div>
+
+        </div>
+        
+
+<div style="margin-right: 200px;"> 
+<div style="font-size: 30px; margin-bottom: 10px; color: #0C3823"> our doctors</div>
+<div style="margin-bottom: 5px;">Doctors</div>
+<div style="margin-bottom: 5px;">buon baekhyun</div>
+<div style="margin-bottom: 5px;">buon baekhyun</div>
+<div style="margin-bottom: 5px;">buon baekhyun</div>
+<div style="margin-bottom: 5px;">buon baekhyun</div>
+<div style="margin-bottom: 5px;">buon baekhyun</div>
+<div style="margin-bottom: 5px;">buon baekhyun</div>
+<div style="margin-bottom: 5px;">buon baekhyun</div>
+
+        </div>
+
+
+        <div style="margin-right: 200px;"> 
+          <div style="font-size: 30px; margin-bottom: 10px; color: #0C3823"> kids area</div>
+<div style="margin-bottom: 5px;"> kids area</div>
+<div style="margin-bottom: 5px;">vip</div>
+<div style="margin-bottom: 5px;">lab</div>
+<div style="margin-bottom: 5px;">gift vaww</div>
+        </div>
+
+
+        <div > 
+<div style="font-size: 30px; margin-bottom: 10px; color: #0C3823"> about as</div>
+<div style="margin-bottom: 5px;">vip</div>
+<div style="margin-bottom: 5px;">lab</div>
+<div>gift vaww</div>
+
+
+        </div>
+
+    </div>
+    </div>
+</div>
+
+
+
+
+<div id="profileSection" class="profile-modal">
+  <div class="profile-content">
+    <!-- زر إغلاق السيكشن -->
+    <span class="closeqw-btn" onclick="toggleProfile()">&times;</span>
+    
+    
+  <!-- الهيدر: يحتوي على صورة القفل والعنوان -->
+  <div class="card-header">
+    <div class="icon-container">
+      <img src="loke.jpg"  class="lock-img">
+    </div>
+    <div class="header-text">
+      <h2>JOIN OUR LOYALTY PROGRAM</h2>
+      <p>Get rewarded every time you shop.</p>
+    </div>
+  </div>
+
+  <!-- قائمة الميزات -->
+  <ul class="features-list">
+    <li>
+      <span class="check-icon">&#10004;</span>
+      Earn points when you shop
+    </li>
+    <li>
+      <span class="check-icon">&#10004;</span>
+      Unlock early product access
+    </li>
+    <li>
+      <span class="check-icon">&#10004;</span>
+      Redeem points for money off
+    </li>
+  </ul>
+
+  <!-- الأزرار -->
+  <div class="buttons-container">
+    <a href="login.html" class="btnxc btn-login">Sign In</a>
+    <a href="mypro.html" class="btnxc btn-create">My Profile</a>
+  </div>
+</div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+window.onclick = function(event) {
+  const profileModal = document.getElementById("profileSection");
+  if (event.target === profileModal) {
+    profileModal.classList.remove("active");
+  }
+}
+
+
+
+
+
+
+
+document.getElementById("skinPhoto").addEventListener("change", function(event) {
+
+    const file = event.target.files[0];
+
+    if (file) {
+        const reader = new FileReader();
+
+        reader.onload = function(e) {
+            const img = document.createElement("img");
+            img.src = e.target.result;
+            img.style.width = "100px";
+            img.style.height = "100px";
+            img.style.objectFit = "cover";
+            img.style.borderRadius = "12px";
+
+            document.querySelector(".card-img").innerHTML = "";
+            document.querySelector(".card-img").appendChild(img);
+        };
+
+        reader.readAsDataURL(file);
+    }
+
+});
+ 
+const myproone = document.getElementById("myproone");
+const myprotwo = document.getElementById("myprotwo");
+const myprothree = document.getElementById("myprothree");
+const myprofour = document.getElementById("myprofour");
+
+const myprotime = document.getElementById("myprotime");
+const myproase = document.getElementById("myproase");
+const myproover = document.getElementById("myproover");
+const myoverb = document.getElementById("myoverb");
+const myprointeg = document.getElementById("myprointeg");
+
+const fiu = document.getElementById("fiu");
+
+
+myproone.addEventListener('click' , function(){
+myprotime.style.display='none';
+myproase.style.display='none';
+myproover.style.display='block';
+myoverb.style.display='block';
+myprointeg.style.display='none';
+fiu.style.marginTop='120px';
+
+ });
+
+
+ myprotwo.addEventListener('click' , function(){
+myprotime.style.display='none';
+myproase.style.display='block';
+myproover.style.display='none';
+myoverb.style.display='none';
+myprointeg.style.display='none';
+fiu.style.marginTop='350px';
+ });
+
+
+
+ myprothree.addEventListener('click' , function(){
+myprotime.style.display='none';
+myproase.style.display='none';
+myproover.style.display='none';
+myoverb.style.display='none';
+myprointeg.style.display='block';
+fiu.style.marginTop='420px';
+ });
+
+
+
+ myprofour.addEventListener('click' , function(){
+myprotime.style.display='block';
+myproase.style.display='none';
+myproover.style.display='none';
+myoverb.style.display='none';
+myprointeg.style.display='none';
+fiu.style.marginTop='350px';
+ });
+
+
+
+
+
+</script>
+
+
+
+
+    </body>
+</html>
 
 
 
