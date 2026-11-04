@@ -1,0 +1,46 @@
+.lumi {
+    width: 100%;
+    height: 600px;
+    background-image: url('lumi.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 50px;
+}
+
+.lumi-container {
+    color: #0c3823;
+    font-size: 25px;
+    font-weight: normal;
+    text-align: center;
+
+}
+
+.namepho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: #0c3823;
+    font-size: 40px;
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sub-title {
+    font-size: 16px;
+    letter-spacing: 4px;
+    margin-top: 4px;
+}
+
+
+.bbb{
+    color: #0c3823;
+    font-size: 23px;
+    font-weight: normal;
+    text-align: center;
+}
