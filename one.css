@@ -914,7 +914,9 @@ flex-direction: column;
 .labte{ text-align: center; margin-top: 40px;  height: 300px; margin-left: 100px;}
 .col{display: flex; align-items: center;}
 .lll{ font-size: 50px; font-family: "Charm", cursive; color: #0C3823;}
-.labbt {width: 250px; height: 50px;margin-top: 50px; background-color: #0C3823; color: #f8f3e7; border: none; border-radius: 20px;}
+.labbt {width: 250px;
+    height: 50px;margin-top: 50px; background-color: #0C3823; color: #f8f3e7; border: none; border-radius: 20px;text-decoration: none;}
+    .labbt:visited{color:ffffff;}
 
 
 
@@ -2234,11 +2236,16 @@ color: #ced2d0;
   border: none;
   padding: 10px 22px;
   font-size: 0.8rem;
+
   letter-spacing: 1.5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   align-self: flex-start;
+  text-decoration: none;
   border-radius: 12px;
+}
+.join-btn:visited{
+    color: #ffffff;
 }
 
 .join-btn:hover {
