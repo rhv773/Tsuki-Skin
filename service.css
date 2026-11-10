@@ -71,8 +71,8 @@
 .zxczx{ position: absolute; bottom: 170px; font-size: 20px;left: 50px;}
 .zxczxc{ position: absolute; bottom: 115px;font-size: 20px;left: 50px;}
 .zxczxcz{ position: absolute; bottom: 90px;font-size: 20px;left: 50px;}
-.zxczxczx{ position: absolute; bottom: 20px;font-size: 20px;left: 250px; height: 40px; width: 190px; border-radius: 12px; background-color: #0C3823; transition: background-color 0.3s ease; border: none; color: #f8f3e7;}
-.zxczxczx:hover{background-color: beige; color: #0C3823; border: 1px solid #0C3823 ; }
+.zxczxczx{ position: absolute; bottom: 20px;font-size: 20px;left: 250px; height: 40px; width: 190px; border-radius: 12px; background-color: #35432e; transition: background-color 0.3s ease; border: none; color: #f8f3e7;}
+.zxczxczx:hover{background-color: beige; color: #35432e; border: 1px solid #35432e ; }
 .three{ font-size: 50px; padding-top: 100px;  font-family: "Charm", cursive; margin-left: 80px; color: #090909;}
 
 
