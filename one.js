@@ -381,8 +381,8 @@ makeupp.addEventListener('click', () => {
   
   bqw.style.backgroundColor = '#fdeded';
   bqww.style.backgroundColor = '#F5D6C6';
-  bqwww.style.backgroundColor = '#D39E82';
-  bqwwww.style.backgroundColor = '#603E2D';
+  bqwww.style.backgroundColor = '#d6a48a';
+  bqwwww.style.backgroundColor = '#a96341';
   bqwwwwi.style.backgroundColor = '#422b1f';
   bqwwwwii.style.backgroundColor = '#281d17';
 bqwr.style.backgroundColor='#f17878';
