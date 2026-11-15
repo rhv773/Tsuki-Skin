@@ -1,6 +1,6 @@
 
 :root {
-    --primary: #a8bfa8;
+    --primary : #35432e;
     --primary-dark: #d48374;
     --bg-color: #eee9e7;
     --card-bg: #ffffff;
@@ -30,7 +30,7 @@
 
 .form-container h1 {
     text-align: center;
-    color:  #a8bfa8;
+    color:#35432e;
     margin-bottom: 30px;
      font-family: "Charm", cursive;
 }
@@ -114,9 +114,10 @@
 
 .form-container .skin-card input:checked + label {
     border-color: var(--primary);
-    background-color: #a8bfa8;
+    background-color :#35432e;
     color: rgb(9, 9, 9);
     font-weight: bold;
+    color: #fff;
 }
 
 
@@ -218,7 +219,7 @@
 
 .form-container .color-option input:checked + label {
   
-    background: #a8bfa8;
+    background : #35432e;
     color: #f0f0f0;
     border: none;
 }
@@ -335,7 +336,7 @@
 }
 
 .sub{
- font-size: 15px; border: none;   width: 150px; height: 40px; border-radius: 12px; background-color: #a8bfa8; color: #fff;
+ font-size: 15px; border: none;   width: 150px; height: 40px; border-radius: 12px; background-color : #35432e; color: #fff;
 }
 
 /* =========================
