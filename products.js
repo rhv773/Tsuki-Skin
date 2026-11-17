@@ -1388,3 +1388,41 @@ window.onclick = function(event) {
     profileModal.classList.remove("active");
   }
 }
+
+
+
+let currentProducts = {};
+
+function updateCurrentProducts() {
+    for (let i = 1; i <= 12; i++) {
+        let name = document.getElementById("pname" + i);
+        let price = document.getElementById("pra" + i);
+        let image = document.getElementById("pmg" + i);
+        let description = document.getElementById("pwa" + i);
+
+        currentProducts[i] = {
+            id: name.textContent.trim(),
+            name: name.textContent.trim(),
+            price: parseFloat(price.textContent),
+            image: image.src,
+            description: description.textContent
+        };
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
