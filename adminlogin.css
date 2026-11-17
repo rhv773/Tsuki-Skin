@@ -1,0 +1,90 @@
+body {
+    margin: 0; 
+}
+
+.adlog {
+    width: 100%;
+    height: 100vh;
+    background-image: url('admlog.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardlog {
+    display: grid;
+    grid-template-columns: 420px 1fr; 
+    width: 950px;
+    height: 590px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+    background-color: #faf8f5;
+    overflow: hidden; 
+}
+
+.card1log {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
+.form-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+}
+
+
+.line {
+    width: 45px;
+    height: 2px;
+    background-color: #35432e;
+    margin-bottom: 25px;
+}
+
+.inputtt {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 340px; 
+}
+
+.typppp {
+    width: 100%;
+    height: 45px;
+    padding: 0 20px;
+    border-radius: 25px;
+    border: 1px solid #d5d0c5;
+    outline: none;
+    background-color: #faf8f5;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.typppp:focus {
+    border-color: #35432e;
+}
+
+.btn-login {
+    width: 100%;
+    height: 45px;
+    border-radius: 25px;
+    border: none;
+    background-color: #35432e;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.btn-login:hover {
+    background-color: #273222;
+}

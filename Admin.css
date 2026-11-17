@@ -94,7 +94,7 @@ body {
   width: 300ps;
   height: 160px;
   background-color: #ffffff;
-  box-shadow: 0 4px 12px rgb(0, 0, 0, 0.08);
+  box-shadow: 0 4px 12px rgb(0, 0, 0, 0.03);
 }
 
 .anaicon {
