@@ -1391,6 +1391,7 @@ window.onclick = function(event) {
 
 
 
+<<<<<<< HEAD
 let currentProducts = {};
 
 function updateCurrentProducts() {
@@ -1412,6 +1413,8 @@ function updateCurrentProducts() {
 
 
 
+=======
+>>>>>>> ec1dd0209055c1108232d2e480fc8d25ccde388a
 
 
 
@@ -1426,3 +1429,52 @@ function updateCurrentProducts() {
 
 
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.querySelectorAll('.wew').forEach((card) => {
+    card.style.cursor = 'pointer';
+    card.addEventListener('click', (e) => {
+        if (e.target.tagName === 'BUTTON') return;
+        
+        const img = card.querySelector('img').src;
+        const name = card.querySelector('.tetow div:nth-child(1)').innerText;
+        const desc = card.querySelector('.tetow div:nth-child(2)').innerText;
+        const price = card.querySelector('div[id^="pra"], div[style*="bottom: 60px"]').innerText;
+
+        localStorage.setItem('selectedProduct', JSON.stringify({ img, name, desc, price }));
+        window.location.href = 'productone.html';
+    });
+});
+
+
+const specialProduct = document.querySelector('.foa'); 
+if (specialProduct) {
+    specialProduct.style.cursor = 'pointer';
+    specialProduct.addEventListener('click', (e) => {
+        if (e.target.tagName === 'BUTTON') return;
+        
+        const img = document.getElementById('pfashm').src;
+        const name = document.getElementById('pfasht').innerText;
+        const desc = document.getElementById('pfashp').innerText;
+        const price = document.getElementById('pfashs').innerText;
+
+        localStorage.setItem('selectedProduct', JSON.stringify({ img, name, desc, price }));
+        window.location.href = 'productone.html';
+    });
+}
+>>>>>>> ec1dd0209055c1108232d2e480fc8d25ccde388a
