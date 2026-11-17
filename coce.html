@@ -28,6 +28,7 @@
 <link rel="stylesheet" href=" one.css">
 
 <script src="one.js" defer></script>
+<script src="coce.js" defer></script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -109,7 +110,7 @@
 
 
 
-<section style="width: 1420px; min-height: 850px; margin: 0 auto; padding: 45px 55px; box-sizing: border-box; background-color: #fbf7e4; font-family: Arial, sans-serif; color: #26382d;">
+<section style="width: 1420px; min-height: 850px; margin: 0 auto; padding: 45px 55px; box-sizing: border-box;  font-family: Arial, sans-serif; color: #26382d;">
 
     <!-- PAGE TITLE -->
     <div style="margin-bottom: 35px;">
@@ -128,74 +129,7 @@
                 <span style="font-size: 14px; font-weight: bold; color: #526354; margin-right: 15px;">PRICE</span>
             </div>
 
-            <!-- PRODUCT 1 -->
-            <div style="display: flex; align-items: center; padding: 25px 15px; border-bottom: 1px solid #e8e2d2; gap: 20px;">
-
-                <img src="https://placehold.co/120x130/f0e9db/526354?text=Product" style="width: 120px; height: 130px; object-fit: cover; border-radius: 8px;">
-
-                <div style="flex: 1;">
-                    <p style="font-size: 11px; color: #9a9c88; letter-spacing: 1px; margin: 0 0 8px;">SKINCARE</p>
-                    <h3 style="font-size: 17px; color: #0c3823; margin: 0 0 8px;">Hydrating Face Serum</h3>
-                    <p style="font-size: 13px; color: #888b7f; margin: 0 0 12px;">Suitable for combination skin</p>
-
-                    <div style="display: flex; align-items: center; gap: 12px;">
-                        <div style="display: flex; align-items: center; border: 1px solid #dcd8c7; border-radius: 5px; height: 30px;">
-                            <button style="border: none; background: transparent; padding: 5px 10px; cursor: pointer; color: #0c3823;">−</button>
-                            <span style="font-size: 13px;">1</span>
-                            <button style="border: none; background: transparent; padding: 5px 10px; cursor: pointer; color: #0c3823;">+</button>
-                        </div>
-                        <button style="border: none; background: transparent; color: #a17f70; font-size: 12px; cursor: pointer;">Remove</button>
-                    </div>
-                </div>
-
-                <span style="font-size: 16px; font-weight: bold; color: #0c3823; white-space: nowrap;">24.00 JOD</span>
-            </div>
-
-            <!-- PRODUCT 2 -->
-            <div style="display: flex; align-items: center; padding: 25px 15px; border-bottom: 1px solid #e8e2d2; gap: 20px;">
-
-                <img src="https://placehold.co/120x130/eee5d9/526354?text=Product" style="width: 120px; height: 130px; object-fit: cover; border-radius: 8px;">
-
-                <div style="flex: 1;">
-                    <p style="font-size: 11px; color: #9a9c88; letter-spacing: 1px; margin: 0 0 8px;">SKINCARE</p>
-                    <h3 style="font-size: 17px; color: #0c3823; margin: 0 0 8px;">Daily Moisturizing Cream</h3>
-                    <p style="font-size: 13px; color: #888b7f; margin: 0 0 12px;">Suitable for sensitive skin</p>
-
-                    <div style="display: flex; align-items: center; gap: 12px;">
-                        <div style="display: flex; align-items: center; border: 1px solid #dcd8c7; border-radius: 5px; height: 30px;">
-                            <button style="border: none; background: transparent; padding: 5px 10px; cursor: pointer; color: #0c3823;">−</button>
-                            <span style="font-size: 13px;">1</span>
-                            <button style="border: none; background: transparent; padding: 5px 10px; cursor: pointer; color: #0c3823;">+</button>
-                        </div>
-                        <button style="border: none; background: transparent; color: #a17f70; font-size: 12px; cursor: pointer;">Remove</button>
-                    </div>
-                </div>
-
-                <span style="font-size: 16px; font-weight: bold; color: #0c3823; white-space: nowrap;">18.00 JOD</span>
-            </div>
-
-            <!-- PRODUCT 3 -->
-            <div style="display: flex; align-items: center; padding: 25px 15px; border-bottom: 1px solid #e8e2d2; gap: 20px;">
-
-                <img src="https://placehold.co/120x130/ece7d9/526354?text=Product" style="width: 120px; height: 130px; object-fit: cover; border-radius: 8px;">
-
-                <div style="flex: 1;">
-                    <p style="font-size: 11px; color: #9a9c88; letter-spacing: 1px; margin: 0 0 8px;">MAKEUP</p>
-                    <h3 style="font-size: 17px; color: #0c3823; margin: 0 0 8px;">Natural Glow Foundation</h3>
-                    <p style="font-size: 13px; color: #888b7f; margin: 0 0 12px;">Lightweight daily coverage</p>
-
-                    <div style="display: flex; align-items: center; gap: 12px;">
-                        <div style="display: flex; align-items: center; border: 1px solid #dcd8c7; border-radius: 5px; height: 30px;">
-                            <button style="border: none; background: transparent; padding: 5px 10px; cursor: pointer; color: #0c3823;">−</button>
-                            <span style="font-size: 13px;">1</span>
-                            <button style="border: none; background: transparent; padding: 5px 10px; cursor: pointer; color: #0c3823;">+</button>
-                        </div>
-                        <button style="border: none; background: transparent; color: #a17f70; font-size: 12px; cursor: pointer;">Remove</button>
-                    </div>
-                </div>
-
-                <span style="font-size: 16px; font-weight: bold; color: #0c3823; white-space: nowrap;">32.00 JOD</span>
-            </div>
+        <div id="cartItems"></div>
 
             <a href="products.html" style="display: inline-block; margin-top: 25px; color: #0c3823; font-size: 14px; text-decoration: none; border-bottom: 1px solid #0c3823; padding-bottom: 4px;">← Continue Shopping</a>
 
@@ -204,7 +138,11 @@
         <!-- RIGHT SIDE : ORDER SUMMARY -->
         <div style="width: 380px; background-color: #fffdf5; border: 1px solid #e9e3d3; border-radius: 10px; padding: 28px; box-sizing: border-box;">
 
-            <h2 style="font-size: 21px; color: #0c3823; font-weight: 500; margin: 0 0 25px;">Order Summary</h2>
+            <h2 style="font-size: 21px; color: #0c3823; font-weight: 500; margin: 0 0 0 px;">Order Summary</h2>
+
+
+
+
 
             <div style="display: flex; justify-content: space-between; margin-bottom: 20px; font-size: 14px;">
                 <span style="color: #85877c;">Subtotal (3 items)</span>
@@ -231,6 +169,9 @@
                 </div>
             </div>
 
+
+ 
+
             <div style="border-top: 1px solid #e6e0d0; padding-top: 22px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px;">
                 <span style="font-size: 16px; font-weight: bold; color: #0c3823;">Total</span>
                 <span style="font-size: 22px; font-weight: bold; color: #0c3823;">69.00 JOD</span>
@@ -244,11 +185,28 @@
 
         </div>
 
+
+
     </div>
 
 </section>
 
 
+<div style="border-top: 1px solid #e6e0d0; padding-top: 22px; margin-bottom: 25px;">
+                <div class="shipping-progress-container">
+
+      <p class="shipping-text">
+        YOU ARE <span id="amount-away" class="pink-text">50 JOD</span> AWAY FROM FREE SHIPPING
+      </p>
+
+
+      <div class="progress-bar-bg">
+        <div id="progress-fill" class="progress-bar-fill" style="width: 50%;"></div>
+      </div>
+      <img src="trackn.jpg"
+        style="width: 30px; border: 2px solid black; height: 30px; border-radius: 50%; position: absolute; top: 375px; right: 410px;">
+    </div>
+            </div>
 
 
 
@@ -525,176 +483,7 @@
 </footer>
 
 
-  <!-- خلفية معتمة عند فتح السلة -->
-  <div id="cart-overlay" class="cart-overlay"></div>
 
-  <!-- القائمة الجانبية للسلة -->
-  <div id="cart-drawer" class="cart-drawer">
-    <!-- الهيدر: العنوان وزر الإغلاق -->
-    <div class="cart-header">
-      <h2>SHOPPING BAG (<span id="cart-count-title">0</span>)</h2>
-      <button id="close-cart-btn" class="close-cart-btn">✕</button>
-    </div>
-
-    <div class="shipping-progress-container">
-
-      <p class="shipping-text">
-        YOU ARE <span id="amount-away" class="pink-text">50 JOD</span> AWAY FROM FREE SHIPPING
-      </p>
-
-
-      <div class="progress-bar-bg">
-        <div id="progress-fill" class="progress-bar-fill" style="width: 50%;"></div>
-      </div>
-      <img src="trackn.jpg"
-        style="width: 35px; border: 2px solid black; height: 35px; border-radius: 50%; position: absolute; top: 145px; right: 29px;">
-    </div>
-
-    <div class="cart-body">
-
-
-
-      <!-- 1. المنتج الرئيسي في السلة -->
-      <div class="cart-main-item">
-        <img src="https://via.placeholder.com/80" alt="Product" class="item-img">
-        <div class="item-info">
-          <h3>EASY BAKE PRESSED POWDER</h3>
-          <p class="item-variant">Banana Bread • 8.5G / 0.29 OZ</p>
-          <p class="item-price">43.00 JOD</p>
-
-          <!-- أزرار زيادة ونقصان الكمية -->
-          <div class="quantity-box">
-            <button>-</button>
-            <span>1</span>
-            <button>+</button>
-          </div>
-        </div>
-        <!-- زر الحذف -->
-        <button class="delete-btn"><i class="fa-solid fa-trash-can"></i></button>
-      </div>
-
-
-
-
-
-      <!-- 2. قسم التوصيات (Recommended For You) القابل للسحب يمين ويسار -->
-      <div class="recommended-section">
-        <div class="rec-header">
-          <span>RECOMMENDED FOR YOU</span>
-          <i class="fa-solid fa-chevron-up"></i>
-        </div>
-
-        <!-- حاوية المنتجات التي تتحرك يمين ويسار -->
-        <div class="rec-slider">
-          <!-- المنتج المقترَح الأول -->
-          <div class="rec-card">
-            <img src="https://via.placeholder.com/70" alt="Rec Product">
-            <div class="rec-details">
-              <h4>Easy Bake Loose Baking & Setting Powder</h4>
-              <select class="rec-select">
-                <option>Peach Pie</option>
-              </select>
-              <div class="rec-price-btn">
-                <span>$43.00</span>
-                <button class="add-bag-btn">ADD TO BAG</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- المنتج المقترَح الثاني (يمكنك نسخه لزيادة المنتجات التي تتحرك يمين وشمال) -->
-          <div class="rec-card">
-            <img src="https://via.placeholder.com/70" alt="Rec Product">
-            <div class="rec-details">
-              <h4>Liquid Matte Lipstick</h4>
-              <select class="rec-select">
-                <option>Bombshell</option>
-              </select>
-              <div class="rec-price-btn">
-                <span>$21.00</span>
-                <button class="add-bag-btn">ADD TO BAG</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 3. أقسام الهدايا والعينات -->
-
-
-
-    </div>
-
-    <!-- فوتر السلة (المجموع وزر الدفع) -->
-    <div class="cart-footer">
-
-      <!-- صندوق النقاط الوردي -->
-      <div class="points-box">
-        <i class="fa-solid fa-crown points-icon"></i>
-        <div class="points-text">
-          <p>Earn <strong>43 Points</strong> on this order</p>
-          <p class="points-sub">Save USD 15.00 next time with 150 Points.</p>
-          <a href="#" class="pink-link">Log in</a> or <a href="#" class="pink-link">Create an account</a>
-        </div>
-      </div>
-
-      <!-- ملخص الطلب (Order Summary) -->
-      <div class="order-summary">
-        <h3>ORDER SUMMARY</h3>
-        <div class="summary-row">
-          <span>Subtotal</span>
-          <span>$43.00</span>
-        </div>
-        <div class="summary-row">
-          <span>Delivery</span>
-          <span class="muted-text">To be calculated at checkout</span>
-        </div>
-        <div class="summary-row">
-          <span>Discounts</span>
-          <span>$0.00</span>
-        </div>
-
-        <div class="summary-divider"></div>
-
-        <div class="summary-row total-row-bold">
-          <span class="pink-title">ORDER TOTAL</span>
-          <span class="pink-price">$43.00</span>
-        </div>
-      </div>
-
-      <!-- زر الدفع الآمن -->
-      <button class="checkout-secure-btn">
-        CHECKOUT SECURELY <i class="fa-solid fa-lock"></i>
-      </button>
-
-      <!-- خط فاصل مع نص Express checkout -->
-      <div class="express-divider">
-        <span>Express checkout</span>
-      </div>
-
-      <!-- أزرار الدفع السريع (PayPal و Google Pay) -->
-      <div class="express-pay-buttons">
-        <button class="pay-btn paypal-btn">
-          <i class="fa-brands fa-paypal"><b>PayPal</b></i>
-        </button>
-        <button class="pay-btn gpay-btn">
-          <i class="fa-brands fa-google-pay"></i> G Pay
-        </button>
-      </div>
-
-      <p class="choose-method-text">Choose your payment method at checkout.</p>
-
-      <!-- أيقونات البطاقات في الأسفل -->
-      <div class="payment-icons">
-        <i class="fa-brands fa-cc-visa" style="color: #1a1f71;"></i>
-        <i class="fa-brands fa-cc-mastercard" style="color: #eb001b;"></i>
-        <i class="fa-brands fa-cc-paypal" style="color: #003087;"></i>
-        <i class="fa-brands fa-apple-pay"></i>
-        <i class="fa-brands fa-google-pay"></i>
-      </div>
-
-    </div>
-
-  </div>
 
 
 

@@ -28,6 +28,11 @@ font-family: 'Courier New', Courier, monospace;
 padding: 8px 0;
 }
 
+.fa-solid fa-cart-shopping{
+color: #35432e;
+
+}
+
 .roro{
     position: fixed;
 width: 100px;
@@ -1735,18 +1740,18 @@ color: #ced2d0;
 /* حاوية شريط التقدم */
 .shipping-progress-container {
     padding: 15px 20px;
-    background-color: #faf8f5;
+   
     border-bottom: 1px solid #eeeeee;
-    text-align: center;
-    height: 200px;
+   
+    height: 50px;
 }
 
 /* النص العلوي */
 .shipping-text {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: bold;
     color: #111;
-    margin-bottom: 25px;
+   margin-bottom: 10px;
     letter-spacing: 0.5px;
 }
 

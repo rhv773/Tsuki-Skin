@@ -497,7 +497,7 @@ pallcolor63.addEventListener('click' , function(){
 pmg12.src='c1g.webp'; });
 
 
-
+updateCurrentProducts();
 });
 
 
@@ -739,7 +739,7 @@ pra12.textContent = '25.70 JOD';
 pta12.textContent = '★★★★★ 34.8k review';
 
 
-
+updateCurrentProducts();
 });
 
 
@@ -1233,7 +1233,7 @@ pmg12.src='c1g.webp'; });
 
 
 
-
+updateCurrentProducts();
 
 });
 
@@ -1391,12 +1391,13 @@ window.onclick = function(event) {
 
 
 
-<<<<<<< HEAD
+
 let currentProducts = {};
 
 function updateCurrentProducts() {
     for (let i = 1; i <= 12; i++) {
         let name = document.getElementById("pname" + i);
+      
         let price = document.getElementById("pra" + i);
         let image = document.getElementById("pmg" + i);
         let description = document.getElementById("pwa" + i);
@@ -1412,25 +1413,6 @@ function updateCurrentProducts() {
 }
 
 
-
-=======
->>>>>>> ec1dd0209055c1108232d2e480fc8d25ccde388a
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<<<<<<< HEAD
-=======
 
 
 
@@ -1477,4 +1459,31 @@ if (specialProduct) {
         window.location.href = 'productone.html';
     });
 }
->>>>>>> ec1dd0209055c1108232d2e480fc8d25ccde388a
+
+
+
+
+
+
+function addToCart(cardNumber) {
+
+    updateCurrentProducts();
+
+    let product = currentProducts[cardNumber];
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    cart.push({
+        id: product.id,
+        name: product.name,
+        price: product.price,
+        image: product.image,
+        description: product.description,
+        quantity: 1
+    });
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    alert("Product added to cart successfully!");
+
+}
