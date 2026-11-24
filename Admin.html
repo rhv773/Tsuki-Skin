@@ -2,10 +2,15 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
+
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <link rel="stylesheet" href="Admin.css">
 </head>
 
@@ -13,88 +18,898 @@
 
     <div class="alll">
 
+
+        <input type="radio" name="tab" id="dashboard" checked>
+        <input type="radio" name="tab" id="users">
+        <input type="radio" name="tab" id="doctors">
+        <input type="radio" name="tab" id="products">
+        <input type="radio" name="tab" id="appointments">
+
+
+        <!-- Sidebar -->
         <div class="dashbar">
 
             <div class="loglog">
-                <img src="looooo.png" style="height: 70px; width: 185px;">
+                <img src="looooo.png">
             </div>
 
-
             <nav class="nav-menu">
-                <a href="" class="nav-item active">
+
+                <label for="dashboard" class="nav-item">
                     <img class="icon" src="ddash.png">
                     <span>Dashboard</span>
-                </a>
-                <a href="" class="nav-item">
+                </label>
+
+                <label for="users" class="nav-item">
                     <img class="icon" src="dper.png">
                     <span>Users</span>
-                </a>
-                <a href="" class="nav-item">
+                </label>
+
+                <label for="doctors" class="nav-item">
                     <img class="icon" src="dper.png">
                     <span>Doctors</span>
-                </a>
-                <a href="" class="nav-item">
+                </label>
+
+                <label for="products" class="nav-item">
                     <img class="icon" src="dpro.png">
                     <span>Products</span>
-                </a>
-                <a href="" class="nav-item">
+                </label>
+
+                <label for="appointments" class="nav-item">
                     <img class="icon" src="dappo.png">
                     <span>Appointments</span>
-                </a>
+                </label>
+
             </nav>
 
             <div class="sidebar-footer">
-                <a href="" class="nav-item">
+                <a href="adminlogin.html" class="nav-item">
                     <img class="icon" src="dlog.png">
                     <span>Logout</span>
                 </a>
             </div>
+
         </div>
 
 
+        <!-- Main Content -->
         <div class="maindash">
-            <div style="color: #35432e; font-size: 49px; font-family: 'display';">Admin Dashboard</div>
-            <h3 style="color: #606160; font-weight: normal; font-family: 'Inter', sans-serif;">Welcome back! Here's an
-                overview of the platform.</h3>
+
+
+            <!-- DASHBOARD -->
+            <section class="dashboard-content">
+
+                <div class="page-title">Admin Dashboard</div>
+
+                <h3 class="welcome">
+                    Welcome back! Here's an overview of the platform.
+                </h3>
+
+
+                <section class="gridana">
+
+                    <div class="carddd">
+                        <img class="anaicon" src="ad1.jpeg">
+
+                        <div class="numpoo">
+                            <h2>11,145</h2>
+                            <h4>Total Users</h4>
+                            <div class="percentage">↗ +12%</div>
+                        </div>
+
+                        <img class="anaiconn" src="hhiiiggg.jpeg">
+                    </div>
+
+
+                    <div class="carddd">
+                        <img class="anaicon" src="ad2.jpeg">
+
+                        <div class="numpoo">
+                            <h2>30</h2>
+                            <h4>Total Doctors</h4>
+                            <div class="percentage">↗ +8%</div>
+                        </div>
+
+                        <img class="anaiconn" src="hhiiiggg.jpeg">
+                    </div>
+
+
+                    <div class="carddd">
+                        <img class="anaicon" src="ad3.jpeg">
+
+                        <div class="numpoo">
+                            <h2>1,260</h2>
+                            <h4>Appointments</h4>
+                            <div class="percentage">↗ +15%</div>
+                        </div>
+
+                        <img class="anaiconn" src="hhiiiggg.jpeg">
+                    </div>
+
+
+                    <div class="carddd">
+                        <img class="anaicon" src="ad4.jpeg">
+
+                        <div class="numpoo">
+                            <h2>580</h2>
+                            <h4>Products</h4>
+                            <div class="percentage">↗ +10%</div>
+                        </div>
+
+                        <img class="anaiconn" src="hhiiiggg.jpeg">
+                    </div>
+
+                </section>
+
+
+                <section class="ctrr">
+
+                    <div class="carddd2">
+                        <h2 style="font-family: 'Times New Roman'; font-weight: normal; font-size: 27px;">Top Products
+                        </h2>
+                        <div class="toppp" style="margin-top: 30px;">
+                            <img class="anaicon" src="l1a.webp">
+                            <div>
+                                <h2>Easy Bake Powder</h2>
+                                <h5>1,520 sold</h5>
+                            </div>
+                        </div>
+                        <div class="toppp">
+                            <img class="anaicon" src="q3an.png">
+                            <div>
+                                <h2>PDRN Hyaluronic Serum</h2>
+                                <h5>980 sold</h5>
+                            </div>
+                        </div>
+                        <div class="toppp">
+                            <img class="anaicon" src="s1ana.webp">
+                            <div>
+                                <h2>Day Dew Sunscreen</h2>
+                                <h5>760 sold</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carddd2">
+                        <h2 style="font-family: 'Times New Roman'; font-weight: normal; font-size: 27px;">Recent Users
+                        </h2>
+                        <div class="toppp" style="margin-top: 30px;">
+                            <img class="anaicon" src="userrrr.jpeg">
+                            <div>
+                                <h2>Kai Bannett</h2>
+                                <h5>kaibannett@gmail.com</h5>
+                            </div>
+                        </div>
+                        <div class="toppp">
+                            <img class="anaicon" src="userrrr.jpeg">
+                            <div>
+                                <h2>Maya Naser</h2>
+                                <h5>mayanaser@gmail.com</h5>
+                            </div>
+                        </div>
+                        <div class="toppp">
+                            <img class="anaicon" src="userrrr.jpeg">
+                            <div>
+                                <h2>Sophia Khaled</h2>
+                                <h5>sophiakhaled@gmail.com</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carddd2">
+                        <h2 style="font-family: 'Times New Roman'; font-weight: normal; font-size: 27px;">Recent
+                            Appointments</h2>
+                        <div class="toppp" style="margin-top: 30px;">
+                            <img class="anaicon" src="ad3.jpeg">
+                            <div>
+                                <h2>Skin Consultation</h2>
+                                <h5>Jan 20, 2027 • 10:00 AM</h5>
+                            </div>
+                        </div>
+                        <div class="toppp">
+                            <img class="anaicon" src="ad3.jpeg">
+                            <div>
+                                <h2>Jawline Filler Session</h2>
+                                <h5>Jan 20, 2027 • 02:00 PM</h5>
+                            </div>
+                        </div>
+                        <div class="toppp">
+                            <img class="anaicon" src="ad3.jpeg">
+                            <div>
+                                <h2>Acne Scar Laser Session</h2>
+                                <h5>Jan 19, 2027 • 11:30 AM</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+            </section>
 
 
 
-            <section class="gridana">
-                <div class="carddd">
-                    <img class="anaicon" src="dper.png">
-                    <div clas="numpoo">
-                    <h2 style="color: #35432e; font-size: 44px; font-family: 'display'; margin-left: 20px;">12,450</h2>
-                    <h4 style="color: #606160; font-weight: normal; font-family: 'Inter', sans-serif; margin-left: 20px;">Total Users</h4>
-                    <div style="color: #35432e; margin-top: 18px; font-size: 18px; margin-left: 20px;">↗ +12%</div>
+            <!-- USERS -->
+            <section class="users-content">
+
+                <div class="page-title">Users</div>
+
+                <h3 class="welcome">
+                    Manage all registered users on the platform.
+                </h3>
+
+
+                <section class="gridana">
+
+                    <div class="carddd">
+                        <img class="anaicon" src="ad1.jpeg">
+
+                        <div class="numpoo">
+                            <h2>11,145</h2>
+                            <h4>Total Users</h4>
+                        </div>
+
+                        <img class="anaiconn" src="hhiiiggg.jpeg">
                     </div>
-                </div>
-                <div class="carddd" >
-                    <img class="anaicon" src="dper.png">
-                    <div clas="numpoo">
-                    <h2 style="color: #35432e; font-size: 44px; font-family: 'display'; margin-left: 20px;">30</h2>
-                    <h4 style="color: #606160; font-weight: normal; font-family: 'Inter', sans-serif; margin-left: 20px; white-space: nowrap;">Total Doctors</h4>
-                    <div style="color: #35432e; margin-top: 18px; font-size: 18px; margin-left: 20px;">↗ +8%</div>
+
+
+                    <div class="carddd">
+                        <img class="anaicon" src="fem.jpeg">
+
+                        <div class="numpoo">
+                            <h2>10,091</h2>
+                            <h4>Femal Users</h4>
+                        </div>
+
+                        <img class="anaiconn" src="hhiiiggg.jpeg">
                     </div>
-                </div>
-                <div class="carddd">
-                    <img class="anaicon" src="dper.png">
-                    <div clas="numpoo">
-                    <h2 style="color: #35432e; font-size: 44px; font-family: 'display'; margin-left: 20px;">1,260</h2>
-                    <h4 style="color: #606160; font-weight: normal; font-family: 'Inter', sans-serif; margin-left: 20px;">Appointments</h4>
-                    <div style="color: #35432e; margin-top: 18px; font-size: 18px; margin-left: 20px;">↗ +15%</div>
+
+
+                    <div class="carddd">
+                        <img class="anaicon" src="ad3.jpeg">
+
+                        <div class="numpoo">
+                            <h2>3,160</h2>
+                            <h4>Active This Month</h4>
+                        </div>
+
+                        <img class="anaiconn" src="hhiiiggg.jpeg">
                     </div>
-                </div>
-                <div class="carddd">
-                    <img class="anaicon" src="dper.png">
-                    <div clas="numpoo">
-                    <h2 style="color: #35432e; font-size: 44px; font-family: 'display'; margin-left: 20px;">580</h2>
-                    <h4 style="color: #606160; font-weight: normal; font-family: 'Inter', sans-serif; margin-left: 20px;">Products</h4>
-                    <div style="color: #35432e; margin-top: 18px; font-size: 18px; margin-left: 20px;">↗ +10%</div>
+
+
+                    <div class="carddd">
+                        <img class="anaicon" src="gro.jpeg">
+
+                        <div class="numpoo">
+                            <h2>+12%</h2>
+                            <h4>Growth Rate</h4>
+                        </div>
+
+                        <img class="anaiconn" src="hhiiiggg.jpeg">
+                    </div>
+
+                </section>
+
+                <br><br>
+
+
+
+                <div class="table-wrapper">
+
+                    <input type="radio" name="page" id="p1" checked hidden>
+                    <input type="radio" name="page" id="p2" hidden>
+                    <input type="radio" name="page" id="p3" hidden>
+
+
+                    <div class="page-content page-1">
+
+
+                        <section>
+
+                            <div class="carddd3">
+
+                                <div class="headd">
+                                    <h3>Users List</h3>
+                                </div>
+
+
+                                <div class="collin">
+                                    <span></span>
+                                    <span>User</span>
+                                    <span>Email</span>
+                                    <span>Skin Type</span>
+                                    <span>Join Date</span>
+                                    <span>Status</span>
+                                    <span>Actions</span>
+                                </div>
+
+
+                                <div class="table-row">
+
+                                    <input type="checkbox" id="eye1" class="chk-eye" hidden>
+                                    <input type="checkbox" id="del1" class="chk-del" hidden>
+
+
+                                    <span></span>
+
+                                    <div class="user-cell">
+
+                                        <span>Kai Bannett</span>
+                                    </div>
+
+                                    <span>kaibannett@gmail.com</span>
+
+                                    <div><span class="badge">Dry</span></div>
+
+                                    <span>Jan 12, 2027</span>
+
+                                    <div><span class="status active">• Active</span></div>
+
+                                    <div class="actions-cell">
+                                        <label for="eye1"><i class="fa-regular fa-eye"></i></label>
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                        <label for="del1"><i class="fa-regular fa-trash-can"></i></label>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="table-row">
+
+                                    <input type="checkbox" id="eye2" class="chk-eye" hidden>
+                                    <input type="checkbox" id="del2" class="chk-del" hidden>
+
+                                    <span></span>
+                                    <div class="user-cell">
+                                        <span>Maya Naser</span>
+                                    </div>
+                                    <span>mayanaser@gmail.com</span>
+                                    <div><span class="badge">Oily</span></div>
+                                    <span>Dec 28, 2026</span>
+                                    <div><span class="status active">• Active</span></div>
+                                    <div class="actions-cell">
+                                        <label for="eye2"><i class="fa-regular fa-eye"></i></label>
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                        <label for="del2"><i class="fa-regular fa-trash-can"></i></label>
+                                    </div>
+                                </div>
+
+
+                                <div class="table-row">
+
+                                    <input type="checkbox" id="eye3" class="chk-eye" hidden>
+                                    <input type="checkbox" id="del3" class="chk-del" hidden>
+
+                                    <span></span>
+                                    <div class="user-cell">
+                                        <span>Sophia Khaled</span>
+                                    </div>
+                                    <span>sophiakhaled@gmail.com</span>
+                                    <div><span class="badge">Normal</span></div>
+                                    <span>Dec 20, 2026</span>
+                                    <div><span class="status active">• Active</span></div>
+                                    <div class="actions-cell">
+                                        <label for="eye3"><i class="fa-regular fa-eye"></i></label>
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                        <label for="del3"><i class="fa-regular fa-trash-can"></i></label>
+                                    </div>
+                                </div>
+
+
+                                <div class="table-row">
+
+                                    <input type="checkbox" id="eye4" class="chk-eye" hidden>
+                                    <input type="checkbox" id="del4" class="chk-del" hidden>
+
+                                    <span></span>
+                                    <div class="user-cell">
+                                        <span>Zhang Yixing</span>
+                                    </div>
+                                    <span>zhangyixing@gmail.com</span>
+                                    <div><span class="badge">Sensitive</span></div>
+                                    <span>Dec 15, 2026</span>
+                                    <div><span class="status inactive">• Inactive</span></div>
+                                    <div class="actions-cell">
+                                        <label for="eye4"><i class="fa-regular fa-eye"></i></label>
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                        <label for="del4"><i class="fa-regular fa-trash-can"></i></label>
+                                    </div>
+                                </div>
+
+                            </div>
+                    </div>
+                    <div class="page-content page-2">
+                        <section>
+
+                            <div class="carddd3">
+
+                                <div class="headd">
+                                    <h3>Users List</h3>
+                                </div>
+
+
+                                <div class="collin">
+                                    <span></span>
+                                    <span>User</span>
+                                    <span>Email</span>
+                                    <span>Skin Type</span>
+                                    <span>Join Date</span>
+                                    <span>Status</span>
+                                    <span>Actions</span>
+                                </div>
+
+
+                                <div class="table-row">
+
+                                    <input type="checkbox" id="eye5" class="chk-eye" hidden>
+                                    <input type="checkbox" id="del5" class="chk-del" hidden>
+
+                                    <span></span>
+
+                                    <div class="user-cell">
+
+                                        <span>Rayan Karim</span>
+                                    </div>
+
+                                    <span>rayankarim@gmail.com</span>
+
+                                    <div><span class="badge">Oily</span></div>
+
+                                    <span>Dec 03, 2026</span>
+
+                                    <div><span class="status inactive">• Inactive</span></div>
+
+                                    <div class="actions-cell">
+                                        <label for="eye5"><i class="fa-regular fa-eye"></i></label>
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                        <label for="del5"><i class="fa-regular fa-trash-can"></i></label>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="table-row">
+
+                                    <input type="checkbox" id="eye6" class="chk-eye" hidden>
+                                    <input type="checkbox" id="del6" class="chk-del" hidden>
+
+                                    <span></span>
+                                    <div class="user-cell">
+                                        <span>Hazal Parker</span>
+                                    </div>
+                                    <span>hazalparker@gmail.com</span>
+                                    <div><span class="badge">Normal</span></div>
+                                    <span>Nov 24, 2026</span>
+                                    <div><span class="status active">• Active</span></div>
+                                    <div class="actions-cell">
+                                        <label for="eye6"><i class="fa-regular fa-eye"></i></label>
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                        <label for="del6"><i class="fa-regular fa-trash-can"></i></label>
+                                    </div>
+                                </div>
+
+
+                                <div class="table-row">
+
+                                    <input type="checkbox" id="eye7" class="chk-eye" hidden>
+                                    <input type="checkbox" id="del7" class="chk-del" hidden>
+
+                                    <span></span>
+                                    <div class="user-cell">
+                                        <span>Mila Liam</span>
+                                    </div>
+                                    <span>milaliam@gmail.com</span>
+                                    <div><span class="badge">Combination</span></div>
+                                    <span>Nov 19, 2026</span>
+                                    <div><span class="status inactive">• Inactive</span></div>
+                                    <div class="actions-cell">
+                                        <label for="eye7"><i class="fa-regular fa-eye"></i></label>
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                        <label for="del7"><i class="fa-regular fa-trash-can"></i></label>
+                                    </div>
+                                </div>
+
+
+                                <div class="table-row">
+
+                                    <input type="checkbox" id="eye8" class="chk-eye" hidden>
+                                    <input type="checkbox" id="del8" class="chk-del" hidden>
+
+                                    <span></span>
+                                    <div class="user-cell">
+                                        <span>Rand Haddad</span>
+                                    </div>
+                                    <span>randhaddad@gmail.com</span>
+                                    <div><span class="badge">Oily</span></div>
+                                    <span>Nov 15, 2026</span>
+                                    <div><span class="status inactive">• Inactive</span></div>
+                                    <div class="actions-cell">
+                                        <label for="eye8"><i class="fa-regular fa-eye"></i></label>
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                        <label for="del8"><i class="fa-regular fa-trash-can"></i></label>
+                                    </div>
+                                </div>
+
+                            </div>
+                    </div>
+                    <div class="page-content page-3">
+                        <section>
+
+                            <div class="carddd3">
+
+                                <div class="headd">
+                                    <h3>Users List</h3>
+                                </div>
+
+
+                                <div class="collin">
+                                    <span></span>
+                                    <span>User</span>
+                                    <span>Email</span>
+                                    <span>Skin Type</span>
+                                    <span>Join Date</span>
+                                    <span>Status</span>
+                                    <span>Actions</span>
+                                </div>
+
+
+                                <div class="table-row">
+
+                                    <input type="checkbox" id="eye9" class="chk-eye" hidden>
+                                    <input type="checkbox" id="del9" class="chk-del" hidden>
+
+                                    <span></span>
+
+                                    <div class="user-cell">
+
+                                        <span>Lamar Faris</span>
+                                    </div>
+
+                                    <span>lamarfaris@gmail.com</span>
+
+                                    <div><span class="badge">Dry</span></div>
+
+                                    <span>Nov 08, 2026</span>
+
+                                    <div><span class="status active">• Active</span></div>
+
+                                    <div class="actions-cell">
+                                        <label for="eye9"><i class="fa-regular fa-eye"></i></label>
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                        <label for="del9"><i class="fa-regular fa-trash-can"></i></label>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="table-row">
+
+                                    <input type="checkbox" id="eye10" class="chk-eye" hidden>
+                                    <input type="checkbox" id="del10" class="chk-del" hidden>
+
+                                    <span></span>
+                                    <div class="user-cell">
+                                        <span>Aya Waleed</span>
+                                    </div>
+                                    <span>ayawaleed@gmail.com</span>
+                                    <div><span class="badge">Combination</span></div>
+                                    <span>Nov 01, 2026</span>
+                                    <div><span class="status inactive">• Inactive</span></div>
+                                    <div class="actions-cell">
+                                        <label for="eye10"><i class="fa-regular fa-eye"></i></label>
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                        <label for="del10"><i class="fa-regular fa-trash-can"></i></label>
+                                    </div>
+                                </div>
+
+
+                                <div class="table-row">
+
+                                    <input type="checkbox" id="eye11" class="chk-eye" hidden>
+                                    <input type="checkbox" id="del11" class="chk-del" hidden>
+
+                                    <span></span>
+                                    <div class="user-cell">
+                                        <span>Sebastian Miller</span>
+                                    </div>
+                                    <span>sebastianmiller@gmail.com</span>
+                                    <div><span class="badge">Combination</span></div>
+                                    <span>Oct 30, 2026</span>
+                                    <div><span class="status inactive">• Inactive</span></div>
+                                    <div class="actions-cell">
+                                        <label for="eye11"><i class="fa-regular fa-eye"></i></label>
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                        <label for="del11"><i class="fa-regular fa-trash-can"></i></label>
+                                    </div>
+                                </div>
+
+
+                                <div class="table-row">
+
+                                    <input type="checkbox" id="eye12" class="chk-eye" hidden>
+                                    <input type="checkbox" id="del12" class="chk-del" hidden>
+
+                                    <span></span>
+                                    <div class="user-cell">
+                                        <span>Misk Kinan</span>
+                                    </div>
+                                    <span>Miskkinan@gmail.com</span>
+                                    <div><span class="badge">Sensitive</span></div>
+                                    <span>Oct 28, 2026</span>
+                                    <div><span class="status active">• Active</span></div>
+                                    <div class="actions-cell">
+                                        <label for="eye12"><i class="fa-regular fa-eye"></i></label>
+                                        <i class="fa-regular fa-pen-to-square"></i>
+                                        <label for="del12"><i class="fa-regular fa-trash-can"></i></label>
+                                    </div>
+                                </div>
+
+                            </div>
+                    </div>
+
+
+                    <div class="pagination-bar">
+                        <span class="pagination-info info-1">Showing 1–4 of 11,145 users</span>
+                        <span class="pagination-info info-2">Showing 5–8 of 11,145 users</span>
+                        <span class="pagination-info info-3">Showing 9–12 of 11,145 users</span>
+
+                        <div class="pagination-controls">
+                            <!-- سهم السابق حسب الصفحة -->
+                            <label class="page-btn arrow-btn arr-prev-1 disabled">&lt;</label>
+                            <label for="p1" class="page-btn arrow-btn arr-prev-2">&lt;</label>
+                            <label for="p2" class="page-btn arrow-btn arr-prev-3">&lt;</label>
+
+                            <!-- أرقام الصفحات -->
+                            <label for="p1" class="page-btn lbl-1">1</label>
+                            <label for="p2" class="page-btn lbl-2">2</label>
+                            <label for="p3" class="page-btn lbl-3">3</label>
+
+                            <label>. . .</label>
+
+
+                            <!-- سهم التالي حسب الصفحة -->
+                            <label for="p2" class="page-btn arrow-btn arr-next-1">&gt;</label>
+                            <label for="p3" class="page-btn arrow-btn arr-next-2">&gt;</label>
+                            <label class="page-btn arrow-btn arr-next-3 disabled">&gt;</label>
+
+
+                        </div>
                     </div>
                 </div>
 
             </section>
+
+            </section>
+
+
+
+
+            <!-- DOCTORS -->
+            <section class="doctors-content">
+
+                <div class="page-title">Doctors</div>
+
+                <h3 class="welcome">
+                    Manage doctors and their information.
+                </h3>
+
+
+                <section class="gridana">
+
+                    <div class="carddd">
+                        <img class="anaicon" src="ad2.jpeg">
+
+                        <div class="numpoo">
+                            <h2>30</h2>
+                            <h4>Total Doctors</h4>
+                        </div>
+
+                        <img class="anaiconn" src="hhiiiggg.jpeg">
+                    </div>
+
+
+                    <div class="carddd">
+                        <img class="anaicon" src="ad1.jpeg">
+
+                        <div class="numpoo">
+                            <h2>22</h2>
+                            <h4>Active Doctors</h4>
+                        </div>
+
+                        <img class="anaiconn" src="hhiiiggg.jpeg">
+                    </div>
+
+
+                    <div class="carddd">
+                        <img class="anaicon" src="ad3.jpeg">
+
+                        <div class="numpoo">
+                            <h2>8</h2>
+                            <h4>On Leave</h4>
+                        </div>
+
+                        <img class="anaiconn" src="hhiiiggg.jpeg">
+                    </div>
+
+
+                    <div class="carddd">
+                        <img class="anaicon" src="raa.jpeg">
+
+                        <div class="numpoo">
+                            <h2>4.8</h2>
+                            <h4>Avg. Rating</h4>
+                        </div>
+
+                        <img class="anaiconn" src="hhiiiggg.jpeg">
+                    </div>
+
+                </section>
+
+
+                <section>
+
+                    <div class="carddd3">
+                    </div>
+
+                </section>
+
+            </section>
+
+
+
+
+
+            <!-- PRODUCTS -->
+            <section class="products-content">
+
+                <div class="page-title">Products</div>
+
+                <h3 class="welcome">
+                    Manage skincare and beauty products.
+                </h3>
+
+
+                <section class="gridana">
+
+                    <div class="carddd">
+                        <img class="anaicon" src="ad4.jpeg">
+
+                        <div class="numpoo">
+                            <h2>580</h2>
+                            <h4>Total Products</h4>
+                        </div>
+
+                        <img class="anaiconn" src="hhiiiggg.jpeg">
+                    </div>
+
+
+                    <div class="carddd">
+                        <img class="anaicon" src="innn.jpeg">
+
+                        <div class="numpoo">
+                            <h2>412</h2>
+                            <h4>In Stock</h4>
+                        </div>
+
+                        <img class="anaiconn" src="hhiiiggg.jpeg">
+                    </div>
+
+
+                    <div class="carddd">
+                        <img class="anaicon" src="outt.jpeg">
+
+                        <div class="numpoo">
+                            <h2>58</h2>
+                            <h4>Low Stock</h4>
+                        </div>
+
+                        <img class="anaiconn" src="hhiiiggg.jpeg">
+                    </div>
+
+
+                    <div class="carddd">
+                        <img class="anaicon" src="raa.jpeg">
+
+                        <div class="numpoo">
+                            <h2>4.7</h2>
+                            <h4>Avg. Rating</h4>
+                        </div>
+
+                        <img class="anaiconn" src="hhiiiggg.jpeg">
+                    </div>
+
+                </section>
+
+
+                <section>
+
+                    <div class="carddd3">
+                    </div>
+
+                </section>
+
+            </section>
+
+
+
+
+
+            <!-- APPOINTMENTS -->
+            <section class="appointments-content">
+
+                <div class="page-title">Appointments</div>
+
+                <h3 class="welcome">
+                    Manage appointments and bookings.
+                </h3>
+
+
+                <section class="gridana">
+
+                    <div class="carddd">
+                        <img class="anaicon" src="ad3.jpeg">
+
+                        <div class="numpoo">
+                            <h2>1,260</h2>
+                            <h4>Total Appointments</h4>
+                        </div>
+
+                        <img class="anaiconn" src="hhiiiggg.jpeg">
+                    </div>
+
+
+                    <div class="carddd">
+                        <img class="anaicon" src="comm.jpeg">
+
+                        <div class="numpoo">
+                            <h2>1,005</h2>
+                            <h4>Completed</h4>
+                        </div>
+
+                        <img class="anaiconn" src="hhiiiggg.jpeg">
+                    </div>
+
+
+                    <div class="carddd">
+                        <img class="anaicon" src="upp.jpeg">
+
+                        <div class="numpoo">
+                            <h2>175</h2>
+                            <h4>Upcoming</h4>
+                        </div>
+
+                        <img class="anaiconn" src="hhiiiggg.jpeg">
+                    </div>
+
+
+                    <div class="carddd">
+                        <img class="anaicon" src="canc.jpeg">
+
+                        <div class="numpoo">
+                            <h2>80</h2>
+                            <h4>Cancelled</h4>
+                        </div>
+
+                        <img class="anaiconn" src="hhiiiggg.jpeg">
+                    </div>
+
+
+                </section>
+
+
+                <section>
+
+                    <div class="carddd3">
+                    </div>
+
+                </section>
+
+            </section>
+
+
+
+
         </div>
+
     </div>
 
 </body>

@@ -32,7 +32,7 @@ body {
     display: block;
 }
 
-.form-side {
+.tyyyttyy {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,13 +41,6 @@ body {
     text-align: center;
 }
 
-
-.line {
-    width: 45px;
-    height: 2px;
-    background-color: #35432e;
-    margin-bottom: 25px;
-}
 
 .inputtt {
     display: flex;
@@ -74,15 +67,18 @@ body {
 }
 
 .btn-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 45px;
     border-radius: 25px;
-    border: none;
     background-color: #35432e;
     color: #fff;
     font-size: 15px;
-    cursor: pointer;
+    text-decoration: none;
     margin-top: 5px;
+    box-sizing: border-box;
 }
 
 .btn-login:hover {
